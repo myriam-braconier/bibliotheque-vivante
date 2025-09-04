@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!-- Métadonnées de base -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Curriculum vitae - Myriam Braconier Leclerc</title>
+
+		<!-- Description et mots-clés -->
+		<meta
+			name="description"
+			content="Curriculum vitae de Myriam Braconier Leclerc"
+		/>
+		<meta
+			name="keywords"
+			content="CV, Myriam Braconier Leclerc, développeuse web"
+		/>
+		<meta name="author" content="Myriam Braconier Leclerc" />
+		<meta name="robots" content="index, follow" />
+
+		<!-- Open Graph (Facebook, LinkedIn) -->
+		<meta
+			property="og:title"
+			content="Curriculum vitae - Myriam Braconier Leclerc"
+		/>
+		<meta
+			property="og:description"
+			content="Découvrez le parcours professionnel de Myriam Braconier Leclerc, en transition vers conceptrice formatrice en e-learning ."
+		/>
+		<meta
+			property="og:image"
+			content="https://codeleclerc.fr/communication.webp"
+		/>
+		<meta property="og:url" content="https://codeleclerc.fr" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Code Leclerc (Braconier)" />
+		<meta property="og:locale" content="fr_FR" />
+
+		<!-- Métadonnées de sécurité -->
+		<meta http-equiv="Content-Security-Policy" />
+		<meta http-equiv="X-Frame-Options" content="DENY" />
+		<meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+
+		<!-- Métadonnées de cache -->
+		<meta http-equiv="Cache-Control" content="max-age=3600" />
+		<meta http-equiv="Expires" content="Wed, 21 Oct 2025 07:28:00 GMT" />
+
+		<!-- Métadonnées pour applications web -->
+		<meta
+			name="application-name"
+			content="curriculum vitae Myriam Braconier Leclerc"
+		/>
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta
+			name="apple-mobile-web-app-status-bar-style"
+			content="black-translucent"
+		/>
+		<meta name="apple-mobile-web-app-title" content="App Title" />
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500&family=Nunito:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- script cdn -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.6.1/micromodal.min.js"></script>
+		<!-- script personnalisé -->
+		<script src="script.js"></script>
+		<!-- styles -->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<div class="bibliotheque">
+			<h1>Bibliothèque Vivante</h1>
+			<p class="subtitle">
+				Myriam Braconier Leclerc - Conceptrice Formatrice Digital Learning
+			</p>
+
+			<!-- Étagère 1: Compétences Techniques -->
+			<div class="etagere">
+				<div class="livres-container">
+					<div class="etagere-place-titre">
+						<div class="etagere-emoji">📚</div>
+						<h2 class="etagere-titre">Compétences Techniques</h2>
+					</div>
+					<div
+						class="livre html competence-card"
+						data-micromodal-trigger="modal-competence"
+						data-competence="HTML5"
+						data-titre="HTML"
+						data-categorie="technique"
+						data-niveau="85"
+					>
+						<div class="livre-titre">HTML5</div>
+					</div>
+
+					<div
+						class="livre css competence-card"
+						data-micromodal-trigger="modal-competence"
+						data-competence="CSS3"
+						data-titre="CSS"
+						data-categorie="technique"
+						data-niveau="85"
+						aria-hidden="true"
+					>
+						<div class="livre-titre">CSS3</div>
+					</div>
+
+					<div
+						class="livre js"
+						onclick="ouvrirPopup('JavaScript', 'technique', 80)"
+					>
+						<div class="livre-titre">JS</div>
+					</div>
+					<div class="livre php" onclick="ouvrirPopup('PHP', 'technique', 75)">
+						<div class="livre-titre">PHP</div>
+					</div>
+					<div
+						class="livre mysql"
+						onclick="ouvrirPopup('MySQL', 'technique', 80)"
+					>
+						<div class="livre-titre">MySQL</div>
+					</div>
+					<div
+						class="livre react"
+						onclick="ouvrirPopup('React.js', 'technique', 85)"
+					>
+						<div class="livre-titre">React</div>
+					</div>
+					<div
+						class="livre nextjs"
+						onclick="ouvrirPopup('Next.js', 'technique', 70)"
+					>
+						<div class="livre-titre">Next.js</div>
+					</div>
+					<div
+						class="livre wordpress"
+						onclick="ouvrirPopup('WordPress', 'technique', 90)"
+					>
+						<div class="livre-titre">WP</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="etagere-deux">
+				<div>
+					<!-- Étagère 2: Communication & Design -->
+					<div class="etagere">
+						<div class="livres-container">
+							<div class="etagere-place-titre">
+								<div class="etagere-emoji">🎨</div>
+								<h2 class="etagere-titre">Communication & Design</h2>
+							</div>
+							<div
+								class="livre adobe"
+								onclick="ouvrirPopup('Adobe Suite', 'communication', 85)"
+							>
+								<div class="livre-titre">Adobe</div>
+							</div>
+							<div
+								class="livre seo"
+								onclick="ouvrirPopup('SEO', 'communication', 80)"
+							>
+								<div class="livre-titre">SEO</div>
+							</div>
+							<div
+								class="livre community"
+								onclick="ouvrirPopup('Community Management', 'communication', 75)"
+							>
+								<div class="livre-titre">CM</div>
+							</div>
+							<div
+								class="livre canva"
+								onclick="ouvrirPopup('Canva', 'communication', 90)"
+							>
+								<div class="livre-titre">Canva</div>
+							</div>
+							<div
+								class="livre communication"
+								onclick="ouvrirPopup('Communication Digitale', 'communication', 85)"
+							>
+								<div class="livre-titre">Com</div>
+							</div>
+							<div
+								class="livre agile"
+								onclick="ouvrirPopup('Gestion Agile', 'communication', 80)"
+							>
+								<div class="livre-titre">Agile</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Étagère 3: Publics & Secteurs -->
+					<div class="etagere">
+						<div class="livres-container">
+							<div class="etagere-place-titre">
+								<div class="etagere-emoji">👥</div>
+								<h2 class="etagere-titre">Publics & Secteurs d'Expertise</h2>
+							</div>
+							<div
+								class="livre public"
+								onclick="ouvrirPopup('Secteur Public', 'publics', 95)"
+							>
+								<div class="etagere-place-titre"></div>
+								<div class="livre-titre">Public</div>
+							</div>
+							<div
+								class="livre universite"
+								onclick="ouvrirPopup('Enseignement Supérieur', 'publics', 90)"
+							>
+								<div class="livre-titre">Université</div>
+							</div>
+							<div
+								class="livre recherche"
+								onclick="ouvrirPopup('Recherche & Innovation', 'publics', 85)"
+							>
+								<div class="livre-titre">R&D</div>
+							</div>
+							<div
+								class="livre collectivite"
+								onclick="ouvrirPopup('Collectivités Territoriales', 'publics', 80)"
+							>
+								<div class="livre-titre">Collectivités</div>
+							</div>
+							<div
+								class="livre startup"
+								onclick="ouvrirPopup('Startups/PME', 'publics', 85)"
+							>
+								<div class="livre-titre">StartUp</div>
+							</div>
+							<div
+								class="livre formation"
+								onclick="ouvrirPopup('Formation Professionnelle', 'publics', 90)"
+							>
+								<div class="livre-titre">Formation</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<img src="autoportrait-enhanced.jpg" alt="portrait" />
+				</div>
+			</div>
+		</div>
+
+		<!-- Popup micromodal-->
+
+<!-- Votre modal doit avoir EXACTEMENT cette structure -->
+<div class="modal micromodal-slide" id="modal-competence">
+  <div class="modal__overlay" data-micromodal-close>
+    <div class="modal__container">
+      
+      <!-- Bouton de fermeture -->
+      <button class="modal__close" data-micromodal-close>×</button>
+      
+      <!-- Contenu de la modal -->
+      <h2 id="modal-title">Titre</h2>
+      <span id="modal-category">Catégorie</span>
+      <p id="modal-description">Description</p>
+      <p id="modal-contexte">Contexte</p>
+      <ul id="modal-projets"></ul>
+      
+      <!-- Barre de niveau -->
+      <div class="progress-bar">
+        <div id="modal-niveau-fill" style="width: 0%; transition: width 0.5s ease;"></div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+		
+	</body>
+</html>
