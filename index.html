@@ -62,7 +62,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500&family=Nunito:wght@400;600&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500&family=Nunito:wght@400;600&display=swap"
 			rel="stylesheet"
 		/>
 		<!-- script cdn -->
@@ -81,72 +81,89 @@
 			</p>
 
 			<!-- Étagère 1: Compétences Techniques -->
-			<div class="etagere">
-				<div class="livres-container">
-					<div class="etagere-place-titre">
-						<div class="etagere-emoji">📚</div>
-						<h2 class="etagere-titre">Compétences Techniques</h2>
-					</div>
-					<div
-						class="livre html competence-card"
-						data-micromodal-trigger="modal-competence"
-						data-competence="HTML5"
-						data-titre="HTML"
-						data-categorie="technique"
-						data-niveau="85"
-					>
-						<div class="livre-titre">HTML5</div>
-					</div>
+			<div class="etagere-container">
+				<div class="bloc-presentation">
+					<p class="presentation">
+						📍Actuellement : En recherche d'alternance (éligible contrat
+						d'apprentissage RQTH), POEI ou POEC pour me spécialiser en
+						ingénierie pédagogique et concrétiser ma reconversion vers la
+						conception-formation e-learning.
+					</p>
+				</div>
+				<div class="etagere">
+					<div class="livres-container">
+						<div class="etagere-place-titre">
+							<div class="etagere-emoji">📚</div>
+							<h2 class="etagere-titre">Compétences Techniques</h2>
+						</div>
+						<div class="livres-lot">
+							<div
+								class="livre html competence-card"
+								data-micromodal-trigger="modal-competence"
+								data-competence="HTML5"
+								data-titre="HTML"
+								data-categorie="technique"
+								data-niveau="85"
+							>
+								<div class="livre-titre">HTML5</div>
+							</div>
 
-					<div
-						class="livre css competence-card"
-						data-micromodal-trigger="modal-competence"
-						data-competence="CSS3"
-						data-titre="CSS"
-						data-categorie="technique"
-						data-niveau="85"
-						aria-hidden="true"
-					>
-						<div class="livre-titre">CSS3</div>
-					</div>
+							<div
+								class="livre css competence-card"
+								data-micromodal-trigger="modal-competence"
+								data-competence="CSS3"
+								data-titre="CSS"
+								data-categorie="technique"
+								data-niveau="85"
+								aria-hidden="true"
+							>
+								<div class="livre-titre">CSS3</div>
+							</div>
 
-					<div
-						class="livre js"
-						onclick="ouvrirPopup('JavaScript', 'technique', 80)"
-					>
-						<div class="livre-titre">JS</div>
-					</div>
-					<div class="livre php" onclick="ouvrirPopup('PHP', 'technique', 75)">
-						<div class="livre-titre">PHP</div>
-					</div>
-					<div
-						class="livre mysql"
-						onclick="ouvrirPopup('MySQL', 'technique', 80)"
-					>
-						<div class="livre-titre">MySQL</div>
-					</div>
-					<div
-						class="livre react"
-						onclick="ouvrirPopup('React.js', 'technique', 85)"
-					>
-						<div class="livre-titre">React</div>
-					</div>
-					<div
-						class="livre nextjs"
-						onclick="ouvrirPopup('Next.js', 'technique', 70)"
-					>
-						<div class="livre-titre">Next.js</div>
-					</div>
-					<div
-						class="livre wordpress"
-						onclick="ouvrirPopup('WordPress', 'technique', 90)"
-					>
-						<div class="livre-titre">WP</div>
+							<div
+								class="livre js"
+								onclick="ouvrirPopup('JavaScript', 'technique', 80)"
+							>
+								<div class="livre-titre">JS</div>
+							</div>
+							<div
+								class="livre php"
+								onclick="ouvrirPopup('PHP', 'technique', 75)"
+							>
+								<div class="livre-titre">PHP</div>
+							</div>
+						</div>
+						<div class="livres-lot">
+							<div
+								class="livre mysql"
+								onclick="ouvrirPopup('MySQL', 'technique', 80)"
+							>
+								<div class="livre-titre">MySQL</div>
+							</div>
+							<div
+								class="livre react"
+								onclick="ouvrirPopup('React.js', 'technique', 85)"
+							>
+								<div class="livre-titre">React</div>
+							</div>
+							<div
+								class="livre nextjs"
+								onclick="ouvrirPopup('Next.js', 'technique', 70)"
+							>
+								<div class="livre-titre">Next.js</div>
+							</div>
+							<div
+								class="livre wordpress"
+								onclick="ouvrirPopup('WordPress', 'technique', 90)"
+							>
+								<div class="livre-titre">WP</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="etagere-deux">
+			<div class="etagere-container">
 				<div>
 					<!-- Étagère 2: Communication & Design -->
 					<div class="etagere">
@@ -241,7 +258,8 @@
 						</div>
 					</div>
 				</div>
-				<div>
+
+				<div class="img-container">
 					<img src="autoportrait-enhanced.jpg" alt="portrait" />
 				</div>
 			</div>
@@ -249,29 +267,29 @@
 
 		<!-- Popup micromodal-->
 
-<!-- Votre modal doit avoir EXACTEMENT cette structure -->
-<div class="modal micromodal-slide" id="modal-competence">
-  <div class="modal__overlay" data-micromodal-close>
-    <div class="modal__container">
-      
-      <!-- Bouton de fermeture -->
-      <button class="modal__close" data-micromodal-close>×</button>
-      
-      <!-- Contenu de la modal -->
-      <h2 id="modal-title">Titre</h2>
-      <span id="modal-category">Catégorie</span>
-      <p id="modal-description">Description</p>
-      <p id="modal-contexte">Contexte</p>
-      <ul id="modal-projets"></ul>
-      
-      <!-- Barre de niveau -->
-      <div class="progress-bar">
-        <div id="modal-niveau-fill" style="width: 0%; transition: width 0.5s ease;"></div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-		
+		<!-- Votre modal doit avoir EXACTEMENT cette structure -->
+		<div class="modal micromodal-slide" id="modal-competence">
+			<div class="modal__overlay" data-micromodal-close>
+				<div class="modal__container">
+					<!-- Bouton de fermeture -->
+					<button class="modal__close" data-micromodal-close>×</button>
+
+					<!-- Contenu de la modal -->
+					<h2 id="modal-title">Titre</h2>
+					<span id="modal-category">Catégorie</span>
+					<p id="modal-description">Description</p>
+					<p id="modal-contexte">Contexte</p>
+					<ul id="modal-projets"></ul>
+
+					<!-- Barre de niveau -->
+					<div class="progress-bar">
+						<div
+							id="modal-niveau-fill"
+							style="width: 0%; transition: width 0.5s ease"
+						></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
