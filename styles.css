@@ -473,27 +473,37 @@ img {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		overflow: hidden;
 		margin: 0 auto 15px auto;
+		width: 110px;
+		height: 110px;
+		border-radius: 50%;
+		overflow: hidden;
+		border: 1px solid #ddd;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	}
 	.portrait-container img {
 		transform: scale(1.1);
 		transition: transform 0.3s ease;
 		display: inline-block;
-		width: 100px;
-		height: 100px;
+		width: 110px;
+		height: 110px;
 		border-radius: 50%;
 		object-fit: cover;
+		object-position: center 30%;
 		border: 1px solid #ddd; /* optionnel : bordure */
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	}
 	.portrait-cercle {
 		width: 110px;
-		height: 110px;
+		height: 130px;
 		border-radius: 50%;
 		object-fit: cover; /* pour garder les proportions */
 		overflow: hidden;
 	}
+
+	.portrait-container img:hover {
+    transform: scale(1.2); /* Effet de zoom plus léger */
+}
 	.etagere-container {
 		display: block;
 	}
@@ -559,7 +569,7 @@ img {
 		left: 0;
 		right: 0;
 		bottom: 0;
-	background: linear-gradient(170deg, #a855f7, #22c55e);
+		background: linear-gradient(170deg, #a855f7, #22c55e);
 		backdrop-filter: blur(3px);
 		display: block;
 		padding: 0;
