@@ -77,8 +77,12 @@
 		<div class="bibliotheque">
 			<h1>Bibliothèque Vivante</h1>
 			<div class="portrait-container">
-				<img class="portrait-cercle"src="autoportrait-enhanced.jpg" alt="portrait">
-			</div >
+				<img
+					class="portrait-cercle"
+					src="autoportrait-enhanced.jpg"
+					alt="portrait"
+				/>
+			</div>
 			<p class="subtitle">
 				Myriam Braconier Leclerc - Conceptrice Formatrice Digital Learning
 			</p>
@@ -100,67 +104,91 @@
 					</div>
 					<div class="livres-container">
 						<div class="livres-lot">
+							<!-- langages -->
 							<div
-								class="livre html competence-card"
+								class="livre langages competence-card"
 								data-micromodal-trigger="modal-competence"
-								data-competence="HTML5"
-								data-titre="HTML"
+								data-competence="Langages"
+								data-titre="Langages"
 								data-categorie="technique"
 								data-niveau="85"
 							>
-								<div class="livre-titre">HTML5</div>
+								<div class="livre-titre">
+									<h2>Langages</h2>
+								</div>
 							</div>
-
+							<!-- frameworks -->
 							<div
-								class="livre css competence-card"
+								class="livre frameworks competence-card"
 								data-micromodal-trigger="modal-competence"
-								data-competence="CSS3"
-								data-titre="CSS"
+								data-competence="Frameworks"
+								data-titre="Frameworks"
 								data-categorie="technique"
 								data-niveau="85"
 								aria-hidden="true"
 							>
-								<div class="livre-titre">CSS3</div>
+								<div class="livre-titre">
+									<h2>Frameworks</h2>
+								</div>
 							</div>
-
+							<!-- BDD -->
 							<div
-								class="livre js"
-								onclick="ouvrirPopup('JavaScript', 'technique', 80)"
+								class="livre bdd competence-card"
+								data-micromodal-trigger="modal-competence"
+								data-competence="BDD"
+								data-titre="BDD"
+								data-categorie="technique"
+								data-niveau="80"
 							>
-								<div class="livre-titre">JS</div>
+								<div class="livre-titre">
+									<h2>BDD</h2>
+								</div>
 							</div>
-							<div
-								class="livre php"
-								onclick="ouvrirPopup('PHP', 'technique', 75)"
+							<!-- Wordpress -->
+							 <div
+								class="livre wordpress competence-card"
+								onclick="ouvrirPopup('WordPress', 'technique', 85)"
 							>
-								<div class="livre-titre">PHP</div>
+								<div class="livre-titre"><h2>WordPress</h2></div>
+							</div>
+							<!-- Recherche documentaire -->
+							<div
+								class="livre recherche-doc"
+								onclick="ouvrirPopup('RechercheDocumentaire', 'technique', 75)"
+							>
+								<div class="livre-titre">
+									<h2>Recherche <br />documentaire</h2>
+								</div>
 							</div>
 						</div>
 						<div class="livres-lot">
+							<!-- technologies de l'information-->
 							<div
-								class="livre mysql"
-								onclick="ouvrirPopup('MySQL', 'technique', 80)"
+								class="livre techno-info competence-card"
+								onclick="ouvrirPopup('TechnologiesInformation', 'technique', 80)"
 							>
-								<div class="livre-titre">MySQL</div>
+								<div class="livre-titre">
+									<h2>technologies <br />Information</h2>
+								</div>
 							</div>
+							<!-- Propriété intellectuelle -->
 							<div
-								class="livre react"
-								onclick="ouvrirPopup('React.js', 'technique', 85)"
+								class="livre propriete"
+								onclick="ouvrirPopup('ProprieteIntellectuelle', 'technique', 75)"
 							>
-								<div class="livre-titre">React</div>
+								<div class="livre-titre">
+									<h2>Propriété </br>Intellectuelle</h2>
+								</div>
 							</div>
+							<!-- Normes & Standards -->
 							<div
-								class="livre nextjs"
-								onclick="ouvrirPopup('Next.js', 'technique', 70)"
+								class="livre normes-standards"
+								onclick="ouvrirPopup('Normesstandards', 'technique', 80)"
 							>
-								<div class="livre-titre">Next.js</div>
+								<div class="livre-titre"><h2>Normes</br> Standards</h2></div>
 							</div>
-							<div
-								class="livre wordpress"
-								onclick="ouvrirPopup('WordPress', 'technique', 90)"
-							>
-								<div class="livre-titre">WP</div>
-							</div>
+							
+							
 						</div>
 					</div>
 				</div>
@@ -175,41 +203,47 @@
 							<h2 class="etagere-titre">Communication & Design</h2>
 						</div>
 						<div class="livres-container">
+							<!-- Adobe Suite -->
 							<div
 								class="livre adobe"
-								onclick="ouvrirPopup('Adobe Suite', 'communication', 85)"
+								onclick="ouvrirPopup('AdobeSuite', 'communication', 85)"
 							>
-								<div class="livre-titre">Adobe</div>
+								<div class="livre-titre"><h2>Adobe</h2></div>
 							</div>
+							<!-- SEO -->
 							<div
 								class="livre seo"
 								onclick="ouvrirPopup('SEO', 'communication', 80)"
 							>
-								<div class="livre-titre">SEO</div>
+								<div class="livre-titre"><h2>SEO</h2></div>
 							</div>
+							<!-- Community Management -->
 							<div
 								class="livre community"
-								onclick="ouvrirPopup('Community Management', 'communication', 75)"
+								onclick="ouvrirPopup('CommunityManagement', 'communication', 75)"
 							>
-								<div class="livre-titre">CM</div>
+								<div class="livre-titre"><h2>Community</br> Management</h2></div>
 							</div>
+							<!-- Canva -->
 							<div
 								class="livre canva"
 								onclick="ouvrirPopup('Canva', 'communication', 90)"
 							>
-								<div class="livre-titre">Canva</div>
+								<div class="livre-titre"><h2>Canva</h2></div>
 							</div>
+							<!-- Communication Digitale -->
 							<div
 								class="livre communication"
-								onclick="ouvrirPopup('Communication Digitale', 'communication', 85)"
+								onclick="ouvrirPopup('CommunicationDigitale', 'communication', 85)"
 							>
-								<div class="livre-titre">Com</div>
+								<div class="livre-titre"><h2>Communication</br> Digitale</h2></div>
 							</div>
+							<!-- Gestion Agile -->
 							<div
 								class="livre agile"
-								onclick="ouvrirPopup('Gestion Agile', 'communication', 80)"
+								onclick="ouvrirPopup('GestionAgile', 'communication', 80)"
 							>
-								<div class="livre-titre">Agile</div>
+								<div class="livre-titre"><h2>Gestion Agile</h2></div>
 							</div>
 						</div>
 					</div>
@@ -217,46 +251,51 @@
 					<!-- Étagère 3: Publics & Secteurs -->
 					<div class="etagere">
 						<div class="etagere-place-titre">
-								<div class="etagere-emoji">👥</div>
-								<h2 class="etagere-titre">Publics & Secteurs</h2>
-							</div>
+							<div class="etagere-emoji">👥</div>
+							<h2 class="etagere-titre">Publics </br>& Secteurs</h2>
+						</div>
 						<div class="livres-container">
-							
+							<!-- Secteur Public -->
 							<div
 								class="livre public"
-								onclick="ouvrirPopup('Secteur Public', 'publics', 95)"
+								onclick="ouvrirPopup('SecteurPublic', 'publics', 95)"
 							>
-								<div class="livre-titre">Public</div>
+								<div class="livre-titre"><h2>Public</h2></div>
 							</div>
+							<!-- Université -->
 							<div
 								class="livre universite"
-								onclick="ouvrirPopup('Enseignement Supérieur', 'publics', 90)"
+								onclick="ouvrirPopup('EnseignementSuperieur', 'publics', 90)"
 							>
-								<div class="livre-titre">Université</div>
+								<div class="livre-titre"><h2>Université</h2></div>
 							</div>
+							<!-- R&D -->
 							<div
 								class="livre recherche"
-								onclick="ouvrirPopup('Recherche & Innovation', 'publics', 85)"
+								onclick="ouvrirPopup('RechercheInnovation', 'publics', 85)"
 							>
-								<div class="livre-titre">R&D</div>
+								<div class="livre-titre"><h2>R&D</h2></div>
 							</div>
+							<!-- Collectivités -->
 							<div
 								class="livre collectivite"
-								onclick="ouvrirPopup('Collectivités Territoriales', 'publics', 80)"
+								onclick="ouvrirPopup('CollectivitésTerritoriales', 'publics', 80)"
 							>
-								<div class="livre-titre">Collectivités</div>
+								<div class="livre-titre"><h2>Collectivités</h2></div>
 							</div>
+							<!-- Startups / PME -->
 							<div
 								class="livre startup"
-								onclick="ouvrirPopup('Startups/PME', 'publics', 85)"
+								onclick="ouvrirPopup('StartupsPME', 'publics', 85)"
 							>
-								<div class="livre-titre">StartUp</div>
+								<div class="livre-titre"><h2>StartUp</h2></div>
 							</div>
+							<!-- Formation Professionnelle -->
 							<div
 								class="livre formation"
-								onclick="ouvrirPopup('Formation Professionnelle', 'publics', 90)"
+								onclick="ouvrirPopup('FormationProfessionnelle', 'publics', 90)"
 							>
-								<div class="livre-titre">Formation</div>
+								<div class="livre-titre"><h2>Formation</h2></div>
 							</div>
 						</div>
 					</div>

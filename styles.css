@@ -5,7 +5,7 @@
 }
 
 body {
-	background: linear-gradient(135deg, #a855f7, #22c55e);
+	background: linear-gradient(170deg, #a855f7, #22c55e);
 	min-height: 100vh;
 	padding: 20px;
 	color: #f5f5dc;
@@ -50,7 +50,7 @@ h1 {
 	background: rgba(245, 245, 245, 0.3);
 	border-radius: 8px;
 	padding: 10px;
-	margin: 0 auto;
+	margin: 0 0 40px 0;
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 	position: relative;
 	width: fit-content;
@@ -94,10 +94,10 @@ h1 {
 	font-family: "Nunito", sans-serif;
 	font-size: 1rem;
 	font-weight: bold;
-	margin-bottom: 10px;
+	margin: 10px 30px 20px 30px;
 	color: #f5f5dc;
 	opacity: 1;
-	padding: 10px;
+	padding: 60x;
 }
 
 .livres-container {
@@ -116,7 +116,7 @@ h1 {
 
 .livre {
 	width: 60px;
-	height: 125px;
+	height: 150px;
 	border-radius: 6px;
 	cursor: pointer;
 	position: relative;
@@ -124,6 +124,7 @@ h1 {
 	transition: all 0.3s ease;
 	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
 	border: 2px solid rgba(255, 255, 255, 0.1);
+	padding: 20px;
 }
 
 .livre:hover {
@@ -132,98 +133,103 @@ h1 {
 }
 
 .livre-titre {
+	position: absolute;
+	bottom: 55px; /* Position fixe depuis le bas */
+	left: 50%;
+	transform: translateX(-50%) rotate(-90deg);
+	transform-origin: center center;
+}
+
+.livre-titre h2 {
 	font-family: "Nunito", sans-serif;
 	text-transform: uppercase;
-	position: absolute;
-	margin-bottom: 18px;
-	bottom: 14px;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%) rotate(-90deg);
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
 	text-shadow: 1px 2px 2px rgba(168, 85, 247, 0.8);
 	white-space: nowrap;
-	transform-origin: center;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
 }
 
 /* Couleurs des livres */
-.livre.html {
-	background: linear-gradient(135deg, #e34c26, #f16529);
+.livre.langages {
+	background: linear-gradient(170deg, #e34c26, #f16529);
 }
-.livre.css {
-	background: linear-gradient(135deg, #1572b6, #33a9dc);
+.livre.frameworks {
+	background: linear-gradient(170deg, #1572b6, #33a9dc);
 }
-.livre.js {
-	background: linear-gradient(135deg, #ffd700, #ffda44);
+.livre.bdd {
+	background: linear-gradient(170deg, #d4af37, #ffda44);
 	color: #000;
 }
-.livre.php {
-	background: linear-gradient(135deg, #777bb4, #8892bf);
+.livre.recherche-doc {
+	background: linear-gradient(170deg, #777bb4, #8892bf);
 }
-.livre.mysql {
-	background: linear-gradient(135deg, #00618a, #4479a1);
+.livre.techno-info {
+	background: linear-gradient(170deg, #00618a, #4479a1);
 }
-.livre.react {
-	background: linear-gradient(135deg, #61dafb, #21d4fd);
+.livre.propriete {
+	background: linear-gradient(170deg, #61dafb, #21d4fd);
 	color: #000;
 }
-.livre.nextjs {
-	background: linear-gradient(135deg, #000000, #333333);
+.livre.normes-standards {
+	background: linear-gradient(170deg, #000000, #333333);
 }
 .livre.wordpress {
-	background: linear-gradient(135deg, #21759b, #2ea3f2);
+	background: linear-gradient(170deg, #21759b, #2ea3f2);
 }
 
 .livre.adobe {
-	background: linear-gradient(135deg, #ff0000, #cc0000);
+	background: linear-gradient(170deg, #ff0000, #cc0000);
 }
 .livre.seo {
-	background: linear-gradient(135deg, #ffd700, #ffed4e);
+	background: linear-gradient(170deg, #d4af37, #ffed4e);
 	color: #000;
 }
 .livre.community {
-	background: linear-gradient(135deg, #ff69b4, #ff1493);
+	background: linear-gradient(170deg, #ff69b4, #ff1493);
 }
 .livre.canva {
-	background: linear-gradient(135deg, #7d2ae8, #9b59b6);
+	background: linear-gradient(170deg, #7d2ae8, #9b59b6);
 }
 .livre.communication {
-	background: linear-gradient(135deg, #00bfff, #1e90ff);
+	background: linear-gradient(170deg, #00bfff, #1e90ff);
 }
 .livre.agile {
-	background: linear-gradient(135deg, #808080, #a9a9a9);
+	background: linear-gradient(170deg, #808080, #a9a9a9);
 }
 
 .livre.public {
-	background: linear-gradient(135deg, #000080, #4169e1);
+	background: linear-gradient(170deg, #000080, #4169e1);
 }
 .livre.universite {
-	background: linear-gradient(135deg, #800000, #dc143c);
+	background: linear-gradient(170deg, #800000, #dc143c);
 }
 .livre.recherche {
-	background: linear-gradient(135deg, #696969, #808080);
+	background: linear-gradient(170deg, #696969, #808080);
 }
 .livre.collectivite {
-	background: linear-gradient(135deg, #228b22, #32cd32);
+	background: linear-gradient(170deg, #228b22, #32cd32);
 }
 .livre.startup {
-	background: linear-gradient(135deg, #ff4500, #ff6347);
+	background: linear-gradient(170deg, #ff4500, #ff6347);
 }
 .livre.formation {
-	background: linear-gradient(135deg, #9400d3, #8a2be2);
+	background: linear-gradient(170deg, #9400d3, #8a2be2);
 }
 
 /* Autoportrait */
 .img-container {
 	justify-content: center;
 	align-items: center;
+	margin: 0 auto;
 }
 img {
-	width: 230px;
+	width: 200px;
 	height: auto;
 	border-radius: 8px;
-	margin: 5px 65px 5px 65px;
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 	align-self: flex-start;
 }
@@ -251,7 +257,7 @@ img {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(168, 85, 247, 0.9);
+	background: linear-gradient(170deg, #a855f7, #22c55e);
 	backdrop-filter: blur(5px);
 	display: flex;
 	justify-content: center;
@@ -267,14 +273,14 @@ img {
 	max-width: 600px;
 	max-height: 80vh;
 	overflow-y: auto;
-	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 20px 40px rgba(35, 21, 232, 0.5);
 	color: #2c1810;
 	position: relative;
 }
 
 /* Styles pour le contenu de la popup (utilise vos styles existants) */
 .popup-header {
-	background: linear-gradient(135deg, #3b82f6, #1104ce);
+	background: linear-gradient(170deg, #a855f7, #22c55e);
 	color: white;
 	padding: 20px;
 	border-radius: 16px 16px 0 0;
@@ -341,7 +347,7 @@ img {
 
 .niveau-fill {
 	height: 100%;
-	background: linear-gradient(90deg, #d4af37, #b8941f);
+	background: linear-gradient(170deg, #a855f7, #22c55e);
 	border-radius: 4px;
 	transition: width 0.8s ease;
 }
@@ -471,8 +477,8 @@ img {
 		margin: 0 auto 15px auto;
 	}
 	.portrait-container img {
-		transform: scale(1.1); 
-		transition: transform 0.3s ease; 
+		transform: scale(1.1);
+		transition: transform 0.3s ease;
 		display: inline-block;
 		width: 100px;
 		height: 100px;
@@ -504,6 +510,7 @@ img {
 	}
 	.presentation {
 		width: 100%;
+		margin: 0 auto 20px auto;
 	}
 	.livres-container {
 		flex-wrap: wrap;
@@ -512,13 +519,24 @@ img {
 
 	.livre {
 		width: 60px;
-		height: 125px;
+		height: 130px;
 		border-radius: 6px;
 	}
 	.livre-titre {
+		bottom: 35px; /* Position fixe depuis le bas */
+	}
+
+	.livre-titre h2 {
+		font-family: "Nunito", sans-serif;
+		text-transform: uppercase;
 		font-size: 14px;
-		margin-bottom: 20px;
-		/* bottom: 14px; */
+		font-weight: bold;
+		color: #fff;
+		text-shadow: 1px 2px 2px rgba(168, 85, 247, 0.8);
+		white-space: nowrap;
+		margin: 0;
+		padding: 0;
+		line-height: 1;
 	}
 	/* Autoportrait */
 	img {
