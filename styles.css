@@ -325,7 +325,8 @@ img {
 }
 #modal-title {
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 28px;
+	margin-bottom: 20px;
 }
 #modal-category {
 	font-size: 14px;
@@ -377,7 +378,7 @@ img {
 	transition: all 0.3s ease;
 }
 
-.close-btn:hover {
+.modal__close:hover {
 	background: rgba(255, 255, 255, 0.2);
 }
 
@@ -500,9 +501,9 @@ img {
 	.popup-category {
 		font-size: 0.85rem; /* Catégorie plus petite */
 	}
-	.close-btn {
+	.modal__close {
 		top: 12px;
-		right: 18px;
+		right: 15px;
 		font-size: 1.7rem; /* Bouton plus petit */
 		width: 38px;
 		height: 38px;
@@ -636,7 +637,11 @@ img {
 		flex-direction: column;
 		box-sizing: border-box;
 	}
-
+#modal-title {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
 	/* Header de la popup */
 	.popup-header {
 		position: relative;
@@ -661,11 +666,10 @@ img {
 	}
 
 	/* Bouton de fermeture */
-	.modal__close,
-	.close-btn {
+	.modal__close {
 		position: absolute;
 		top: 15px;
-		right: 15px;
+		right: 6px;
 		font-size: 1.8rem;
 		width: 35px;
 		height: 35px;
