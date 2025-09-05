@@ -25,6 +25,9 @@ h1 {
 	color: #d4af37;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.portrait-container {
+	display: none;
+}
 
 .subtitle {
 	font-family: "Nunito", sans-serif;
@@ -33,18 +36,26 @@ h1 {
 	color: #f5f5dc;
 	opacity: 0.8;
 }
+.etagere-container {
+	display: flex;
+	align-items: center;
+}
+.etagere-container2 {
+	display: flex;
+	align-items: center;
+}
 
 .etagere {
 	/* background: linear-gradient(180deg, #8b4513, #a0522d); */
 	background: rgba(245, 245, 245, 0.3);
 	border-radius: 8px;
 	padding: 10px;
-	margin: 40px 0 40px 10px;
+	margin: 0 auto;
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 	position: relative;
 	width: fit-content;
 	height: fit-content;
-	justify-content: center; 
+	justify-content: center;
 	display: flex;
 }
 
@@ -59,10 +70,7 @@ h1 {
 	opacity: 0.7;
 	border-radius: 8px 8px 0 0;
 }
-.etagere-container {
-	display: flex;
-	align-items: center;
-}
+
 .etagere-place-titre {
 	display: flex;
 	justify-content: start;
@@ -76,10 +84,10 @@ h1 {
 .etagere-titre {
 	font-family: "Spectral", serif;
 	font-size: 1.8rem;
-	margin-bottom: 10px;
 	color: #f5f5dc;
 	font-weight: bold;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	width: 100%;
 }
 
 .presentation {
@@ -88,8 +96,7 @@ h1 {
 	font-weight: bold;
 	margin-bottom: 10px;
 	color: #f5f5dc;
-	opacity: 0.8;
-	max-width: 200px;
+	opacity: 1;
 	padding: 10px;
 }
 
@@ -98,7 +105,9 @@ h1 {
 	justify-content: center;
 	gap: 30px;
 	z-index: 2;
+	margin-left: 30px;
 }
+
 .livres-lot {
 	display: flex;
 	align-items: center;
@@ -214,7 +223,7 @@ img {
 	width: 230px;
 	height: auto;
 	border-radius: 8px;
-	margin-top: 5px;
+	margin: 5px 65px 5px 65px;
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 	align-self: flex-start;
 }
@@ -450,33 +459,57 @@ img {
 }
 
 @media (max-width: 480px) {
-	.etagere-container {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
-	/* .bloc-presentation {
-	border: 2px solid #1104ce;
-	border-radius: 8px;
-	padding: 12px;
-} */
-	.presentation {
-		font-family: "Nunito", sans-serif;
-		font-size: 1rem;
-		margin-bottom: 10px;
-		color: #f5f5dc;
-		opacity: 0.8;
-		max-width: 400px;
+	.bibliothèque {
 		padding: 10px;
+		margin: 10px;
 	}
-	.livres-container {
+	.portrait-container {
 		display: flex;
 		justify-content: center;
-		flex-wrap: wrap;
-		gap: 30px;
-		z-index: 2;
+		align-items: center;
+		overflow: hidden;
+		margin: 0 auto 15px auto;
 	}
+	.portrait-container img {
+		transform: scale(1.1); 
+		transition: transform 0.3s ease; 
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 1px solid #ddd; /* optionnel : bordure */
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+	.portrait-cercle {
+		width: 110px;
+		height: 110px;
+		border-radius: 50%;
+		object-fit: cover; /* pour garder les proportions */
+		overflow: hidden;
+	}
+	.etagere-container {
+		display: block;
+	}
+	.etagere-container2 {
+		display: block;
+	}
+	.etagere {
+		display: block;
+	}
+	.etagere-place-titre {
+		max-width: 100%;
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+	.presentation {
+		width: 100%;
+	}
+	.livres-container {
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+
 	.livre {
 		width: 60px;
 		height: 125px;
