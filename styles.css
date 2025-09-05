@@ -25,6 +25,23 @@ h1 {
 	color: #d4af37;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+h2 {
+	font-family: "Spectral", serif;
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+	justify-self: center;
+	color: #f5f5dc;
+	text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+h3 {
+	font-family: "Nunito", sans-serif;
+	font-size: 1.2rem;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
 .portrait-container {
 	display: none;
 }
@@ -36,27 +53,49 @@ h1 {
 	color: #f5f5dc;
 	opacity: 0.8;
 }
+.ligne1 {
+	width: 150px;
+	transform: rotate(-90deg);
+	transform-origin: bottom left;
+	height: 2px;
+	border: none;
+	background: linear-gradient(90deg, #d4af37, #f5f5dc, #d4af37);
+	margin: 0 auto;
+	/* margin: 20px 0; */
+}
 .etagere-container {
 	display: flex;
 	align-items: center;
+	justify-content: flex-start;
 }
 .etagere-container2 {
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
+	border-right: #d4af37 2px solid;
 }
-
+.ligne2 {
+	width: 150px;
+	transform: rotate(-90deg);
+	transform-origin: bottom right;
+	height: 2px;
+	border: none;
+	background: linear-gradient(90deg, #d4af37, #f5f5dc, #d4af37);
+	/* margin: 20px 0; */
+}
 .etagere {
 	/* background: linear-gradient(180deg, #8b4513, #a0522d); */
 	background: rgba(245, 245, 245, 0.3);
 	border-radius: 8px;
 	padding: 10px;
-	margin: 0 0 40px 0;
+	margin: 10px 0 10px 0;
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 	position: relative;
 	width: fit-content;
 	height: fit-content;
 	justify-content: center;
 	display: flex;
+	align-items: center;
 }
 
 .etagere::before {
@@ -73,13 +112,13 @@ h1 {
 
 .etagere-place-titre {
 	display: flex;
-	justify-content: start;
+	/* justify-content: start; */
 	align-items: center;
-	margin-right: 20px;
-	max-width: 230px;
+	width: 280px;
 }
 .etagere-emoji {
 	font-size: 2.2rem;
+	margin: 0 20px 0 0;
 }
 .etagere-titre {
 	font-family: "Spectral", serif;
@@ -88,16 +127,24 @@ h1 {
 	font-weight: bold;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 	width: 100%;
+	margin: 0 auto;
 }
-
+.presentation-container {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
 .presentation {
 	font-family: "Nunito", sans-serif;
 	font-size: 1rem;
 	font-weight: bold;
-	margin: 10px 30px 20px 30px;
+	/* padding: 20px 20px 10px 20px; */
 	color: #f5f5dc;
 	opacity: 1;
-	padding: 60x;
+	margin: 20px 20px 20px auto;
+	padding: 20px;
+	border: #d4af37 2px solid;
+	border-radius: 25px;
 }
 
 .livres-container {
@@ -140,7 +187,7 @@ h1 {
 	transform-origin: center center;
 }
 
-.livre-titre h2 {
+.livre-titre h3 {
 	font-family: "Nunito", sans-serif;
 	text-transform: uppercase;
 	font-size: 16px;
@@ -224,18 +271,16 @@ h1 {
 .img-container {
 	justify-content: center;
 	align-items: center;
-	margin: 0 auto;
 }
 img {
 	width: 200px;
 	height: auto;
-	border-radius: 8px;
+	border-radius: 25px;
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-	align-self: flex-start;
+	margin: 0 80px 20px 80px;
 }
 
-/* Popup Overlay */
-/* CSS pour corriger l'affichage de la modal */
+/* modal */
 
 .modal {
 	display: none;
@@ -276,15 +321,28 @@ img {
 	box-shadow: 0 20px 40px rgba(35, 21, 232, 0.5);
 	color: #2c1810;
 	position: relative;
+	padding: 0 40px 0 30px;
+}
+#modal-title {
+	text-transform: uppercase;
+	font-size: 24px;
+}
+#modal-category {
+	font-size: 14px;
+	font-style: italic;
+	opacity: 0.8;
+	text-align: right;
+}
+.niveau-section {
+	margin: 20px 0;
 }
 
-/* Styles pour le contenu de la popup (utilise vos styles existants) */
-.popup-header {
+.modal__header {
 	background: linear-gradient(170deg, #a855f7, #22c55e);
 	color: white;
 	padding: 20px;
-	border-radius: 16px 16px 0 0;
 	position: relative;
+	margin: 25px 0 0 0;
 }
 
 .popup-title {
@@ -300,22 +358,23 @@ img {
 	opacity: 0.9;
 }
 
-.close-btn {
+.modal__close {
 	position: absolute;
 	top: 15px;
-	right: 20px;
-	background: none;
-	border: none;
-	color: white;
-	font-size: 2rem;
-	cursor: pointer;
-	width: 40px;
-	height: 40px;
+	right: 5px;
+	font-size: 1.8rem;
+	width: 35px;
+	height: 35px;
+	background: rgba(255, 0, 0, 0.7) !important;
+	color: white !important;
+	border: 2px solid white;
 	border-radius: 50%;
-	display: flex;
+	display: flex !important;
 	align-items: center;
 	justify-content: center;
-	transition: background 0.3s ease;
+	cursor: pointer;
+	z-index: 999999 !important; /* Z-index très élevé */
+	transition: all 0.3s ease;
 }
 
 .close-btn:hover {
@@ -324,10 +383,6 @@ img {
 
 .popup-body {
 	padding: 25px;
-}
-
-.niveau-section {
-	margin-bottom: 20px;
 }
 
 .niveau-label {
@@ -352,16 +407,10 @@ img {
 	transition: width 0.8s ease;
 }
 
-.description,
-.projets,
-.contexte {
-	margin-bottom: 20px;
-}
-
 .section-title {
+	margin-top: 10px;
 	font-weight: bold;
 	color: #8b4513;
-	margin-bottom: 8px;
 	font-size: 1.1rem;
 }
 
@@ -469,41 +518,36 @@ img {
 		padding: 10px;
 		margin: 10px;
 	}
+	.ligne1 {
+		display: none;
+	}
+	.ligne2 {
+		display: none;
+	}
 	.portrait-container {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin: 0 auto 15px auto;
-		width: 110px;
-		height: 110px;
+		width: 130px;
+		height: 130px;
 		border-radius: 50%;
 		overflow: hidden;
 		border: 1px solid #ddd;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	}
-	.portrait-container img {
-		transform: scale(1.1);
-		transition: transform 0.3s ease;
-		display: inline-block;
-		width: 110px;
-		height: 110px;
-		border-radius: 50%;
-		object-fit: cover;
-		object-position: center 30%;
-		border: 1px solid #ddd; /* optionnel : bordure */
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	}
-	.portrait-cercle {
-		width: 110px;
-		height: 130px;
-		border-radius: 50%;
-		object-fit: cover; /* pour garder les proportions */
-		overflow: hidden;
-	}
 
+	.portrait-container img {
+		display: block !important;
+		transition: transform 0.3s ease;
+		width: 125%;
+		height: 125%;
+		object-fit: cover;
+		transform: scale(1.2) translateY(20px);
+	}
 	.portrait-container img:hover {
-    transform: scale(1.2); /* Effet de zoom plus léger */
-}
+		transform: scale(1.7) translateY(50px);
+	}
 	.etagere-container {
 		display: block;
 	}
@@ -536,7 +580,7 @@ img {
 		bottom: 35px; /* Position fixe depuis le bas */
 	}
 
-	.livre-titre h2 {
+	.livre-titre h3 {
 		font-family: "Nunito", sans-serif;
 		text-transform: uppercase;
 		font-size: 14px;
@@ -609,14 +653,14 @@ img {
 		font-size: 1.3rem;
 		margin-bottom: 3px;
 		line-height: 1.2;
-		padding-right: 0; /* Supprimé car on a déjà du padding sur le header */
+		padding-right: 0;
 	}
 
 	.popup-category {
 		font-size: 0.75rem;
 	}
 
-	/* Bouton de fermeture - Correction critique */
+	/* Bouton de fermeture */
 	.modal__close,
 	.close-btn {
 		position: absolute;

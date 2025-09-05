@@ -1,6 +1,6 @@
 // Base de données des compétences
 const competences = {
-	"Langages": {
+	Langages: {
 		description: [
 			"Langage de structuration web moderne, maîtrisé pour créer des interfaces accessibles et sémantiques.",
 			"CSS3 : Feuilles de style avancées pour des designs modernes et responsives avec animations et transitions.",
@@ -10,7 +10,7 @@ const competences = {
 		contexte:
 			"Utilisé dans tous mes projets web, notamment pour l'application React.js chez Maubeuge et les sites WordPress.",
 		projets: [
-			"Application React.js - Intégration API (Maubeuge 2024)",
+			"Application React.js - Intégration API (Maubeuge 2024): https://agglo-maubeuge.fr",
 			"Sites WordPress avec templates personnalisés",
 			"Interfaces responsives pour différents supports",
 			"Optimisation SEO et design - La Fabrique Documentaire",
@@ -24,7 +24,7 @@ const competences = {
 			"Interfaces de gestion documentaire",
 		],
 	},
-	"Frameworks": {
+	Frameworks: {
 		description: [
 			"Symfony, React.js, Next.js : Frameworks modernes pour le développement web full-stack et front-end.",
 		],
@@ -39,19 +39,19 @@ const competences = {
 			"Intégration avec services externes",
 		],
 	},
-	"BDD": {
+	BDD: {
 		description: [
 			"Gestion de bases de données relationnelles, optimisation des requêtes et architecture de données.",
 		],
 		contexte:
 			"Stockage et organisation de données documentaires et géomatiques.",
 		projets: [
-				"Base de données géomatique ArcGIS (SNCF)",
+			"Base de données géomatique ArcGIS (SNCF)",
 			"Systèmes de gestion documentaire",
 			"Optimisation de bases WordPress",
 		],
 	},
-	"WordPress": {
+	WordPress: {
 		description: [
 			"CMS leader mondial, maîtrisé pour création, maintenance et sécurisation de sites web.",
 		],
@@ -63,7 +63,7 @@ const competences = {
 			"Formations WordPress pour équipes",
 		],
 	},
-	"RechercheDocumentaire": {
+	RechercheDocumentaire: {
 		displayName: "Recherche Documentaire",
 		description: [
 			"Développement backend procédural pour la gestion de données et l'interfaçage avec bases de données.",
@@ -76,7 +76,7 @@ const competences = {
 			"Interfaces de gestion documentaire",
 		],
 	},
-	"TechnologiesInformation": {
+	TechnologiesInformation: {
 		displayName: "Technologies de l'Information",
 		description: [
 			"Gestion de bases de données relationnelles, optimisation des requêtes et architecture de données.",
@@ -89,7 +89,7 @@ const competences = {
 			"Optimisation de bases WordPress",
 		],
 	},
-	"ProprieteIntellectuelle": {
+	ProprieteIntellectuelle: {
 		displayName: "Propriété Intellectuelle",
 		description: [
 			"Connaissance des droits d'auteur, licences et gestion des contenus numériques.",
@@ -102,14 +102,13 @@ const competences = {
 			"Intégration avec services externes",
 		],
 	},
-	"Normesstandards": {
+	Normesstandards: {
 		displayName: "Normes & Standards",
 		description: [
 			"Connaissance approfondie des normes web (W3C, RGAA) et meilleures pratiques d'accessibilité.",
 		],
 		contexte:
 			"Framework React full-stack pour applications web optimisées avec rendu côté serveur.",
-		contexte: "Développement d'applications performantes avec SEO optimisé.",
 		projets: [
 			"Sites web optimisés pour le référencement",
 			"Applications avec génération statique",
@@ -117,8 +116,8 @@ const competences = {
 		],
 	},
 
-	"AdobeSuite": {
-				displayName: "Adobe Suite",
+	AdobeSuite: {
+		displayName: "Adobe Suite",
 		description: [
 			"Suite créative professionnelle : Photoshop, InDesign, After Effects pour supports visuels et vidéo.",
 		],
@@ -130,7 +129,7 @@ const competences = {
 			"Contenus vidéo pédagogiques",
 		],
 	},
-	"SEO": {
+	SEO: {
 		description: [
 			"Optimisation pour moteurs de recherche, amélioration de la visibilité et du trafic web.",
 		],
@@ -142,7 +141,7 @@ const competences = {
 			"Formation aux bonnes pratiques SEO",
 		],
 	},
-	"CommunityManagement": {
+	CommunityManagement: {
 		displayName: "Community Management",
 		description: [
 			"Gestion de communautés en ligne, animation de réseaux sociaux et engagement digital.",
@@ -155,7 +154,7 @@ const competences = {
 			"Campagnes d'engagement digital",
 		],
 	},
-	"Canva": { 
+	Canva: {
 		description: [
 			"Outil de design accessible pour création rapide de supports visuels professionnels.",
 		],
@@ -167,7 +166,7 @@ const competences = {
 			"Templates pour équipes non-graphistes",
 		],
 	},
-	"CommunicationDigitale": {
+	CommunicationDigitale: {
 		displayName: "Communication Digitale",
 		description: [
 			"Stratégies de communication omnicanale adaptées aux publics et objectifs métier.",
@@ -180,7 +179,7 @@ const competences = {
 			"Formation aux outils de communication",
 		],
 	},
-	"GestionAgile": {
+	GestionAgile: {
 		displayName: "Gestion Agile",
 		description: [
 			"Méthodologies Agile et Kanban pour gestion de projets collaboratifs et itératifs.",
@@ -193,7 +192,7 @@ const competences = {
 			"Coordination équipes pluridisciplinaires",
 		],
 	},
-	"SecteurPublic": {
+	SecteurPublic: {
 		displayName: "Secteur Public",
 		description: [
 			"10+ années d'expérience dans l'administration : DILA, SNCF Réseaux, collectivités.",
@@ -206,7 +205,7 @@ const competences = {
 			"Application métier Communauté d'Agglomération Maubeuge",
 		],
 	},
-	"EnseignementSuperieur": {
+	EnseignementSuperieur: {
 		displayName: "Enseignement Supérieur",
 		description: [
 			"Expérience en université avec publics étudiants et chercheurs, valorisation des collections.",
@@ -219,7 +218,7 @@ const competences = {
 			"Création de produits documentaires académiques",
 		],
 	},
-	"RechercheInnovation": {
+	RechercheInnovation: {
 		displayName: "Recherche & Innovation",
 		description: [
 			"Travail avec chercheurs et ingénieurs ONERA dans l'aérospatial, environnement technique pointu.",
@@ -232,7 +231,7 @@ const competences = {
 			"Support recherche documentaire scientifique",
 		],
 	},
-	"CollectivitésTerritoriales": {
+	CollectivitésTerritoriales: {
 		displayName: "Collectivités Territoriales",
 		description: [
 			"Développement d'outils numériques pour services publics locaux et citoyens.",
@@ -245,7 +244,7 @@ const competences = {
 			"Solutions web pour services citoyens",
 		],
 	},
-	"StartupsPME": {
+	StartupsPME: {
 		displayName: "Startups / PME",
 		description: [
 			"Accompagnement de structures agiles avec ressources limitées, adaptabilité et polyvalence.",
@@ -258,12 +257,12 @@ const competences = {
 			"Stratégies de visibilité pour PME",
 		],
 	},
-	"FormationProfessionnelle": {
+	FormationProfessionnelle: {
 		displayName: "Formation Professionnelle",
 		description: [
 			"Objectif principal : concevoir et animer des formations en digital learning adaptées aux adultes.",
 		],
-		contexte: 
+		contexte:
 			"Transmission de compétences techniques avec pédagogie adaptée aux professionnels en activité.",
 		projets: [
 			"Recherche contrat d'apprentissage ingénierie pédagogique",
@@ -289,84 +288,52 @@ function getCategorieLabel(categorie) {
 	return labels[categorie] || "🔧 Compétence";
 }
 
-// Fonction principale pour afficher une compétence (compatible avec onclick ET data-attributes)
 function ouvrirPopup(nomCompetence, categorie, niveau) {
-	console.log("🚀 Ouverture popup pour:", nomCompetence);
+    console.log("🚀 Ouverture popup pour:", nomCompetence);
 
-	// Récupérer la compétence
-	const comp = competences[nomCompetence];
-	if (!comp) {
-		console.error("❌ Compétence non trouvée:", nomCompetence);
-		return;
-	}
+    const comp = competences[nomCompetence];
+    if (!comp) {
+        console.error("❌ Compétence non trouvée:", nomCompetence);
+        return;
+    }
 
-	// Remplir la modal avec styling personnalisé
-	const modal = document.getElementById("modal-competence");
-	if (!modal) {
-		console.error("❌ Modal non trouvée");
-		return;
-	}
+    const displayName = comp.displayName || nomCompetence.replace(/_/g, " ");
 
-	// Créer le contenu de la modal avec le style de votre CSS existant
-	const container = modal.querySelector(".modal__container");
-	if (container) {
-		    const displayName = comp.displayName || nomCompetence.replace(/_/g, ' ');
+    // Remplir les éléments
+    document.getElementById("modal-title").textContent = displayName;
+    document.getElementById("modal-category").textContent = getCategorieLabel(categorie);
+    document.getElementById("modal-niveau-text").textContent = niveau;
+    
+    document.getElementById("modal-description").innerHTML = comp.description
+        .map((desc) => `<li>${desc}</li>`)
+        .join("");
+    
+    document.getElementById("modal-contexte").textContent = comp.contexte;
+    
+    document.getElementById("modal-projets").innerHTML = comp.projets
+        .map((projet) => {
+            const urlRegex = /(https?:\/\/[^\s]+)/g;
+            const projetAvecLiens = projet.replace(
+                urlRegex,
+                '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
+            );
+            return `<li>${projetAvecLiens}</li>`;
+        })
+        .join("");
 
-		container.innerHTML = `
-			<div class="popup-header">
-				<button class="close-btn" onclick="fermerPopup()">×</button>
-				<div class="popup-title">${displayName}</div>
-				<div class="popup-category">${getCategorieLabel(categorie)}</div>
-			</div>
-			<div class="popup-body">
-				<div class="niveau-section">
-					<div class="niveau-label">Niveau de maîtrise: ${niveau}%</div>
-					<div class="niveau-bar">
-						<div class="niveau-fill" style="width: 0%; transition: width 1s ease;"></div>
-					</div>
-				</div>
-				
-				<div class="description">
-					<div class="section-title">Description</div>
-					<ul class="projets-list">
-						${comp.description.map((description) => `<li>${description}</li>`).join("")}
-					</ul>
-				</div>
-				
-				<div class="contexte">
-					<div class="section-title">Contexte d'utilisation</div>
-					<div class="section-content">${comp.contexte}</div>
-				</div>
-				
-				<div class="projets">
-					<div class="section-title">Projets réalisés</div>
-					<ul class="projets-list">
-						${comp.projets.map((projet) => `<li>${projet}</li>`).join("")}
-					</ul>
-				</div>
-			</div>
-		`;
-
-		// Animer la barre de niveau après un délai
-		setTimeout(() => {
-			const niveauFill = container.querySelector(".niveau-fill");
-			if (niveauFill) {
-				niveauFill.style.width = niveau + "%";
-			}
-		}, 300);
-	}
-
-	// Afficher la modal avec style forcé
-	modal.style.display = "block";
-	modal.classList.add("is-open");
-
-	// Ajouter une classe au body pour éviter le scroll
-	document.body.style.overflow = "hidden";
-
-	console.log("✅ Modal ouverte et remplie");
+    // Ouvrir la modale
+    MicroModal.show("modal-competence");
+    
+    // Animer la barre après ouverture
+    setTimeout(() => {
+        const niveauFill = document.getElementById("modal-niveau-fill");
+        if (niveauFill) {
+            niveauFill.style.width = niveau + "%";
+        }
+    }, 300);
 }
 
-// Fonction pour fermer la modal
+// Fonction pour fermer la modale
 function fermerPopup() {
 	const modal = document.getElementById("modal-competence");
 	if (modal) {
