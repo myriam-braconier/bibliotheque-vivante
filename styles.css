@@ -559,7 +559,7 @@ img {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba(168, 85, 247, 0.95);
+	background: linear-gradient(170deg, #a855f7, #22c55e);
 		backdrop-filter: blur(3px);
 		display: block;
 		padding: 0;
@@ -571,7 +571,7 @@ img {
 		position: absolute;
 		top: 80px;
 		left: 0;
-		width: 60%;
+		width: 100%;
 		height: 100%;
 		max-width: none;
 		max-height: 100%;
