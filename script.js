@@ -23,7 +23,7 @@ const competences = {
 		projets: [
 			"Application complète avec API/React dans Power Apps (Maubeuge)",
 			"Projet tutoré: Symfony",
-			"Projet personnel : Next.js et Api Express: Concrete Vibes",
+			"Projet personnel : Next.js et Api Express: Concrete Vibes : https://concrete-vibes.up.railway.app/synthetisers",
 		],
 	},
 	BDD: {
