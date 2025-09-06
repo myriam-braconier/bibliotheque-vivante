@@ -31,7 +31,7 @@ h1 {
 	margin-bottom: 10px;
 	justify-self: center;
 	color: #d4af37;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
 }
 h2 {
 	font-family: "Spectral", serif;
@@ -39,7 +39,7 @@ h2 {
 	margin-bottom: 10px;
 	justify-self: center;
 	color: #f5f5dc;
-	text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
+	text-shadow: 10px 10px 10px rgba(255, 255, 255, 0.8);
 }
 h3 {
 	font-family: "Nunito", sans-serif;
@@ -47,7 +47,7 @@ h3 {
 	margin: 0;
 	padding: 0;
 	color: #fff;
-	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+	text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
 }
 li {
 	margin: 0 0 5px 0;
@@ -109,7 +109,7 @@ li {
 	border-radius: 8px;
 	padding: 15px;
 	margin: 10px 0 10px 0;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
 	position: relative;
 	width: fit-content;
 	height: fit-content;
@@ -145,7 +145,7 @@ li {
 	font-size: 1.8rem;
 	color: #f5f5dc;
 	font-weight: bold;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 	margin: 0 auto;
 }
 .presentation-container {
@@ -187,14 +187,14 @@ li {
 	position: relative;
 	transform: translateY(0);
 	transition: all 0.3s ease;
-	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 6px 8px rgba(255, 255, 255, 0.5);
 	border: 2px solid rgba(255, 255, 255, 0.1);
 	padding: 20px;
 }
 
 .livre:hover {
 	transform: translateY(-8px);
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
 }
 
 .livre-titre {
@@ -294,7 +294,7 @@ img {
 	width: 200px;
 	height: auto;
 	border-radius: 25px;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
 	margin: 0 80px 0px 80px;
 }
 
@@ -396,7 +396,7 @@ hr {
 	z-index: 999999 !important; /* Z-index très élevé */
 	transition: all 0.3s ease;
 }
-.modal__close span{
+.modal__close span {
 	border: none;
 }
 
@@ -486,7 +486,7 @@ footer p {
 		border-radius: 50%;
 		overflow: hidden;
 		border: 1px solid #ddd;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
 	}
 
 	.portrait-container img {
@@ -695,7 +695,7 @@ footer p {
 		margin-bottom: 10px;
 		justify-self: center;
 		color: #d4af37;
-		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 	}
 	.ligne1 {
 		display: none;
@@ -713,7 +713,7 @@ footer p {
 		border-radius: 50%;
 		overflow: hidden;
 		border: 1px solid #ddd;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 	}
 
 	.portrait-container img {
