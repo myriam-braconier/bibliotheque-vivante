@@ -64,11 +64,10 @@ h3 {
 
 .logo {
 	margin-top: 10px;
-	height: auto;
 }
 .logo img {
-	width: 60px;
-	height: auto;
+	width: 50px;
+	height: 50px;
 	background-color: white;
 }
 .ligne1 {
@@ -494,7 +493,7 @@ footer p {
 		transform: scale(1.2) translateY(20px);
 	}
 	.portrait-container img:hover {
-		transform: scale(1.7) translateY(50px);
+		transform: scale(1.7) translateY(30px);
 	}
 	.etagere-container {
 		display: block;
@@ -710,7 +709,7 @@ footer p {
 		transform: scale(1.2) translateY(20px);
 	}
 	.portrait-container img:hover {
-		transform: scale(1.7) translateY(50px);
+		transform: scale(1.7) translateY(30px);
 	}
 	.subtitle {
 		font-size: 1rem;
