@@ -334,7 +334,7 @@ img {
 	border-radius: 8px;
 	width: 80%;
 	max-width: 600px;
-	height: 100%;
+	height: fit-content;
 	overflow-y: auto;
 	box-shadow: -10px -10px 20px rgba(35, 21, 232, 0.7);
 	color: #2c1810;
@@ -395,6 +395,9 @@ hr {
 	cursor: pointer;
 	z-index: 999999 !important; /* Z-index très élevé */
 	transition: all 0.3s ease;
+}
+.modal__close span{
+	border: none;
 }
 
 .modal__close:hover {
@@ -850,7 +853,6 @@ footer p {
 	#modal-projets {
 		padding: 0 40px 20px 40px;
 	}
-
 	/* Bouton de fermeture */
 	.modal__close {
 		top: 10px;

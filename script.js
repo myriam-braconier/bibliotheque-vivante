@@ -2,22 +2,16 @@
 const competences = {
 	Langages: {
 		description: [
-			"Langage de structuration web moderne, maîtrisé pour créer des interfaces accessibles et sémantiques.",
+			"HTML5 : Langage de structuration web.",
 			"CSS3 : Feuilles de style avancées pour des designs modernes et responsives avec animations et transitions.",
 			"JavaScript : Programmation interactive côté client et manipulation du DOM pour des expériences utilisateur dynamiques.",
 			"PHP : Développement backend procédural pour la gestion de données et l'interfaçage avec bases de données.",
 		],
-		contexte:
-			"Utilisé dans tous mes projets web, notamment pour l'application React.js chez Maubeuge et les sites WordPress.",
+		contexte: "Utilisés dans tous mes projets web.",
 		projets: [
-			"Application React.js - Intégration API (Maubeuge 2024): https://agglo-maubeuge.fr",
 			"Sites WordPress avec templates personnalisés",
-			"Interfaces responsives pour différents supports",
-			"Optimisation SEO et design - La Fabrique Documentaire",
 			"Responsive design pour applications web",
 			"Animations et micro-interactions",
-			"Application React.js avec intégration API Power Apps",
-			"Scripts d'automatisation pour workflows documentaires"	
 		],
 	},
 	Frameworks: {
@@ -25,19 +19,16 @@ const competences = {
 			"Symfony, React.js, Next.js : Frameworks modernes pour le développement web full-stack et front-end.",
 		],
 		contexte:
-			"Création de chartes graphiques cohérentes et optimisation de l'expérience utilisateur.",
+			"Création d'une application pour tablette avec Power Apps et projet tutoré.",
 		projets: [
-			"Optimisation SEO et design - La Fabrique Documentaire",
-			"Responsive design pour applications web",
-			"Animations et micro-interactions",
-			"Application complète avec API Power Apps (Maubeuge)",
-			"Composants réutilisables pour interfaces admin",
-			"Intégration avec services externes",
+			"Application complète avec API/React dans Power Apps (Maubeuge)",
+			"Projet tutoré: Symfony",
+			"Projet personnel : Next.js et Api Express: Concrete Vibes",
 		],
 	},
 	BDD: {
 		description: [
-			"Gestion de bases de données relationnelles, optimisation des requêtes et architecture de données.",
+			"Gestion de bases de données relationnelles et noSQL, optimisation des requêtes et architecture de données.",
 		],
 		contexte:
 			"Stockage et organisation de données documentaires et géomatiques.",
@@ -54,61 +45,70 @@ const competences = {
 		contexte:
 			"Développement de sites institutionnels et optimisation pour différents publics.",
 		projets: [
-			"Site La Fabrique Documentaire (maintenance, SEO, sécurité)",
-			"Sites pour collectivités et associations",
+			"Optimisation SEO et design - La Fabrique Documentaire (maintenance, SEO, sécurité)",
 			"Formations WordPress pour équipes",
 		],
 	},
 	RechercheDocumentaire: {
 		displayName: "Recherche Documentaire",
 		description: [
-			"Développement backend procédural pour la gestion de données et l'interfaçage avec bases de données.",
+			"Veille informationnelle",
+			"Analyse et synthèse documentaire",
+			"Recherche bibliographique spécialisée",
+			"Curation de contenus scientifiques",
+			"Formation aux outils de recherche",
+			"Évaluation de sources d'information",
 		],
 		contexte:
-			"Création de solutions web dynamiques et gestion de contenus administratifs.",
-		projets: [
-			"Scripts de traitement de données SNCF Réseaux",
-			"Modules WordPress personnalisés",
-			"Interfaces de gestion documentaire",
-		],
+			"Au sein d'organismes de recherches, université, centres de documentation et bibliothèques",
+		projets: ["Libguides : université Descartes"],
 	},
 	TechnologiesInformation: {
 		displayName: "Technologies de l'Information",
 		description: [
-			"Gestion de bases de données relationnelles, optimisation des requêtes et architecture de données.",
+			"Systèmes de Gestion de Bases de Données documentaires",
+			"Architecture de systèmes d'information documentaire",
+			"Utilisation d'interfaces de recherche avancée",
+			"Intégration de métadonnées et standards bibliographiques",
+			"Solutions de GED (Gestion Électronique de Documents)",
 		],
 		contexte:
-			"Stockage et organisation de données documentaires et géomatiques.",
+			"Stockage et organisation de données documentaires / Gestion des Prêts.",
 		projets: [
-			"Base de données géomatique ArcGIS (SNCF)",
-			"Systèmes de gestion documentaire",
-			"Optimisation de bases WordPress",
+			"Onera: Système de gestion documentaire aéronautique: Cadic Intégral",
+			"Eurocontrol: Base documentaire contrôle aérien européen: Soutron",
 		],
 	},
 	ProprieteIntellectuelle: {
 		displayName: "Propriété Intellectuelle",
 		description: [
-			"Connaissance des droits d'auteur, licences et gestion des contenus numériques.",
+			"Connaissance des droits d'auteur, licences et gestion des contenus numériques",
+			"Gestion des licences Creative Commons et open source",
+			"Formation aux enjeux du droit numérique",
 		],
 		contexte:
-			"Développement d'applications web modernes avec gestion d'état et composants réutilisables.",
+			"Organismes publics, entreprises culturelles, maisons d'édition, plateformes numériques et institutions académiques nécessitant une expertise juridique en propriété intellectuelle",
+
 		projets: [
-			"Application complète avec API Power Apps (Maubeuge)",
-			"Composants réutilisables pour interfaces admin",
-			"Intégration avec services externes",
+		"Plateforme de gestion des droits - Adobe Stock",
+		"Mise en conformité RGPD/PI - Archives départementales",
 		],
 	},
 	Normesstandards: {
 		displayName: "Normes & Standards",
 		description: [
-			"Connaissance approfondie des normes web (W3C, RGAA) et meilleures pratiques d'accessibilité.",
+			"Connaissance des normes web (W3C, RGAA) et meilleures pratiques d'accessibilité",
+		"Application des standards de métadonnées (Dublin Core, MARC, EAD)",
+		"Maîtrise des protocoles d'interopérabilité (OAI-PMH, Z39.50)",
+		"Respect des normes ISO documentation (ISO 690, ISO 25964)",
+		"Conformité réglementaire (RGPD, accessibilité numérique)",
 		],
-		contexte:
-			"Framework React full-stack pour applications web optimisées avec rendu côté serveur.",
+		contexte: 
+		"Projets de transformation numérique nécessitant le respect strict des standards techniques et réglementaires, dans les secteurs public, privé et associatif",
 		projets: [
-			"Sites web optimisés pour le référencement",
-			"Applications avec génération statique",
-			"Prototypes d'applications e-learning",
+		"Migration catalogue MARC21 - Réseau de bibliothèques intercommunales",
+		"Normalisation métadonnées - Archives numériques historiques",
+		"Interface OAI-PMH - Dépôt institutionnel universitaire",
 		],
 	},
 
@@ -122,7 +122,7 @@ const competences = {
 		projets: [
 			"Supports d'information The Good Start",
 			"Visuels pour formations iconographiques",
-			"Contenus vidéo pédagogiques",
+			"Contenus vidéo instittutionnels",
 		],
 	},
 	SEO: {
@@ -143,9 +143,9 @@ const competences = {
 			"Gestion de communautés en ligne, animation de réseaux sociaux et engagement digital.",
 		],
 		contexte:
-			"Développement de stratégies d'engagement pour différents secteurs.",
+			"Développement de stratégies d'engagement pour le secteur associatif.",
 		projets: [
-			"Stratégies réseaux sociaux (formation Doranco)",
+			"Stratégies réseaux sociaux (formation Doranco et Ecole des Métiers de l'Information)",
 			"Animation communautés professionnelles",
 			"Campagnes d'engagement digital",
 		],
@@ -159,7 +159,6 @@ const competences = {
 		projets: [
 			"Supports de formation standardisés",
 			"Visuels pour réseaux sociaux",
-			"Templates pour équipes non-graphistes",
 		],
 	},
 	CommunicationDigitale: {
@@ -168,11 +167,10 @@ const competences = {
 			"Stratégies de communication omnicanale adaptées aux publics et objectifs métier.",
 		],
 		contexte:
-			"Conception de stratégies de communication pour organismes variés.",
+			"Conception de stratégies de communication pour les associations",
 		projets: [
-			"Stratégies communication (École des Métiers)",
+			"Stratégies communication (École des Métiers de l'Information)",
 			"Plans de communication digitale",
-			"Formation aux outils de communication",
 		],
 	},
 	GestionAgile: {
@@ -181,11 +179,9 @@ const competences = {
 			"Méthodologies Agile et Kanban pour gestion de projets collaboratifs et itératifs.",
 		],
 		contexte:
-			"Organisation de projets complexes avec équipes multidisciplinaires.",
+			"Organisation de projets complexes avec équipes techniques (informatique et énergie).",
 		projets: [
-			"Gestion projet application Maubeuge",
-			"Workflow documentaire SNCF (méthodologie Kanban)",
-			"Coordination équipes pluridisciplinaires",
+			"Workflow documentaire SNCF et EDF (méthodologie Kanban)",
 		],
 	},
 	SecteurPublic: {
@@ -236,7 +232,6 @@ const competences = {
 			"Compréhension des besoins territoriaux et contraintes des services publics de proximité.",
 		projets: [
 			"Application React.js/Power Apps (Maubeuge)",
-			"Digitalisation de processus administratifs",
 			"Solutions web pour services citoyens",
 		],
 	},
@@ -250,7 +245,6 @@ const competences = {
 		projets: [
 			"Communication digitale The Good Start",
 			"Solutions web La Fabrique Documentaire",
-			"Stratégies de visibilité pour PME",
 		],
 	},
 	FormationProfessionnelle: {
@@ -263,7 +257,6 @@ const competences = {
 		projets: [
 			"Recherche contrat d'apprentissage ingénierie pédagogique",
 			"Formations informelles équipes (WordPress, outils)",
-			"Conception supports pédagogiques",
 		],
 	},
 };
@@ -285,48 +278,49 @@ function getCategorieLabel(categorie) {
 }
 
 function ouvrirPopup(nomCompetence, categorie, niveau) {
-    console.log("🚀 Ouverture popup pour:", nomCompetence);
+	console.log("🚀 Ouverture popup pour:", nomCompetence);
 
-    const comp = competences[nomCompetence];
-    if (!comp) {
-        console.error("❌ Compétence non trouvée:", nomCompetence);
-        return;
-    }
+	const comp = competences[nomCompetence];
+	if (!comp) {
+		console.error("❌ Compétence non trouvée:", nomCompetence);
+		return;
+	}
 
-    const displayName = comp.displayName || nomCompetence.replace(/_/g, " ");
+	const displayName = comp.displayName || nomCompetence.replace(/_/g, " ");
 
-    // Remplir les éléments
-    document.getElementById("modal-title").textContent = displayName;
-    document.getElementById("modal-category").textContent = getCategorieLabel(categorie);
-    document.getElementById("modal-niveau-text").textContent = niveau;
-    
-    document.getElementById("modal-description").innerHTML = comp.description
-        .map((desc) => `<li>${desc}</li>`)
-        .join("");
-    
-    document.getElementById("modal-contexte").textContent = comp.contexte;
-    
-    document.getElementById("modal-projets").innerHTML = comp.projets
-        .map((projet) => {
-            const urlRegex = /(https?:\/\/[^\s]+)/g;
-            const projetAvecLiens = projet.replace(
-                urlRegex,
-                '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
-            );
-            return `<li>${projetAvecLiens}</li>`;
-        })
-        .join("");
+	// Remplir les éléments
+	document.getElementById("modal-title").textContent = displayName;
+	document.getElementById("modal-category").textContent =
+		getCategorieLabel(categorie);
+	document.getElementById("modal-niveau-text").textContent = niveau;
 
-    // Ouvrir la modale
-    MicroModal.show("modal-competence");
-    
-    // Animer la barre après ouverture
-    setTimeout(() => {
-        const niveauFill = document.getElementById("modal-niveau-fill");
-        if (niveauFill) {
-            niveauFill.style.width = niveau + "%";
-        }
-    }, 300);
+	document.getElementById("modal-description").innerHTML = comp.description
+		.map((desc) => `<li>${desc}</li>`)
+		.join("");
+
+	document.getElementById("modal-contexte").textContent = comp.contexte;
+
+	document.getElementById("modal-projets").innerHTML = comp.projets
+		.map((projet) => {
+			const urlRegex = /(https?:\/\/[^\s]+)/g;
+			const projetAvecLiens = projet.replace(
+				urlRegex,
+				'<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
+			);
+			return `<li>${projetAvecLiens}</li>`;
+		})
+		.join("");
+
+	// Ouvrir la modale
+	MicroModal.show("modal-competence");
+
+	// Animer la barre après ouverture
+	setTimeout(() => {
+		const niveauFill = document.getElementById("modal-niveau-fill");
+		if (niveauFill) {
+			niveauFill.style.width = niveau + "%";
+		}
+	}, 300);
 }
 
 // Fonction pour fermer la modale
@@ -340,19 +334,15 @@ function fermerPopup() {
 	}
 }
 
-
-
 // Initialisation au chargement du DOM
 document.addEventListener("DOMContentLoaded", function () {
-
-   // IMPORTANT: Initialiser MicroModal
-    MicroModal.init({
-        onShow: modal => console.log('Modal ouverte'),
-        onClose: modal => console.log('Modal fermée'),
-        disableScroll: false,
-        debugMode: true
-    });
-
+	// IMPORTANT: Initialiser MicroModal
+	MicroModal.init({
+		onShow: (modal) => console.log("Modal ouverte"),
+		onClose: (modal) => console.log("Modal fermée"),
+		disableScroll: false,
+		debugMode: true,
+	});
 
 	console.log("🚀 Initialisation du système de compétences");
 	console.log("📚 Compétences chargées:", Object.keys(competences).length);
