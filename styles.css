@@ -691,12 +691,12 @@ footer p {
 		margin: 10px;
 	}
 	h1 {
-		font-family: "Spectral", serif;
-		font-size: 3rem;
-		margin-bottom: 10px;
+		
+		font-size: 2rem;
+		
 		justify-self: center;
-		color: #d4af37;
-		text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+		
+	
 	}
 	.ligne1 {
 		display: none;
