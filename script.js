@@ -17,11 +17,7 @@ const competences = {
 			"Responsive design pour applications web",
 			"Animations et micro-interactions",
 			"Application React.js avec intégration API Power Apps",
-			"Scripts d'automatisation pour workflows documentaires",
-			"Interfaces dynamiques pour la gestion de contenu",
-			"Scripts de traitement de données SNCF Réseaux",
-			"Modules WordPress personnalisés",
-			"Interfaces de gestion documentaire",
+			"Scripts d'automatisation pour workflows documentaires"	
 		],
 	},
 	Frameworks: {
