@@ -340,8 +340,20 @@ function fermerPopup() {
 	}
 }
 
+
+
 // Initialisation au chargement du DOM
 document.addEventListener("DOMContentLoaded", function () {
+
+   // IMPORTANT: Initialiser MicroModal
+    MicroModal.init({
+        onShow: modal => console.log('Modal ouverte'),
+        onClose: modal => console.log('Modal fermée'),
+        disableScroll: false,
+        debugMode: true
+    });
+
+
 	console.log("🚀 Initialisation du système de compétences");
 	console.log("📚 Compétences chargées:", Object.keys(competences).length);
 
