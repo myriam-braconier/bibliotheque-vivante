@@ -748,12 +748,12 @@ footer p {
 	}
 	.etagere-place-titre {
 		max-width: 100%;
-		justify-content: start;
 		margin-bottom: 15px;
 	}
 	.etagere-titre {
 		font-size: 1.5rem;
 		justify-content: start;
+		margin: 0;
 	}
 	.presentation {
 		width: 100%;
