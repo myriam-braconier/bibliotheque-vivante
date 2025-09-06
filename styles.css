@@ -69,7 +69,7 @@ h3 {
 .logo img {
 	width: 60px;
 	height: auto;
-	margin: 0 auto;
+	background-color: white;
 }
 .ligne1 {
 	width: 150px;
@@ -723,6 +723,7 @@ footer p {
 	.logo img {
 		width: 40px;
 		display: block;
+		background-color: white;
 	}
 	.etagere-container {
 		display: block;
