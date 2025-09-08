@@ -9,9 +9,9 @@ const competences = {
 		],
 		contexte: "Utilisés dans tous mes projets web.",
 		projets: [
-			"Sites WordPress avec templates personnalisés",
 			"Responsive design pour applications web",
 			"Animations et micro-interactions",
+			"Dépôts GitHub : https://github.com/myriam-braconier",
 		],
 	},
 	Frameworks: {
@@ -22,11 +22,12 @@ const competences = {
 			"Création d'une application pour tablette avec Power Apps et projet tutoré.",
 		projets: [
 			"Application complète avec API/React dans Power Apps (Maubeuge)",
-			"Projet tutoré: Symfony",
+			"Projet tutoré: Symfony : https://github.com/myriam-braconier/concrete_vibrations",
 			"Projet personnel : Next.js et Api Express: Concrete Vibes : https://concrete-vibes.up.railway.app/synthetisers",
 		],
 	},
-	BDD: {
+	BDDAPI: {
+		displayName: "BDD et API",
 		description: [
 			"Gestion de bases de données relationnelles et noSQL, optimisation des requêtes et architecture de données.",
 		],
@@ -35,25 +36,23 @@ const competences = {
 		projets: [
 			"Base de données géomatique ArcGIS (SNCF)",
 			"Systèmes de gestion documentaire",
-			"Optimisation de bases WordPress",
+			"intégration d'une API météo",
+			"Création d'une API personnalisée",
 		],
 	},
 	WordPress: {
 		description: [
 			"CMS leader mondial, maîtrisé pour création, maintenance et sécurisation de sites web.",
 		],
-		contexte:
-			"Développement de sites institutionnels et optimisation pour différents publics.",
+		contexte: "Développement d'un site institutionnel'",
 		projets: [
 			"Optimisation SEO et design - La Fabrique Documentaire (maintenance, SEO, sécurité)",
-			"Formations WordPress pour équipes",
 		],
 	},
 	RechercheDocumentaire: {
 		displayName: "Recherche Documentaire",
 		description: [
 			"Veille informationnelle",
-			"Analyse et synthèse documentaire",
 			"Recherche bibliographique spécialisée",
 			"Curation de contenus scientifiques",
 			"Formation aux outils de recherche",
@@ -61,7 +60,7 @@ const competences = {
 		],
 		contexte:
 			"Au sein d'organismes de recherches, université, centres de documentation et bibliothèques",
-		projets: ["Libguides : université Descartes"],
+		projets: ["Libguides : université Descartes", "ONERA", "Eurocontrol"],
 	},
 	TechnologiesInformation: {
 		displayName: "Technologies de l'Information",
@@ -83,46 +82,42 @@ const competences = {
 		displayName: "Propriété Intellectuelle",
 		description: [
 			"Connaissance des droits d'auteur, licences et gestion des contenus numériques",
-			"Gestion des licences Creative Commons et open source",
+			"Gestion des licences Creative Commons et Open Source",
 			"Formation aux enjeux du droit numérique",
 		],
 		contexte:
 			"Organismes publics, entreprises culturelles, maisons d'édition, plateformes numériques et institutions académiques nécessitant une expertise juridique en propriété intellectuelle",
 
 		projets: [
-		"Plateforme de gestion des droits - Adobe Stock",
-		"Mise en conformité RGPD/PI - Archives départementales",
+			"Plateforme de gestion des droits - Adobe Stock",
+			"Guide gastronomique Michelin",
 		],
 	},
 	Normesstandards: {
 		displayName: "Normes & Standards",
 		description: [
 			"Connaissance des normes web (W3C, RGAA) et meilleures pratiques d'accessibilité",
-		"Application des standards de métadonnées (Dublin Core, MARC, EAD)",
-		"Maîtrise des protocoles d'interopérabilité (OAI-PMH, Z39.50)",
-		"Respect des normes ISO documentation (ISO 690, ISO 25964)",
-		"Conformité réglementaire (RGPD, accessibilité numérique)",
+			"Application des standards de métadonnées (MARC)",
+			"Respect des normes ISO documentation (ISO 690)",
+			"Conformité réglementaire (RGPD, accessibilité numérique)",
 		],
-		contexte: 
-		"Projets de transformation numérique nécessitant le respect strict des standards techniques et réglementaires, dans les secteurs public, privé et associatif",
+		contexte:
+			"Projets de transformation numérique nécessitant le respect des standards techniques et réglementaires, dans les secteurs public, privé et associatif",
 		projets: [
-		"Migration catalogue MARC21 - Réseau de bibliothèques intercommunales",
-		"Normalisation métadonnées - Archives numériques historiques",
-		"Interface OAI-PMH - Dépôt institutionnel universitaire",
+			"Migration catalogue Eurocontrol : Dipmaker vers Souton Global",
 		],
 	},
 
 	AdobeSuite: {
 		displayName: "Adobe Suite",
 		description: [
-			"Suite créative professionnelle : Photoshop, InDesign, After Effects pour supports visuels et vidéo.",
+			"Suite créative professionnelle : Photoshop, InDesign, Première pour supports visuels et vidéo.",
 		],
-		contexte:
-			"Création de supports de formation et de communication visuelle impactante.",
+		contexte: "Création de supports de communication visuelle impactante.",
 		projets: [
 			"Supports d'information The Good Start",
 			"Visuels pour formations iconographiques",
-			"Contenus vidéo instittutionnels",
+			"Contenus vidéo institutionnels pour l'association Communication et Démocratie : https://www.communication-democratie.org/fr/",
 		],
 	},
 	SEO: {
@@ -137,18 +132,11 @@ const competences = {
 			"Formation aux bonnes pratiques SEO",
 		],
 	},
-	CommunityManagement: {
-		displayName: "Community Management",
-		description: [
-			"Gestion de communautés en ligne, animation de réseaux sociaux et engagement digital.",
-		],
-		contexte:
-			"Développement de stratégies d'engagement pour le secteur associatif.",
-		projets: [
-			"Stratégies réseaux sociaux (formation Doranco et Ecole des Métiers de l'Information)",
-			"Animation communautés professionnelles",
-			"Campagnes d'engagement digital",
-		],
+	Maquettage: {
+		displayName: "Maquettage",
+		description: ["Figma"],
+		contexte: "Conception de maquette d'applications",
+		projets: ["Prototypes pour sites web"],
 	},
 	Canva: {
 		description: [
@@ -167,10 +155,12 @@ const competences = {
 			"Stratégies de communication omnicanale adaptées aux publics et objectifs métier.",
 		],
 		contexte:
-			"Conception de stratégies de communication pour les associations",
+			"Conception et développement de stratégies de communication pour les associations",
 		projets: [
 			"Stratégies communication (École des Métiers de l'Information)",
+			"Stratégies réseaux sociaux (formation Doranco et Ecole des Métiers de l'Information)",
 			"Plans de communication digitale",
+			"Calendrier éditorial pour les réseaux",
 		],
 	},
 	GestionAgile: {
@@ -180,9 +170,7 @@ const competences = {
 		],
 		contexte:
 			"Organisation de projets complexes avec équipes techniques (informatique et énergie).",
-		projets: [
-			"Workflow documentaire SNCF et EDF (méthodologie Kanban)",
-		],
+		projets: ["Workflow documentaire SNCF et EDF"],
 	},
 	SecteurPublic: {
 		displayName: "Secteur Public",
@@ -238,7 +226,7 @@ const competences = {
 	StartupsPME: {
 		displayName: "Startups / PME",
 		description: [
-			"Accompagnement de structures agiles avec ressources limitées, adaptabilité et polyvalence.",
+			"Accompagnement de structures avec ressources limitées, adaptabilité et polyvalence.",
 		],
 		contexte:
 			"Support communication et développement pour entreprises en croissance.",
@@ -256,7 +244,6 @@ const competences = {
 			"Transmission de compétences techniques avec pédagogie adaptée aux professionnels en activité.",
 		projets: [
 			"Recherche contrat d'apprentissage ingénierie pédagogique",
-			"Formations informelles équipes (WordPress, outils)",
 		],
 	},
 };
