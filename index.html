@@ -13,10 +13,7 @@
 			name="description"
 			content="Curriculum vitae de Myriam Braconier Leclerc"
 		/>
-		<meta
-			name="keywords"
-			content="CV, Myriam Braconier Leclerc, e-learning"
-		/>
+		<meta name="keywords" content="CV, Myriam Braconier Leclerc, e-learning" />
 		<meta name="author" content="Myriam Braconier Leclerc" />
 		<meta name="robots" content="index, follow" />
 
@@ -29,10 +26,9 @@
 			property="og:description"
 			content="Découvrez le parcours professionnel de Myriam Braconier Leclerc, en transition vers conceptrice formatrice en e-learning ."
 		/>
-		
-		
+
 		<meta property="og:type" content="website" />
-	
+
 		<meta property="og:locale" content="fr_FR" />
 
 		<!-- Métadonnées de sécurité -->
@@ -74,7 +70,9 @@
 	<body>
 		<div class="bibliotheque">
 			<h1>E-portfolio</h1>
-			<p class="subtitle1">Explorez mes compétences comme dans une bibliothèque interactive</p>
+			<p class="subtitle1">
+				Explorez mes compétences comme dans une bibliothèque interactive
+			</p>
 			<div class="portrait-container">
 				<img src="autoportrait-enhanced-removebg-preview.png" alt="portrait" />
 			</div>
@@ -83,10 +81,7 @@
 					<img src="linkedin_logo.png" alt="logo" />
 				</a>
 			</div>
-			<p class="subtitle2">
-				Myriam Braconier Leclerc
-			</p>
-			
+			<p class="subtitle2">Myriam Braconier Leclerc</p>
 
 			<!-- Étagère 1: Compétences Techniques -->
 			<div class="etagere-container">
@@ -99,13 +94,13 @@
 					pédagogique et concrétiser ma reconversion vers la
 					conception-formation e-learning.
 				</p>
-				<!-- </div> -->
+
 				<div class="etagere">
 					<div class="etagere-place-titre">
 						<div class="etagere-emoji">📚</div>
 						<h2 class="etagere-titre">Compétences Techniques</h2>
 					</div>
-					<div class="livres-container">
+					<div class="livres-container2">
 						<div class="livres-lot">
 							<!-- langages -->
 							<div
@@ -134,6 +129,23 @@
 									<h3>Frameworks</h3>
 								</div>
 							</div>
+							<!-- outils microsoft -->
+							<div
+								class="livre microsoft competence-card"
+								data-micromodal-trigger="modal-competence"
+								data-competence="Microsoft"
+								data-titre="Microsoft"
+								data-categorie="technique"
+								data-niveau="50"
+								aria-hidden="true"
+							>
+								<div class="livre-titre">
+									<h3>Outils <br />Microsoft</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="livres-lot">
 							<!-- BDD -->
 							<div
 								class="livre bdd competence-card"
@@ -147,56 +159,60 @@
 									<h3>BDD & API</h3>
 								</div>
 							</div>
-							<!-- Wordpress -->
-							<div
-								class="livre wordpress competence-card"
-								onclick="ouvrirPopup('WordPress', 'technique', 85)"
-							>
-								<div class="livre-titre"><h3>WordPress</h3></div>
+							<!-- Recherche documentaire -->
+						<div
+							class="livre recherche-doc"
+							onclick="ouvrirPopup('RechercheDocumentaire', 'technique', 75)"
+						>
+							<div class="livre-titre">
+								<h3>Recherche <br />documentaire</h3>
 							</div>
 						</div>
-						<div class="livres-lot">
-							<!-- Recherche documentaire -->
-							<div
-								class="livre recherche-doc"
-								onclick="ouvrirPopup('RechercheDocumentaire', 'technique', 75)"
-							>
-								<div class="livre-titre">
-									<h3>Recherche <br />documentaire</h3>
-								</div>
+						<!-- technologies de l'information-->
+						<div
+							class="livre techno-info competence-card"
+							onclick="ouvrirPopup('TechnologiesInformation', 'technique', 80)"
+						>
+							<div class="livre-titre">
+								<h3>technologies <br />Information</h3>
 							</div>
-							<!-- technologies de l'information-->
-							<div
-								class="livre techno-info competence-card"
-								onclick="ouvrirPopup('TechnologiesInformation', 'technique', 80)"
-							>
-								<div class="livre-titre">
-									<h3>technologies <br />Information</h3>
-								</div>
+						</div>
+
+						</div>
+					</div>
+
+					
+					
+					<div class="livres-lot-etagere1">
+						<!-- Propriété intellectuelle -->
+						<div
+							class="livre propriete"
+							onclick="ouvrirPopup('ProprieteIntellectuelle', 'technique', 75)"
+						>
+							<div class="livre-titre">
+								<h3>Propriété <br />Intellectuelle</h3>
 							</div>
-							<!-- Propriété intellectuelle -->
-							<div
-								class="livre propriete"
-								onclick="ouvrirPopup('ProprieteIntellectuelle', 'technique', 75)"
-							>
-								<div class="livre-titre">
-									<h3>Propriété <br />Intellectuelle</h3>
-								</div>
-							</div>
-							<!-- Normes & Standards -->
-							<div
-								class="livre normes-standards"
-								onclick="ouvrirPopup('Normesstandards', 'technique', 80)"
-							>
-								<div class="livre-titre">
-									<h3>
-										Normes<br />
-										Standards
-									</h3>
-								</div>
+						</div>
+						<!-- Normes & Standards -->
+						<div
+							class="livre normes-standards"
+							onclick="ouvrirPopup('Normesstandards', 'technique', 80)"
+						>
+							<div class="livre-titre">
+								<h3>
+									Normes<br />
+									Standards
+								</h3>
 							</div>
 						</div>
 					</div>
+					
+				</div>
+				<div class="img-container">
+					<img
+						src="autoportrait-enhanced-removebg-preview.png"
+						alt="portrait"
+					/>
 				</div>
 			</div>
 
@@ -223,19 +239,17 @@
 							>
 								<div class="livre-titre"><h3>Canva</h3></div>
 							</div>
-							
+
 							<!-- Maquettage et prototypage -->
 							<div
 								class="livre prototypage"
 								onclick="ouvrirPopup('Maquettage', 'communication', 75)"
 							>
 								<div class="livre-titre">
-									<h3>
-										Maquettage
-									</h3>
+									<h3>Maquettage</h3>
 								</div>
 							</div>
-							
+
 							<!-- Communication Digitale -->
 							<div
 								class="livre communication"
@@ -247,6 +261,13 @@
 										Digitale
 									</h3>
 								</div>
+							</div>
+							<!-- Wordpress -->
+							<div
+								class="livre wordpress competence-card"
+								onclick="ouvrirPopup('WordPress', 'technique', 85)"
+							>
+								<div class="livre-titre"><h3>WordPress</h3></div>
 							</div>
 							<!-- SEO -->
 							<div
@@ -317,57 +338,70 @@
 						</div>
 					</div>
 				</div>
-				<div class="img-container">
-					<img src="autoportrait-enhanced-removebg-preview.png" alt="portrait" />
-				</div>
 			</div>
 		</div>
 
 		<!-- La modale micromodal-->
-		<div class="modal micromodal-slide" id="modal-competence" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
-    <div class="modal__overlay" data-micromodal-close>
-        <div class="modal__container" tabindex="-1">
-            <button class="modal__close" data-micromodal-close aria-label="Fermer la modale">
-                <span aria-hidden="true">×</span>
-            </button>
-            <div class="modal__header">
-                <h3 id="modal-title">Titre</h3>
-                <h4 id="modal-category">Catégorie</h4>
-            </div>
-            <div class="niveau-section">
-                <div class="niveau-label">
-                    Niveau de maîtrise: <span id="modal-niveau-text" aria-live="polite">0</span>%
-                </div>
-                <div class="niveau-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-labelledby="modal-niveau-text">
-                    <div
-                        id="modal-niveau-fill"
-                        class="niveau-fill"
-                        style="width: 0%; transition: width 1s ease"
-                    ></div>
-                </div>
-            </div>
+		<div
+			class="modal micromodal-slide"
+			id="modal-competence"
+			role="dialog"
+			aria-modal="true"
+			aria-labelledby="modal-title"
+			aria-describedby="modal-description"
+		>
+			<div class="modal__overlay" data-micromodal-close>
+				<div class="modal__container" tabindex="-1">
+					<button
+						class="modal__close"
+						data-micromodal-close
+						aria-label="Fermer la modale"
+					>
+						<span aria-hidden="true">×</span>
+					</button>
+					<div class="modal__header">
+						<h3 id="modal-title">Titre</h3>
+						<h4 id="modal-category">Catégorie</h4>
+					</div>
+					<div class="niveau-section">
+						<div class="niveau-label">
+							Niveau de maîtrise:
+							<span id="modal-niveau-text" aria-live="polite">0</span>%
+						</div>
+						<div
+							class="niveau-bar"
+							role="progressbar"
+							aria-valuemin="0"
+							aria-valuemax="100"
+							aria-valuenow="0"
+							aria-labelledby="modal-niveau-text"
+						>
+							<div
+								id="modal-niveau-fill"
+								class="niveau-fill"
+								style="width: 0%; transition: width 1s ease"
+							></div>
+						</div>
+					</div>
 
-            <div class="section-title">Description</div>
-            <hr />
-            <ul id="modal-description"></ul>
+					<div class="section-title">Description</div>
+					<hr />
+					<ul id="modal-description"></ul>
 
-            <div class="section-title">Contexte d'utilisation</div>
-            <hr />
-            <div id="modal-contexte">Contexte</div>
+					<div class="section-title">Contexte d'utilisation</div>
+					<hr />
+					<div id="modal-contexte">Contexte</div>
 
-            <div class="section-title">Projets réalisés</div>
-            <hr />
-            <ul id="modal-projets"></ul>
-        </div>
-    </div>
-</div>
-
+					<div class="section-title">Projets réalisés</div>
+					<hr />
+					<ul id="modal-projets"></ul>
+				</div>
+			</div>
+		</div>
 
 		<footer>
 			<div>
-				<p>
-					&copy; 2025 Myriam Braconier Leclerc - myriam [at] gmail.com
-				</p>
+				<p>&copy; 2025 Myriam Braconier Leclerc - myriam [at] gmail.com</p>
 			</div>
 		</footer>
 	</body>

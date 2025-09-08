@@ -26,6 +26,18 @@ const competences = {
 			"Projet personnel : Next.js et Api Express: Concrete Vibes : https://concrete-vibes.up.railway.app/synthetisers",
 		],
 	},
+		Microsoft: {
+			displayName: "Outils Microsoft",
+		description: [
+			"suite Microsoft Office, 365 et PowerApps",
+		],
+		contexte:
+			"Création d'une application pour tablette avec PowerApps.",
+		projets: [
+			"Application complète avec API/React dans Power Apps (Maubeuge) : https://github.com/myriam-braconier/camvs-powerapps ",
+
+		],
+	},
 	BDDAPI: {
 		displayName: "BDD et API",
 		description: [
