@@ -22,7 +22,7 @@ body {
 
 .bibliotheque {
 	max-width: 1200px;
-	/* margin: 0px 40px 0px 40px; */
+	margin : 0 auto;
 	text-align: center;
 }
 
