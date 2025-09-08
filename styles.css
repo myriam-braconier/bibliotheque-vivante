@@ -19,7 +19,9 @@ body {
 	color: #f5f5dc;
 	margin: 0 auto;
 }
-
+.img-container {
+	display: none;
+}
 .bibliotheque {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -76,7 +78,7 @@ li {
 }
 
 .logo {
-	margin-bottom: 10px;
+	margin-bottom:5px;
 }
 .logo img {
 	width: 50px;
