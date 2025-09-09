@@ -15,7 +15,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	min-height: 100vh;
-	padding: 0 60px 0 60px;
+	/* padding: 0 60px 0 60px; */
 	color: #f5f5dc;
 	margin: 0 auto;
 }
@@ -486,11 +486,13 @@ footer p {
 	}
 	.etagere-container {
 		display: block;
+		
 	}
 
 	.etagere {
 		display: block;
-		width: 100%;
+		width: 85%;
+		margin: 0 auto 0 auto;
 	}
 	.etagere-place-titre {
 		width: 100%;
@@ -498,7 +500,7 @@ footer p {
 		margin-bottom: 15px;
 	}
 	.presentation {
-		width: 100%;
+		width: 85%;
 		margin: 0 auto 0 auto;
 	}
 .etagere-place-titre {
@@ -508,7 +510,7 @@ footer p {
 	.livres-lot {
 		justify-content: center;
 		gap: 80px;
-		margin: 0 0 0 10px;
+		margin: 0 auto;
 	}
 
 	.livre {
@@ -660,7 +662,7 @@ footer p {
 	}
 }
 @media (max-width: 480px) {
-
+	
 	.bibliotheque {
 		padding: 10px;
 		margin: 10px;
@@ -739,7 +741,7 @@ footer p {
 	}
 
 	.presentation {
-		width: 100%;
+		width: 85%;
 		margin: 0 auto 20px auto;
 	}
 	.livres-container {
