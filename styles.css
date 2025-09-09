@@ -53,7 +53,7 @@ h2 {
 	margin-bottom: 10px;
 	justify-self: center;
 	color: #f5f5dc;
-	text-shadow: 10px 10px 10px rgba(255, 255, 255, 0.8);
+	text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
 }
 h3 {
 	font-family: "Nunito", sans-serif;
