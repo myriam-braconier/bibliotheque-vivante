@@ -171,10 +171,8 @@ background: linear-gradient(
 }
 
 .sticky-intro.shrunk .portrait-container img {
-	width: 120%;
-	height: 120%;
-	border-width: 2px;
-	transform: scale(1.2) translateY(5px);
+	border-width: 1px;
+	transform: scale(1.2) translateY(10px);
 }
 
 /* Sous-titre 2 */
