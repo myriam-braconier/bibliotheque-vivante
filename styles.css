@@ -219,13 +219,16 @@ li {
 
 .sticky-intro.shrunk .logo {
 	display: block;
-	margin: 0;
+	margin: 0 0 0 20px;
 	order: 4;
 }
 
 .sticky-intro.shrunk .logo img {
 	width: 25px;
 	height: 25px;
+}
+.nom-logo {
+	display: flex;
 }
 
 /* ETAGERES */
@@ -926,13 +929,16 @@ footer p {
 
 .sticky-intro.shrunk .logo {
 	display: block;
-	margin: 0;
+	margin: 0 0 0 10px;
 	order: 4;
 }
 
 .sticky-intro.shrunk .logo img {
 	width: 25px;
 	height: 25px;
+}
+.nom-logo {
+display: flex;
 }
 
 }
@@ -1211,7 +1217,7 @@ footer p {
 /* Titre */
 .title {
 	font-size: 2rem;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 .sticky-intro.shrunk .title {
@@ -1278,7 +1284,7 @@ footer p {
 
 /* subtitle2 état rétréci */
 .sticky-intro.shrunk .subtitle2 {
-	font-size: 0.9rem;
+	font-size: 1.1rem;
 	margin: 0;
 	order: 3;
 	white-space: nowrap; 
@@ -1311,13 +1317,15 @@ footer p {
 
 .sticky-intro.shrunk .logo {
 	display: block;
-	margin: 0;
+	margin: 0 0 0 20px;
 	order: 4;
 }
 
 .sticky-intro.shrunk .logo img {
-	width: 25px;
-	height: 25px;
+	width: 30px;
+	height: 30px;
 }
-
+.nom-logo {
+	display: flex;
+}
 }
