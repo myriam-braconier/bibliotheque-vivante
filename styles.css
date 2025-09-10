@@ -1036,9 +1036,7 @@ display: flex;
 		gap: 30px;
 		margin: 0 auto;
 	}
-	/* .livres-lot > div:nth-child(5) {
-	display:block
-} */
+
 	.livre {
 		width: 60px;
 		height: 130px;
@@ -1270,7 +1268,7 @@ display: flex;
 	width: 120%;
 	height: 120%;
 	border-width: 2px;
-	transform: scale(1.2) translateY(5px);
+	transform: scale(1.2) translateY(12px);
 }
 
 /* Sous-titre 2 */
