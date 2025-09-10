@@ -334,6 +334,7 @@ function fermerPopup() {
 }
 
 // Initialisation au chargement du DOM
+
 document.addEventListener("DOMContentLoaded", function () {
 	// IMPORTANT: Initialiser MicroModal
 	MicroModal.init({

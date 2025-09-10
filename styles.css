@@ -408,14 +408,6 @@ background: linear-gradient(
 	background: linear-gradient(170deg, #7d2ae8, #9b59b6);
 }
 
-/* Autoportrait */
-
-img {
-	width: 180px;
-	height: auto;
-	border-radius: 25px;
-	box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
-}
 
 /* modal */
 
