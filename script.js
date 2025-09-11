@@ -266,6 +266,8 @@ console.log(
 	"compétences"
 );
 
+
+
 // Fonction pour obtenir le label de catégorie
 function getCategorieLabel(categorie) {
 	const labels = {
@@ -399,7 +401,3 @@ window.test = function (nom = "HTML5") {
 	ouvrirPopup(nom, "technique", 85);
 };
 
-console.log("💡 Commandes disponibles:");
-console.log("- test('HTML5') : Tester HTML5");
-console.log("- ouvrirPopup('CSS3', 'technique', 90) : Tester CSS3");
-console.log("- fermerPopup() : Fermer la modal");
