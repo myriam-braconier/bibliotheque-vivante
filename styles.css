@@ -100,7 +100,7 @@ li {
 	padding-left: 20px;
 	color: #d4af37;
 	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
-	transition: all 0.4s ease;
+	transition: all 0.3s ease;
 }
 
 .sticky-intro.shrunk .title {
@@ -116,7 +116,7 @@ li {
 	font-weight: 700;
 	margin-bottom: 25px;
 	color: #d4af37;
-	transition: all 0.4s ease;
+	transition: all 0.3s ease;
 	/* visible par défaut */
 	opacity: 1;
 	display: block;
