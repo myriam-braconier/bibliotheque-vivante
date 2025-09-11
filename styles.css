@@ -269,13 +269,23 @@ li {
 }
 
 .etagere-place-titre {
-	display: flex;
-	justify-content: center;
-	width: 260px;
+	display: block;
+	max-width: 260px;
+padding: 15px 0 15px 0;
+margin: 0 auto;
 }
-.etagere-emoji {
-	font-size: 2.2rem;
-	margin: 0 10px 0 0;
+
+.etagere-gif1 img {
+	width: 20%;
+	height: auto;
+}
+.etagere-gif2 img {
+	width: 20%;
+	height: auto;
+}
+.etagere-gif3 img {
+	width: 20%;
+	height: auto;
 }
 .presentation {
 	font-family: "Nunito", sans-serif;
@@ -283,7 +293,6 @@ li {
 	font-weight: 700;
 	color: #f5f5dc;
 	opacity: 1;
-	/* margin: 0px 20px 20px 0px; */
 	padding: 10px;
 	border: #d4af37 2px solid;
 	border-radius: 25px;
@@ -629,16 +638,24 @@ footer p {
 	.etagere-place-titre {
 		width: 100%;
 		justify-content: center;
-		margin-bottom: 15px;
 	}
 	.presentation {
 		width: 85%;
 		margin: 15px auto 15px auto;
 	}
-	.etagere-place-titre {
-		margin: 15px 0 15px 0;
-	}
 
+.etagere-gif1 img {
+	width: 10%;
+	height: auto;
+}
+.etagere-gif2 img {
+	width: 10%;
+	height: auto;
+}
+.etagere-gif3 img {
+	width: 10%;
+	height: auto;
+}
 	.livres-lot {
 		justify-content: center;
 		gap: 80px;
@@ -665,10 +682,6 @@ footer p {
 		margin: 0;
 		padding: 0;
 		line-height: 1;
-	}
-	/* Autoportrait */
-	img {
-		display: none;
 	}
 
 	/* Modal principale */
@@ -1005,8 +1018,6 @@ footer p {
 	}
 	.etagere-place-titre {
 		max-width: 100%;
-		margin-bottom: 15px;
-		margin: 0 auto;
 	}
 
 	.presentation {
@@ -1045,10 +1056,7 @@ footer p {
 		padding: 0;
 		line-height: 1;
 	}
-	/* Autoportrait */
-	img {
-		display: none;
-	}
+
 
 	/* Modal principale */
 	.modal {
