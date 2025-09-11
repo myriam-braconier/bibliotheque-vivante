@@ -269,10 +269,8 @@ li {
 }
 
 .etagere-place-titre {
-	display: block;
 	max-width: 260px;
 padding: 15px 0 15px 0;
-margin: 0 auto;
 }
 
 .etagere-gif1 img {
@@ -637,7 +635,7 @@ footer p {
 	}
 	.etagere-place-titre {
 		width: 100%;
-		justify-content: center;
+		margin: 0 auto;
 	}
 	.presentation {
 		width: 85%;
