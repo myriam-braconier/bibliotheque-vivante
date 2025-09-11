@@ -251,6 +251,7 @@ const competences = {
 		displayName: "Formation Professionnelle",
 		description: [
 			"Objectif principal : concevoir et animer des formations en digital learning adaptées aux adultes.",
+			"AI Coding: Claude Code",
 		],
 		contexte:
 			"Transmission de compétences techniques avec pédagogie adaptée aux professionnels en activité.",
