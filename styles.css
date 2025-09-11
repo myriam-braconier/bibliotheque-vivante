@@ -947,8 +947,8 @@ footer p {
 }
 @media (max-width: 480px) {
 	.bibliotheque {
-		padding: 0 20px 0 20px;
-		margin: 10px;
+		padding: 0 15px 0 15px;
+		margin: 0 auto;
 	}
 	h1 {
 		font-size: 1.8rem;
