@@ -61,12 +61,14 @@ li {
 	);
 	margin: 0 0 10px 0;
 	width: 100%;
-	transition: all 0.4s ease;
+	transition: padding 0.3s ease, background 0.3s ease;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	padding: 10px 20px;
 	text-align: center;
-	/* layout par défaut */
 	display: block;
+	/* Optimisations performance pour Android */
+	will-change: transform;
+	transform: translateZ(0);
 }
 
 /* Header sticky - état rétréci */
@@ -74,16 +76,18 @@ li {
 	padding: 15px 20px;
 	background: linear-gradient(
 		45deg,
-		rgba(168, 85, 247, 0.8),
-		rgba(34, 197, 94, 0.8)
+		rgba(168, 85, 247, 0.95),
+		rgba(34, 197, 94, 0.95)
 	);
-	backdrop-filter: blur(10px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 15px;
 	text-align: left;
-	flex-wrap: wrap; /* AJOUTÉ pour éviter les débordements */
+	flex-wrap: wrap;
+	/* Optimisations performance pour Android */
+	will-change: transform;
+	transform: translateZ(0);
 }
 
 /* TOUS les éléments enfants du header rétréci */
@@ -817,13 +821,15 @@ footer p {
 	.sticky-intro.shrunk {
 		padding: 15px 20px;
 		background: rgba(102, 126, 234, 0.95);
-		backdrop-filter: blur(10px);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		gap: 15px;
 		text-align: left;
-		flex-wrap: wrap; /* AJOUTÉ pour éviter les débordements */
+		flex-wrap: wrap;
+		/* Optimisations performance pour tablettes */
+		will-change: transform;
+		transform: translateZ(0);
 	}
 
 	/* TOUS les éléments enfants du header rétréci */
@@ -1204,13 +1210,16 @@ footer p {
 	.sticky-intro.shrunk {
 		padding: 15px 20px;
 		background: rgba(102, 126, 234, 0.95);
-		backdrop-filter: blur(10px);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		gap: 15px;
 		text-align: left;
-		flex-wrap: wrap; /* AJOUTÉ pour éviter les débordements */
+		flex-wrap: wrap;
+		/* Optimisations performance pour mobiles */
+		will-change: transform;
+		transform: translateZ(0);
+		transition: none; /* Désactiver les transitions sur mobile pour les performances */
 	}
 
 	/* TOUS les éléments enfants du header rétréci */
@@ -1330,5 +1339,37 @@ footer p {
 	}
 	.nom-logo {
 		display: flex;
+	}
+}
+
+/* Optimisations spécifiques pour appareils Android à performances limitées (Galaxy A20, etc.) */
+@media (max-width: 480px) and (max-device-pixel-ratio: 2) {
+	.sticky-intro {
+		/* Simplifier les styles pour de meilleures performances */
+		transition: none;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	}
+	
+	.sticky-intro.shrunk {
+		/* Désactiver complètement les transitions sur les appareils lents */
+		transition: none !important;
+		transform: none;
+		will-change: auto;
+	}
+	
+	/* Simplifier les effets visuels coûteux */
+	.portrait-container img {
+		transition: none !important;
+		transform: none !important;
+	}
+	
+	.portrait-container img:hover {
+		transform: none !important;
+	}
+	
+	/* Optimiser les éléments du header rétréci */
+	.sticky-intro.shrunk .portrait-container img {
+		transition: none !important;
+		transform: none !important;
 	}
 }
