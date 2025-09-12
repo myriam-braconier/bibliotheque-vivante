@@ -22,7 +22,7 @@ const competences = {
 			"Création d'une application pour tablette avec Power Apps et projet tutoré.",
 		projets: [
 			"Application complète avec API/React dans Power Apps (Maubeuge)",
-			"Projet tutoré: Symfony : https://github.com/myriam-braconier/concrete_vibrations",
+			"Projet tutoré: Symfony : https://docs.google.com/document/d/12m6p3-MM4O9wO35dEXvAAFExPC90UzmIPBwARCIRP3E/edit?usp=sharing",
 			"Projet personnel : Next.js et Api Express: Concrete Vibes : https://concrete-vibes.up.railway.app/synthetisers",
 		],
 	},
