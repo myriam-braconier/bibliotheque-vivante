@@ -58,7 +58,7 @@ const competences = {
 		],
 		contexte: "Développement d'un site institutionnel'",
 		projets: [
-			"Optimisation SEO et design - La Fabrique Documentaire (maintenance, SEO, sécurité)",
+			"Optimisation SEO et design - La Fabrique Documentaire (maintenance, SEO, sécurité) : https://drive.google.com/file/d/1Eu83ax-Ic2n8-_EXEfhavEAKB-hMANWs/view?usp=sharing",
 		],
 	},
 	RechercheDocumentaire: {
