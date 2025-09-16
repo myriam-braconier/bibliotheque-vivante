@@ -250,13 +250,13 @@ const competences = {
 	FormationProfessionnelle: {
 		displayName: "Formation Professionnelle",
 		description: [
-			"Objectif principal : concevoir et animer des formations en digital learning adaptées aux adultes.",
+			"Objectif principal : concevoir et animer des formations en digital learning adaptées aux adultes : https://www.codeleclerc.fr/portfoliocf/",
 			"AI Coding: Claude Code",
 		],
 		contexte:
 			"Transmission de compétences techniques avec pédagogie adaptée aux professionnels en activité.",
 		projets: [
-			"Recherche contrat d'apprentissage ingénierie pédagogique",
+			"Recherche contrat d'apprentissage en ingénierie pédagogique",
 		],
 	},
 };
