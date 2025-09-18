@@ -15,9 +15,14 @@ body {
 	background-size: cover;
 	background-position: center;
 	min-height: 100vh;
-
 	color: #f5f5dc;
 	margin: 0 auto;
+}
+a {
+	color: rgba(16, 2, 207, 0.8);
+}
+a:hover {
+	color:rgba(255, 255, 255, 1)
 }
 
 .bibliotheque {
