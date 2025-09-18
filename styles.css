@@ -307,6 +307,71 @@ padding: 15px 0 15px 0;
 	height: fit-content;
 	margin: 30px auto 30px auto;
 }
+.presentation h3 {
+	color: #2c1810;
+	margin-top:20px;
+}
+
+/* Conteneur principal */
+        .image-container {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+			justify-content: center;
+        }
+        
+        /* Chaque lien avec image */
+        .image-link {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .image-link img {
+            display: block;
+            transition: transform 0.2s ease;
+        }
+        
+        .image-link:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Bulle personnalisée */
+        .tooltip {
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            pointer-events: none; /* Évite les conflits avec le clic */
+        }
+        
+        /* Flèche de la bulle */
+        .tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #333;
+        }
+        
+        /* Affichage de la bulle au survol */
+        .image-link:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+        
 
 .livres-lot {
 	display: flex;
