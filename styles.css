@@ -8,7 +8,7 @@ body {
 	/* background: linear-gradient(170deg, #a855f7, #22c55e), */
 	background: linear-gradient(
 			45deg,
-			rgba(168, 85, 247, 0.8),
+			rgba(42, 4, 94, 0.8),
 			rgba(34, 197, 94, 0.8)
 		),
 		url("pexels-bymalens.jpg");
@@ -61,7 +61,7 @@ li {
 	z-index: 1000;
 	background: linear-gradient(
 		45deg,
-		rgba(168, 85, 247, 0.8),
+		rgba(42, 4, 94, 0.8),
 		rgba(34, 197, 94, 0.8)
 	);
 	margin: 0 0 10px 0;
