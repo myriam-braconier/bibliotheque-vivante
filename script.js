@@ -15,8 +15,11 @@ const competences = {
 		],
 	},
 	Frameworks: {
+		displayName: "Frameworks et Déploiements",
 		description: [
 			"Symfony, React.js, Next.js : Frameworks modernes pour le développement web full-stack et front-end.",
+			"Docker : Containerisation d'applications pour des déploiements cohérents et portables.",
+			"Déploiement : Mise en production d'applications web sur diverses plateformes (vercel, Railway, CloudFlare, AWS).",
 		],
 		contexte:
 			"Création d'une application pour tablette avec Power Apps et projet tutoré.",
@@ -26,16 +29,12 @@ const competences = {
 			"Projet personnel : Next.js et Api Express: Concrete Vibes : https://concrete-vibes.up.railway.app/synthetisers",
 		],
 	},
-		Microsoft: {
-			displayName: "Outils Microsoft",
-		description: [
-			"suite Microsoft Office, 365 et PowerApps",
-		],
-		contexte:
-			"Création d'une application pour tablette avec PowerApps.",
+	Microsoft: {
+		displayName: "Outils Microsoft",
+		description: ["suite Microsoft Office, 365 et PowerApps"],
+		contexte: "Création d'une application pour tablette avec PowerApps.",
 		projets: [
 			"Application complète avec API/React dans Power Apps (Maubeuge) : https://github.com/myriam-braconier/camvs-powerapps ",
-
 		],
 	},
 	BDDAPI: {
@@ -115,9 +114,7 @@ const competences = {
 		],
 		contexte:
 			"Projets de transformation numérique nécessitant le respect des standards techniques et réglementaires, dans les secteurs public, privé et associatif",
-		projets: [
-			"Migration catalogue Eurocontrol : Dipmaker vers Souton Global",
-		],
+		projets: ["Migration catalogue Eurocontrol : Dipmaker vers Souton Global"],
 	},
 
 	AdobeSuite: {
@@ -255,9 +252,7 @@ const competences = {
 		],
 		contexte:
 			"Transmission de compétences techniques avec pédagogie adaptée aux professionnels en activité.",
-		projets: [
-			"Recherche contrat d'apprentissage en ingénierie pédagogique",
-		],
+		projets: ["Recherche contrat d'apprentissage en ingénierie pédagogique"],
 	},
 };
 
@@ -266,8 +261,6 @@ console.log(
 	Object.keys(competences).length,
 	"compétences"
 );
-
-
 
 // Fonction pour obtenir le label de catégorie
 function getCategorieLabel(categorie) {
@@ -401,4 +394,3 @@ document.addEventListener("DOMContentLoaded", function () {
 window.test = function (nom = "HTML5") {
 	ouvrirPopup(nom, "technique", 85);
 };
-
