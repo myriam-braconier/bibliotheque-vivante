@@ -4,7 +4,7 @@ const competences = {
 		description: [
 			"HTML5 : Langage de structuration web.",
 			"CSS3 : Feuilles de style avancées pour des designs modernes et responsives avec animations et transitions.",
-			"JavaScript : Programmation interactive côté client et manipulation du DOM pour des expériences utilisateur dynamiques.",
+			" Vanilla JavaScript, Typescript : Programmation interactive côté client et manipulation du DOM pour des expériences utilisateur dynamiques.",
 			"PHP : Développement backend procédural pour la gestion de données et l'interfaçage avec bases de données.",
 		],
 		contexte: "Utilisés dans tous mes projets web.",
@@ -390,7 +390,4 @@ document.addEventListener("DOMContentLoaded", function () {
 	console.log("✅ Système initialisé - Compatible onclick ET data-attributes");
 });
 
-// Test manuel
-window.test = function (nom = "HTML5") {
-	ouvrirPopup(nom, "technique", 85);
-};
+

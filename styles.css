@@ -53,7 +53,11 @@ h3 {
 li {
 	margin: 0 0 5px 0;
 }
-
+/* SCHRINK DU HEADER */
+/* TOUS les éléments enfants du header rétréci */
+.sticky-intro.shrunk > * {
+	flex-shrink: 0; /* IMPORTANT : empêche la déformation */
+}
 /* Header sticky - état normal */
 .sticky-intro {
 	position: sticky;
@@ -75,7 +79,6 @@ li {
 	will-change: transform;
 	transform: translateZ(0);
 }
-
 /* Header sticky - état rétréci */
 .sticky-intro.shrunk {
 	padding: 15px 20px;
@@ -95,10 +98,7 @@ li {
 	transform: translateZ(0);
 }
 
-/* TOUS les éléments enfants du header rétréci */
-.sticky-intro.shrunk > * {
-	flex-shrink: 0; /* IMPORTANT : empêche la déformation */
-}
+
 
 /* Titre */
 .title {
