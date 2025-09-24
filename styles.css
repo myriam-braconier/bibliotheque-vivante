@@ -10,8 +10,8 @@ body {
 			45deg,
 			rgba(42, 4, 94, 0.6),
 			rgba(34, 197, 94, 0.6)
-		),
-		url("mike-hindle-xQd6htA8er4-unsplash.jpg");
+		); 
+		/* url("mike-hindle-xQd6htA8er4-unsplash.jpg"); */
 		/* url("pexels-bymalens.jpg"); */
 	background-size: cover;
 	background-position: center;
@@ -299,7 +299,7 @@ padding: 15px 0 15px 0;
 	font-family: "Nunito", sans-serif;
 	font-size: 1.2rem;
 	font-weight: 700;
-	color: #f5f5dc;
+	color: #454537;
 	opacity: 1;
 	padding: 10px;
 	border: #d4af37 2px solid;
