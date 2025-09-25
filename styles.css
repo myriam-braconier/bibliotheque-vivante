@@ -1018,9 +1018,7 @@ footer p {
 		width: 25px;
 		height: 25px;
 	}
-	.nom-logo {
-		display: flex;
-	}
+
 }
 @media (max-width: 480px) {
 	.bibliotheque {
@@ -1408,9 +1406,7 @@ footer p {
 		width: 30px;
 		height: 30px;
 	}
-	.nom-logo {
-		display: flex;
-	}
+
 }
 
 /* Optimisations spécifiques pour appareils Android à performances limitées (Galaxy A20, etc.) */
