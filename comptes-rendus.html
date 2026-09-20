@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comptes rendus de réunions traités en local et relus | afterbefore.fr</title>
+<meta name="description" content="Procès-verbaux et comptes rendus rédigés à partir de vos enregistrements, avec un traitement 100 % local, une relecture humaine et un accord de confidentialité signé avant tout traitement.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Comptes rendus de réunions traités en local et relus">
+<meta property="og:description" content="Aucun fichier ne quitte mon ordinateur. Relecture humaine, accord de confidentialité et RGPD signés avant de commencer.">
+<meta property="og:url" content="https://afterbefore.fr/comptes-rendus.html">
+<link rel="canonical" href="https://afterbefore.fr/comptes-rendus.html">
+<link rel="stylesheet" href="fonts/fonts.css">
+
+<!--
+  À FAIRE AVANT MISE EN LIGNE
+  1. Remplacer VOTRE_ADRESSE@afterbefore.fr (2 endroits) par ton adresse professionnelle.
+  2. Remplir tous les passages surlignés en jaune [entre crochets], puis supprimer la classe "todo".
+  3. Le dossier "fonts" (Spectral et Nunito, hébergées sur ton site) doit être publié avec cette page.
+  Aucune police ni script externe : la page n'envoie aucune requête à un tiers.
+-->
+
+<style>
+  :root {
+    --fond: #F7F9F6;
+    --encre: #16211C;
+    --encre-douce: #46544C;
+    --vert: #2F6B4F;
+    --vert-fonce: #204B37;
+    --sauge: #E1EBE4;
+    --trait: #C6D4CB;
+    --alerte: #8B2E2E;
+    --serif: "Spectral", Georgia, "Times New Roman", serif;
+    --sans: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--fond);
+    color: var(--encre);
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  strong { font-weight: 600; }
+  a { color: var(--vert-fonce); text-underline-offset: 3px; }
+  a:hover { color: var(--vert); }
+  :focus-visible { outline: 3px solid var(--vert); outline-offset: 3px; }
+  .wrap { width: min(100% - 2.5rem, 68rem); margin-inline: auto; }
+
+  .todo { background: #FFF1A8; padding: 0 .2em; border-radius: 2px; }
+
+  /* En-tête */
+  .topbar { border-bottom: 1px solid var(--trait); }
+  .topbar .wrap { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding-block: 1rem; }
+  .topbar strong { font-family: var(--serif); font-weight: 500; font-size: 1.2rem; }
+  .topbar a { font-size: .95rem; }
+
+  /* Hero */
+  .hero { padding-block: clamp(2.5rem, 7vw, 5rem); }
+  .hero .wrap { display: grid; gap: 2.5rem; align-items: center; }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(2.1rem, 5vw, 3.4rem);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.25rem;
+    max-width: 20ch;
+  }
+  .lede { font-size: 1.2rem; max-width: 34rem; color: var(--encre-douce); margin: 0 0 1.75rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; }
+  .btn {
+    display: inline-block;
+    background: var(--vert);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: .85rem 1.4rem;
+    border-radius: 6px;
+    min-height: 44px;
+  }
+  .btn:hover { background: var(--vert-fonce); color: #fff; }
+  figure { margin: 0; }
+  figure svg { width: 100%; height: auto; display: block; }
+  figcaption { font-size: .9rem; color: var(--encre-douce); margin-top: .5rem; }
+
+  /* Sections */
+  main section { padding-block: clamp(2rem, 5vw, 3.25rem); border-top: 1px solid var(--trait); }
+  h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.2; margin: 0 0 1rem; }
+  .cols { display: grid; gap: 1.5rem 3rem; }
+  .prose { max-width: 40rem; }
+  .prose p { margin: 0 0 1rem; }
+
+  ol.etapes { list-style: none; counter-reset: etape; padding: 0; margin: 0; max-width: 40rem; }
+  ol.etapes li { counter-increment: etape; position: relative; padding: 0 0 1.25rem 3.25rem; }
+  ol.etapes li::before {
+    content: counter(etape);
+    position: absolute; left: 0; top: 0;
+    width: 2.25rem; height: 2.25rem; border-radius: 50%;
+    background: var(--sauge); color: var(--vert-fonce);
+    font-family: var(--serif); font-weight: 500; font-size: 1.1rem;
+    display: grid; place-items: center;
+  }
+  ol.etapes li::after {
+    content: ""; position: absolute; left: 1.1rem; top: 2.4rem; bottom: .15rem;
+    border-left: 2px solid var(--trait);
+  }
+  ol.etapes li:last-child { padding-bottom: 0; }
+  ol.etapes li:last-child::after { display: none; }
+  ol.etapes strong { display: block; }
+
+  ul.engagements { list-style: none; padding: 0; margin: 0; display: grid; gap: 0; }
+  ul.engagements li { padding: 1rem 0 1rem 1.6rem; border-bottom: 1px solid var(--trait); position: relative; }
+  ul.engagements li::before {
+    content: ""; position: absolute; left: 0; top: 1.45rem;
+    width: .7rem; height: .7rem; background: var(--vert);
+    clip-path: polygon(0 55%, 15% 40%, 40% 62%, 85% 5%, 100% 20%, 40% 100%);
+    transform: scale(1.35); transform-origin: left center;
+  }
+  ul.engagements strong { display: block; }
+  ul.engagements span { color: var(--encre-douce); }
+
+  .essai { background: var(--sauge); border-top: 0; }
+  .essai .wrap { display: grid; gap: 1.5rem; }
+  .essai p { max-width: 38rem; margin: 0; }
+
+  footer { border-top: 1px solid var(--trait); padding-block: 1.75rem; font-size: .9rem; color: var(--encre-douce); }
+  footer p { margin: 0 0 .4rem; }
+
+  /* Schéma */
+  .s-box { fill: #fff; stroke: var(--vert); stroke-width: 2.5; }
+  .s-txt { font-family: var(--sans); font-size: 15px; fill: var(--encre); }
+  .s-strong { font-weight: 600; font-size: 16px; fill: var(--vert-fonce); }
+  .s-soft { fill: var(--encre-douce); }
+  .s-cloud { fill: #DCE3DF; }
+  .s-line { stroke: var(--vert); stroke-width: 3; fill: none; }
+  .s-doc { fill: #F3F7F4; stroke: var(--vert); stroke-width: 2; }
+
+  @media (min-width: 52rem) {
+    .hero .wrap { grid-template-columns: 1.05fr 1fr; gap: 3.5rem; }
+    .cols { grid-template-columns: 1fr 1fr; }
+    ul.engagements { grid-template-columns: 1fr 1fr; column-gap: 3rem; }
+    .essai .wrap { grid-template-columns: 1fr auto; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <strong>afterbefore.fr</strong>
+    <a href="/">← Retour au portfolio</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="border-top:0">
+    <div class="wrap">
+      <div>
+        <h1>Vos réunions sensibles, rédigées sans quitter mon ordinateur</h1>
+        <p class="lede">Je transforme vos enregistrements en procès-verbaux et comptes rendus clairs, relus par une rédactrice. Aucun fichier n'est envoyé dans le cloud ni à un service d'IA en ligne.</p>
+        <div class="actions">
+          <a class="btn" href="mailto:VOTRE_ADRESSE@afterbefore.fr?subject=Essai%20compte%20rendu">Proposer un enregistrement test</a>
+          <a href="#engagements">Voir mes engagements</a>
+        </div>
+      </div>
+
+      <figure>
+        <svg viewBox="0 0 440 334" role="img" aria-labelledby="schema-titre schema-desc">
+          <title id="schema-titre">Le traitement reste sur mon ordinateur</title>
+          <desc id="schema-desc">Un enregistrement audio devient un compte rendu relu à l'intérieur de mon ordinateur. Aucune connexion vers le cloud ou un service d'IA en ligne.</desc>
+
+          <g class="s-cloud">
+            <rect x="262" y="34" width="106" height="26" rx="13"/>
+            <circle cx="298" cy="34" r="20"/>
+            <circle cx="330" cy="28" r="24"/>
+          </g>
+          <text class="s-txt s-soft" x="315" y="84" text-anchor="middle">Cloud, IA en ligne</text>
+          <line x1="315" y1="94" x2="315" y2="130" stroke="#8A968F" stroke-width="2" stroke-dasharray="4 5"/>
+          <circle cx="315" cy="112" r="11" fill="#fff" stroke="#8B2E2E" stroke-width="2"/>
+          <path d="M310 107 L320 117 M320 107 L310 117" stroke="#8B2E2E" stroke-width="2.2" stroke-linecap="round"/>
+
+          <rect class="s-box" x="10" y="132" width="420" height="192" rx="10"/>
+          <text class="s-txt s-strong" x="28" y="162">Mon ordinateur</text>
+
+          <g fill="#2F6B4F">
+            <rect x="36"  y="226" width="7" height="18" rx="3.5"/>
+            <rect x="48.5" y="215" width="7" height="40" rx="3.5"/>
+            <rect x="61"  y="203" width="7" height="64" rx="3.5"/>
+            <rect x="73.5" y="220" width="7" height="30" rx="3.5"/>
+            <rect x="86"  y="196" width="7" height="78" rx="3.5"/>
+            <rect x="98.5" y="212" width="7" height="46" rx="3.5"/>
+            <rect x="111" y="205" width="7" height="60" rx="3.5"/>
+            <rect x="123.5" y="222" width="7" height="26" rx="3.5"/>
+            <rect x="136" y="228" width="7" height="14" rx="3.5"/>
+          </g>
+          <text class="s-txt" x="90" y="292" text-anchor="middle">Enregistrement</text>
+
+          <text class="s-txt s-soft" x="210" y="222" text-anchor="middle">traitement local</text>
+          <line class="s-line" x1="160" y1="235" x2="262" y2="235"/>
+          <polygon points="262,227 278,235 262,243" fill="#2F6B4F"/>
+
+          <path class="s-doc" d="M292 195 h46 l22 22 v70 h-68 z"/>
+          <path d="M338 195 v22 h22" fill="none" stroke="#2F6B4F" stroke-width="2"/>
+          <path d="M304 240 h44 M304 254 h44 M304 268 h30" stroke="#2F6B4F" stroke-width="2.5" stroke-linecap="round"/>
+          <text class="s-txt" x="326" y="306" text-anchor="middle">Compte rendu relu</text>
+        </svg>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap cols">
+      <div>
+        <h2>Le problème</h2>
+        <div class="prose">
+          <p>Retranscrire une réunion prend des heures. Les outils en ligne, eux, envoient vos échanges sur des serveurs tiers.</p>
+          <p>Pour un CSE, un entretien RH ou un dossier juridique, ce n'est pas envisageable.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Ce que je fais</h2>
+        <div class="prose">
+          <p>Vous me confiez l'enregistrement d'une réunion ou d'un entretien. Je vous livre un procès-verbal ou un compte rendu structuré, relu et prêt à être diffusé : décisions, points clés, actions à suivre.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Comment ça se passe</h2>
+      <ol class="etapes">
+        <li><strong>Vous m'envoyez l'enregistrement</strong>Après signature d'un accord de confidentialité.</li>
+        <li><strong>Je le traite en local et je rédige le document</strong>Sur mon propre matériel, sans service en ligne.</li>
+        <li><strong>Je relis et je vous livre sous <span class="todo">[X]</span> jours</strong>Puis je supprime les enregistrements et les transcriptions.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="engagements">
+    <div class="wrap">
+      <h2>Mes engagements</h2>
+      <ul class="engagements">
+        <li><strong>Traitement 100 % local</strong><span>Aucun envoi vers le cloud ni vers un service d'IA en ligne.</span></li>
+        <li><strong>Confidentialité et RGPD</strong><span>Accord de confidentialité et accord de sous-traitance signés avant tout traitement.</span></li>
+        <li><strong>Relecture humaine</strong><span>Chaque document est relu avant livraison.</span></li>
+        <li><strong>Suppression après livraison</strong><span>Enregistrements et transcriptions effacés, avec confirmation écrite si vous le demandez.</span></li>
+        <li><strong>Tarif au forfait</strong><span>Le prix est annoncé avant de commencer.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap cols">
+      <div>
+        <h2>Pour qui</h2>
+        <div class="prose">
+          <p>Secrétaires et élus de CSE, services RH, cabinets d'avocats et d'expertise comptable, associations et organismes qui tiennent des réunions sensibles.</p>
+        </div>
+      </div>
+      <div>
+        <h2>À propos</h2>
+        <div class="prose">
+          <p>Je m'appelle <span class="todo">[Prénom Nom, identique au SIRET]</span>, rédactrice technique et médiatrice numérique. <span class="todo">[Une ou deux phrases sur votre parcours et ce qui vous a menée à ce service.]</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="essai">
+    <div class="wrap">
+      <div>
+        <h2>Testez sans engagement</h2>
+        <p>Je traite un premier enregistrement à tarif réduit pour que vous jugiez le résultat avant de décider.</p>
+      </div>
+      <a class="btn" href="mailto:VOTRE_ADRESSE@afterbefore.fr?subject=Essai%20compte%20rendu">Écrire à VOTRE_ADRESSE@afterbefore.fr</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 <span class="todo">[Nom exact au SIRET]</span> – entrepreneuse individuelle – SIRET <span class="todo">[numéro]</span></p>
+    <p>Site hébergé par <span class="todo">[nom et adresse de l'hébergeur]</span>. Cette page n'utilise ni cookie, ni police externe, ni outil de mesure.</p>
+  </div>
+</footer>
+
+</body>
+</html>
