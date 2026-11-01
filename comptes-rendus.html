@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Comptes rendus de réunions traités en local et relus | afterbefore.fr</title>
+<title>Comptes rendus et transcriptions, traités en local et relus | afterbefore.fr</title>
 <meta name="description" content="Procès-verbaux et comptes rendus rédigés à partir de vos enregistrements : traitement 100 % local, relecture humaine, accord de confidentialité et de sous-traitance RGPD signés avant tout traitement. 60 € les 30 minutes.">
 <link rel="canonical" href="https://afterbefore.fr/comptes-rendus.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:title" content="Comptes rendus de réunions traités en local et relus">
+<meta property="og:title" content="De l'oral à l'écrit, fidèlement : comptes rendus et transcriptions traités en local">
 <meta property="og:description" content="Aucun fichier ne quitte mon ordinateur. Relecture humaine, confidentialité et RGPD signés avant de commencer. 60 € les 30 minutes.">
 <meta property="og:url" content="https://afterbefore.fr/comptes-rendus.html">
 <style>
@@ -93,6 +93,11 @@
   .note { color: var(--muted); font-size: .95rem; }
   footer { border-top: 1px solid var(--line); max-width: 52rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; color: var(--muted); font-size: .95rem; }
   footer a { margin-right: 1rem; }
+  header.top nav { display: flex; gap: 1.1rem; flex-wrap: wrap; font-size: .98rem; }
+  .trio { display: grid; gap: 1rem; grid-template-columns: 1fr; margin: 1rem 0; }
+  @media (min-width: 760px) { .trio { grid-template-columns: repeat(3, 1fr); } }
+  .trio .card { margin: 0; }
+  .trio h3 { margin-top: 0; }
 </style>
 </head>
 <body>
@@ -100,19 +105,40 @@
 
 <header class="top">
   <strong>afterbefore.fr</strong>
-  <a href="https://afterbefore.fr/">← Retour au portfolio</a>
+  <nav aria-label="Navigation">
+    <a href="https://afterbefore.fr/securite.html">Sécurité</a>
+    <a href="https://afterbefore.fr/cgv.html">CGV</a>
+    <a href="https://afterbefore.fr/mentions-legales.html">Mentions légales</a>
+    <a href="https://afterbefore.fr/">← Portfolio</a>
+  </nav>
 </header>
 
 <main id="contenu">
 
-  <h1>Vos réunions sensibles, rédigées sans quitter mon ordinateur</h1>
-  <p class="lead">Je transforme vos enregistrements en procès-verbaux et comptes rendus clairs, relus par une rédactrice. Aucun fichier n'est envoyé dans le cloud ni à un service d'IA en ligne.</p>
+  <h1>De l'oral à l'écrit, fidèlement</h1>
+  <p class="lead">Vos échanges mis par écrit, relus par une rédactrice : procès-verbaux, comptes rendus, transcriptions et articles tirés de vos enregistrements. Aucun fichier n'est envoyé dans le cloud ni à un service d'IA en ligne.</p>
 
   <p><strong>60 € les 30 minutes d'enregistrement.</strong> Devis gratuit pour une durée supérieure.</p>
 
   <div class="btns">
     <a class="btn primary" href="mailto:braconier@proton.me?subject=Enregistrement%20test%20-%20compte%20rendu">Proposer un enregistrement test</a>
     <a class="btn secondary" href="#tarif">Voir le tarif</a>
+  </div>
+
+  <h2>Pour quels besoins</h2>
+  <div class="trio">
+    <div class="card">
+      <h3>Réunions sensibles</h3>
+      <p>CSE, entretiens RH, cabinets, syndicats : procès-verbaux et comptes rendus. Vos réunions restent sur mon ordinateur, sans service en ligne.</p>
+    </div>
+    <div class="card">
+      <h3>Associations, médias, podcasts</h3>
+      <p>Vos épisodes, colloques et webinaires transformés en articles, comptes rendus ou transcriptions prêts à publier, fidèles à ce qui a été dit. Sur devis.</p>
+    </div>
+    <div class="card">
+      <h3>Sociétés de transcription</h3>
+      <p>Un premier jet avec locuteurs identifiés et horodatage, traité en local, que vos relecteurs corrigent. Essai possible sur un extrait de quelques minutes.</p>
+    </div>
   </div>
 
   <figure class="diagram" aria-label="Schéma : le traitement reste sur mon ordinateur">
@@ -134,11 +160,12 @@
   </figure>
 
   <h2>Le problème</h2>
-  <p>Retranscrire une réunion prend des heures. Les outils en ligne, eux, envoient vos échanges sur des serveurs tiers.</p>
+  <p>Retranscrire une réunion ou un épisode prend des heures. Les outils en ligne, eux, envoient vos échanges sur des serveurs tiers, sans personne pour vérifier les noms, les chiffres et les citations.</p>
   <p>Pour un CSE, un entretien RH ou un dossier juridique, ce n'est pas envisageable.</p>
 
   <h2>Ce que je fais</h2>
   <p>Vous me confiez l'enregistrement d'une réunion ou d'un entretien. Je vous livre un procès-verbal ou un compte rendu structuré, relu et prêt à être diffusé : décisions, points clés, actions à suivre, dans le format que vous utilisez déjà.</p>
+  <p>Pour un colloque, un webinaire ou un épisode de podcast, je livre une transcription fidèle ou un article tiré de l'enregistrement, selon ce dont vous avez besoin.</p>
 
   <h2 id="tarif">Tarif</h2>
   <div class="card price">
@@ -199,7 +226,7 @@
     <li><strong>Traçabilité</strong><span class="sub">Je tiens un journal par dossier (dates de réception, de livraison et de suppression), que je peux vous fournir sur demande.</span></li>
     <li><strong>Vérifiable en direct</strong><span class="sub">Sur demande, je vous montre en visio mon outil fonctionner sans connexion Internet.</span></li>
   </ul>
-  <p class="note">Je ne promets pas « zéro risque » : je vous dis ce que je fais, vous pouvez me poser toutes vos questions de sécurité avant de signer.</p>
+  <p class="note">Je ne promets pas « zéro risque » : je vous dis ce que je fais, vous pouvez me poser toutes vos questions de sécurité avant de signer. <a href="https://afterbefore.fr/securite.html">Voir la page Sécurité</a>, également disponible <a href="https://afterbefore.fr/Fiche_securite_donnees.pdf">en PDF</a>.</p>
   <!-- À activer seulement une fois l'assurance souscrite :
   <p><strong>Assurance responsabilité civile professionnelle</strong> souscrite auprès de [assureur], attestation disponible sur demande.</p>
   -->
@@ -220,7 +247,7 @@
   </ul>
 
   <h2>Pour qui</h2>
-  <p>Secrétaires et élus de CSE, services RH, cabinets d'avocats et d'expertise comptable, syndicats, associations et organismes qui tiennent des réunions sensibles.</p>
+  <p>Secrétaires et élus de CSE, services RH, cabinets d'avocats et d'expertise comptable, syndicats, associations et organismes qui tiennent des réunions sensibles. Aussi : associations, médias et équipes de podcast qui veulent publier leurs contenus à l'écrit, et sociétés de transcription qui cherchent un renfort pour leurs pics de charge.</p>
 
   <h2>À propos</h2>
   <p>Je m'appelle Myriam Braconier-Leclerc. Après des années en documentation, en communication digitale et en développement web, j'ai conçu moi-même l'outil de transcription local que j'utilise pour ce service.</p>
@@ -238,7 +265,7 @@
 <footer>
   <p>© 2026 BRACONIER-LECLERC – entrepreneuse individuelle – SIRET 83922324500037</p>
   <p>Site hébergé par GitHub. Cette page n'utilise ni cookie, ni police externe, ni outil de mesure.</p>
-  <p><a href="https://afterbefore.fr/mentions-legales.html">Mentions légales</a><a href="https://afterbefore.fr/cgv.html">CGV</a><a href="https://afterbefore.fr/securite.html">Sécurité</a></p>
+  <p><a href="https://afterbefore.fr/securite.html">Sécurité</a><a href="https://afterbefore.fr/mentions-legales.html">Mentions légales</a><a href="https://afterbefore.fr/cgv.html">CGV</a></p>
 </footer>
 </body>
 </html>
