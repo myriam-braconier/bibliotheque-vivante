@@ -146,8 +146,8 @@ li {
 	/* display:flex; */
 	/* justify-content: center;
 	align-items: center; */
-	width: 120px;
-	height: 120px;
+	width: 140px;
+	height: 140px;
 	border-radius: 50%;
 	overflow: hidden;
 	transition: all 0.4s ease;
@@ -162,7 +162,7 @@ li {
 	align-items: center; */
 	/* margin: 0 auto; */
 	width: 110%;
-	height: 130%;
+	height: 140%;
 	object-fit: cover;
 	border: none;
 	transition: all 0.4s ease;
