@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sous-traitance de transcriptions et comptes rendus, traités en local | afterbefore.fr</title>
+<meta name="description" content="Premiers jets de transcription et de compte rendu pour sociétés de transcription : IA locale, relecture humaine, accord de sous-traitance RGPD signé avant le premier fichier. Essai gratuit sur un extrait de 15 minutes.">
+<link rel="canonical" href="https://afterbefore.fr/sous-traitance.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Un renfort pour vos pics de charge, sans risque pour vos clients">
+<meta property="og:description" content="Premiers jets relus, traités sans aucun service en ligne. Essai gratuit sur un extrait de 15 minutes.">
+<meta property="og:url" content="https://afterbefore.fr/sous-traitance.html">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --text: #1f2933;
+    --muted: #52606d;
+    --accent: #1f5f7a;
+    --accent-dark: #164759;
+    --card: #ffffff;
+    --line: #dde3e8;
+    --soft: #eef4f7;
+    --warn: #fff6e5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14191d;
+      --text: #e8edf1;
+      --muted: #a9b5bf;
+      --accent: #6cb6d3;
+      --accent-dark: #8cc9e0;
+      --card: #1c2329;
+      --line: #2e3841;
+      --soft: #1a2830;
+      --warn: #2b2618;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+  }
+  .skip { position: absolute; left: -999px; }
+  .skip:focus { left: 1rem; top: 1rem; background: var(--card); padding: .5rem 1rem; z-index: 10; }
+  header.top {
+    max-width: 52rem; margin: 0 auto; padding: 1rem 1.25rem;
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;
+  }
+  header.top strong { font-size: 1.1rem; }
+  a { color: var(--accent); }
+  a:hover { color: var(--accent-dark); }
+  main { max-width: 52rem; margin: 0 auto; padding: 0 1.25rem 3rem; }
+  h1 { font-size: clamp(1.7rem, 4.5vw, 2.4rem); line-height: 1.2; margin: 1.5rem 0 1rem; }
+  h2 { font-size: 1.45rem; line-height: 1.3; margin: 2.8rem 0 .8rem; }
+  h3 { font-size: 1.1rem; margin: 1.4rem 0 .4rem; }
+  p { margin: .6rem 0; }
+  .lead { font-size: 1.2rem; color: var(--muted); }
+  .btns { display: flex; gap: .8rem; flex-wrap: wrap; margin: 1.5rem 0; }
+  .btn {
+    display: inline-block; padding: .8rem 1.3rem; border-radius: .5rem;
+    font-weight: 600; text-decoration: none; border: 2px solid var(--accent);
+  }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn.primary:hover { background: var(--accent-dark); color: #fff; }
+  .btn.secondary { color: var(--accent); background: transparent; }
+  .btn:focus-visible, a:focus-visible { outline: 3px solid var(--accent-dark); outline-offset: 2px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: .7rem; padding: 1.2rem 1.4rem; margin: 1rem 0;
+  }
+  .price { background: var(--soft); border-color: var(--accent); }
+  .price .big { font-size: 1.9rem; font-weight: 700; margin: 0; }
+  .price ul { margin: .6rem 0 0; padding-left: 1.2rem; }
+  ol.steps { padding-left: 1.3rem; }
+  ol.steps li { margin: .7rem 0; }
+  ul.checks { list-style: none; padding: 0; margin: .8rem 0; }
+  ul.checks li { padding-left: 1.6rem; position: relative; margin: .7rem 0; }
+  ul.checks li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .sub { display: block; color: var(--muted); font-size: .98rem; }
+  .diagram { margin: 1.5rem 0; }
+  .diagram svg { width: 100%; height: auto; max-width: 40rem; }
+  .compare { display: grid; gap: 1rem; grid-template-columns: 1fr; margin: 1rem 0; }
+  @media (min-width: 700px) { .compare { grid-template-columns: 1fr 1fr; } }
+  .compare .card { margin: 0; }
+  .compare h3 { margin-top: 0; }
+  .raw { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92rem; background: var(--warn); }
+  .note { color: var(--muted); font-size: .95rem; }
+  footer { border-top: 1px solid var(--line); max-width: 52rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; color: var(--muted); font-size: .95rem; }
+  footer a { margin-right: 1rem; }
+  header.top nav { display: flex; gap: 1.1rem; flex-wrap: wrap; font-size: .98rem; }
+  .trio { display: grid; gap: 1rem; grid-template-columns: 1fr; margin: 1rem 0; }
+  @media (min-width: 760px) { .trio { grid-template-columns: repeat(3, 1fr); } }
+  .trio .card { margin: 0; }
+  .trio h3 { margin-top: 0; }
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <strong>afterbefore.fr</strong>
+  <nav aria-label="Navigation">
+    <a href="https://afterbefore.fr/securite.html">Sécurité</a>
+    <a href="https://afterbefore.fr/cgv.html">CGV</a>
+    <a href="https://afterbefore.fr/mentions-legales.html">Mentions légales</a>
+    <a href="https://afterbefore.fr/">← Portfolio</a>
+  </nav>
+</header>
+
+<main id="contenu">
+
+  <h1>Un renfort pour vos pics de charge, sans risque pour vos clients</h1>
+  <p class="lead">Je livre à votre équipe des premiers jets de transcription et de compte rendu, relus par une humaine, que vos rédacteurs n'ont plus qu'à finaliser. Tout est traité sur mon ordinateur : aucun enregistrement ne passe par un service en ligne.</p>
+
+  <div class="btns">
+    <a class="btn primary" href="mailto:myriam-braconier@afterbefore.fr?subject=Essai%20sur%20extrait%20-%20sous-traitance">Proposer un extrait à l'essai</a>
+    <a class="btn secondary" href="#confidentialite">Voir la confidentialité</a>
+  </div>
+
+  <h2>Ce que je livre</h2>
+  <div class="trio">
+    <div class="card">
+      <h3>Transcription relue</h3>
+      <p>Texte intégral, intervenants nommés, horodatage par intervention.</p>
+    </div>
+    <div class="card">
+      <h3>Premier jet de compte rendu</h3>
+      <p>Discours indirect, structuré par exposé et par échange, chiffres contrôlés sur l'enregistrement.</p>
+    </div>
+    <div class="card">
+      <h3>À vos formats</h3>
+      <p>.txt, .docx ou .srt, adaptés à votre gabarit et à vos conventions de nommage des intervenants.</p>
+    </div>
+  </div>
+  <p class="note">Les passages incertains sont signalés « [à vérifier] », jamais devinés. Vocabulaire déjà travaillé : médical et chirurgical, financement de la santé, dialogue social.</p>
+
+  <h2>Méthode : IA locale, relecture humaine</h2>
+  <p>J'utilise de l'intelligence artificielle, mais uniquement installée sur mon ordinateur. Je préfère vous le dire d'emblée.</p>
+  <ol class="steps">
+    <li><strong>Transcription et identification des intervenants</strong><span class="sub">Sur mon ordinateur, sans connexion à Internet.</span></li>
+    <li><strong>Premier jet de compte rendu</strong><span class="sub">Par un modèle de langage installé localement, encadré par des contrôles automatiques des chiffres, des dates et des références.</span></li>
+    <li><strong>Relecture humaine complète</strong><span class="sub">Attribution des propos, termes techniques, noms propres, chiffres.</span></li>
+  </ol>
+  <p class="note">Si l'un de vos clients exclut toute IA, même locale, dites-le-moi : je vous le signale avant d'accepter la mission.</p>
+
+  <h2 id="confidentialite">Confidentialité et RGPD</h2>
+  <p>Je m'inscris dans votre chaîne de sous-traitance avec des engagements écrits, signés avant le premier fichier.</p>
+  <ul class="checks">
+    <li><strong>Accords signés avant tout échange</strong><span class="sub">Accord de confidentialité et accord de sous-traitance RGPD (article 28), sur votre modèle ou le mien.</span></li>
+    <li><strong>Poste de travail sécurisé</strong><span class="sub">Disque chiffré, aucune synchronisation ni sauvegarde dans le cloud, un dossier isolé par mission.</span></li>
+    <li><strong>Transmission chiffrée</strong><span class="sub">Par dépôt chiffré uniquement, jamais en pièce jointe d'une messagerie ordinaire.</span></li>
+    <li><strong>Suppression après livraison</strong><span class="sub">Enregistrements et textes effacés, avec attestation datée sur demande.</span></li>
+    <li><strong>Vos clients restent vos clients</strong><span class="sub">Je ne démarche jamais les clients dont vous me confiez les fichiers.</span></li>
+  </ul>
+  <p class="note">Détail des mesures : <a href="https://afterbefore.fr/securite.html">page Sécurité</a>, également disponible <a href="https://afterbefore.fr/Fiche_securite_donnees.pdf">en PDF</a>.</p>
+
+  <h2>Capacité et délais</h2>
+  <!-- À compléter : volume hebdomadaire et délai standard, une fois mesurés. Exemple :
+  <p><strong>Jusqu'à [X] heures d'enregistrement par semaine</strong>, livrées sous [Y] jours ouvrés.</p>
+  -->
+  <p>Volume et délais convenus avec vous selon vos besoins ; urgences possibles sur accord préalable. Le tarif dépend du livrable et du délai, et se fixe avec vous avant toute mission.</p>
+
+  <h2>À propos</h2>
+  <p>Je m'appelle Myriam Braconier-Leclerc. Après des années en documentation, en communication digitale et en développement web, j'ai conçu moi-même l'outil de transcription local que j'utilise.</p>
+  <p>J'ai été <strong>représentante du personnel pendant quatre ans</strong> : je connais de l'intérieur les réunions que vous traitez, et la discrétion qu'elles exigent.</p>
+  <p class="note">Entrepreneuse individuelle · SIRET 83922324500037 · Pantin (93)</p>
+
+  <h2>Jugez sur pièce</h2>
+  <div class="card price">
+    <p class="big">Un extrait de 15 minutes, traité gratuitement</p>
+    <ul>
+      <li>Un enregistrement de votre choix, dans vos conditions réelles : format, délai, conventions.</li>
+      <li>Accord de confidentialité signé avant l'envoi, comme pour une vraie mission.</li>
+    </ul>
+  </div>
+  <div class="btns">
+    <a class="btn primary" href="mailto:myriam-braconier@afterbefore.fr?subject=Essai%20sur%20extrait%20-%20sous-traitance">Écrire à myriam-braconier@afterbefore.fr</a>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 BRACONIER-LECLERC – entrepreneuse individuelle – SIRET 83922324500037</p>
+  <p>Site hébergé par GitHub. Cette page n'utilise ni cookie, ni police externe, ni outil de mesure.</p>
+  <p><a href="https://afterbefore.fr/securite.html">Sécurité</a><a href="https://afterbefore.fr/mentions-legales.html">Mentions légales</a><a href="https://afterbefore.fr/cgv.html">CGV</a></p>
+</footer>
+</body>
+</html>
