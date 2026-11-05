@@ -1,441 +1,191 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<!-- Métadonnées de base -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		
-		<!-- Opengraph -->
-		<meta property="og:title" content="E-portfolio - Myriam Braconier Leclerc" />
-		<meta property="og:description" content="Conceptrice e-learning, développeuse web et passionnée d'alimentation durable. Je connecte tech et sens pour des projets qui comptent vraiment.">
+
+		<title>Myriam Braconier Leclerc · Comptes rendus et information scientifique</title>
+		<meta
+			name="description"
+			content="Technicienne de l'information scientifique et technique à Pantin : comptes rendus de séances, assemblées générales et conférences, archives orales, bulletins. Transcription en local, relecture humaine."
+		/>
+		<meta name="author" content="Myriam Braconier Leclerc" />
+		<meta name="robots" content="index, follow" />
+		<link rel="canonical" href="https://afterbefore.fr/" />
+
+		<!-- Open Graph -->
+		<meta property="og:title" content="Myriam Braconier Leclerc · Comptes rendus et information scientifique" />
+		<meta
+			property="og:description"
+			content="Comptes rendus de séances, d'assemblées générales et de conférences, archives orales et bulletins. Transcription en local, relecture humaine."
+		/>
 		<meta property="og:type" content="website" />
 		<meta property="og:locale" content="fr_FR" />
 		<meta property="og:url" content="https://afterbefore.fr/" />
 		<meta property="og:image" content="https://afterbefore.fr/feuille-verte.png" />
-		
-		<title>E-portfolio - Myriam Braconier Leclerc</title>
+
 		<link rel="icon" type="image/x-icon" href="/feuille-verte.ico" />
-		<!-- Description et mots-clés -->
-		<meta
-			name="description"
-			content="E-portfolio de Myriam Braconier"
-		/>
-		<meta
-			name="keywords"
-			content="E-portolio, Myriam Braconier, e-learning"
-		/>
-		<meta name="author" content="Myriam Braconier Leclerc" />
-		<meta name="robots" content="index, follow" />
-
-		<!-- Métadonnées de sécurité -->
-		<meta http-equiv="Content-Security-Policy" />
-		<meta http-equiv="X-Frame-Options" content="DENY" />
-		<meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-
-		<!-- Métadonnées de cache -->
-		<meta http-equiv="Cache-Control" content="max-age=3600" />
-		<meta http-equiv="Expires" content="Wed, 21 Oct 2025 07:28:00 GMT" />
-
-		<!-- Métadonnées pour applications web -->
-		<meta
-			name="application-name"
-			content="E-portfolio Myriam Braconier Leclerc"
-		/>
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta
-			name="apple-mobile-web-app-status-bar-style"
-			content="black-translucent"
-		/>
-		<meta
-			name="apple-mobile-web-app-title"
-			content="E-portfolio de Myriam Braconier"
-		/>
-		<!-- fonts -->
 		<link rel="stylesheet" href="fonts/fonts.css" />
-		<!-- script cdn -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.6.1/micromodal.min.js"></script>
-		<!-- script personnalisé -->
-		<script src="script.js"></script>
-		<!-- styles -->
 		<link rel="stylesheet" href="styles.css" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.6.1/micromodal.min.js"></script>
+		<script src="script.js"></script>
 	</head>
 
 	<body>
-		<header class="sticky-intro" id="stickyIntro">
-			<div class="portrait-titre">
-				<div class="portrait-container">
-					<img
-						src="autoportrait-enhanced-removebg-preview.png"
-						alt="portrait"
-					/>
-				</div>
-				<h1 class="title"><a href="https://afterbefore.fr">E-portfolio</a></h1>
-			</div>
-			<p class="subtitle1">
-				Explorez mes compétences comme dans une bibliothèque interactive
-			</p>
-			<div class="nom-logo">
-				<p class="subtitle2">Myriam Braconier Leclerc</p>
-				<div class="logo">
-					<a
-						href="https://www.linkedin.com/in/myriam-braconier/"
-						target="_blank"
-					>
-						<img src="linkedin_logo.png" alt="logo" />
-					</a>
-				</div>
-			</div>
+		<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+		<!-- Barre du haut -->
+		<header class="topbar" id="stickyIntro">
+			<a class="topbar__brand" href="https://afterbefore.fr">afterbefore.fr</a>
+			<nav class="topbar__nav" aria-label="Navigation principale">
+				<a href="comptes-rendus.html">Comptes rendus</a>
+				<a href="#competences">Compétences</a>
+				<a href="https://www.linkedin.com/in/myriam-braconier/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+			</nav>
 		</header>
 
-		<main>
-			<div class="bibliotheque">
-				<div class="presentation">
-					<p>
-						Je suis Myriam Braconier, technicienne de l’information scientifique et technique, installée à Pantin. Mon métier est de transcrire, structurer et mettre en forme des contenus spécialisés, sans en être spécialiste : ce sont vos membres qui gardent la main sur le fond.
-
-J'accompagne les associations et structures locales en prenant en charge la rédaction de leurs comptes rendus de séances, conférences et assemblées générales, de leurs archives orales.
-
-Je transcris en local, sans envoyer vos enregistrements à un service tiers, puis je relis et mets en forme le texte, je crée votre newsletter pour votre bulletin ou votre site. 
-Pour les termes techniques et les noms propres, je vous demande une courte liste de référence, et je signale tout passage douteux plutôt que de le deviner. Un de vos membres relit le texte avant diffusion.<br />
-						
+		<main id="contenu">
+			<!-- En-tête -->
+			<section class="hero">
+				<div class="portrait-container">
+					<img src="autoportrait-enhanced-removebg-preview.png" alt="Portrait de Myriam Braconier Leclerc" />
+				</div>
+				<div class="hero__text">
+					<p class="hero__eyebrow">Pantin · Île-de-France</p>
+					<h1>Myriam Braconier Leclerc</h1>
+					<p class="hero__role">
+						Technicienne de l'information scientifique et technique.
+						Je transcris, structure et mets en forme vos contenus spécialisés.
 					</p>
-					<p>
-						<a
-							href="comptes-rendus.html"
-							style="display:inline-block;background:#2F6B4F;color:#fff;font-weight:600;text-decoration:none;padding:0.7rem 1.2rem;border-radius:6px;"
-							>Comptes rendus confidentiels : découvrir mon offre</a
-						>
-					</p>
-					<p>
-						<!-- Vous pouvez aussi consulter mon -->
-						<!-- <a
-							href="https://codeleclerc.fr/portfoliocf/"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="image-link"
-							>Portfolio de ressources pédagogiques
-						</a> -->
-						<!-- et mon -->
-						<!-- <a
-							href="https://portfolio-react-production-b4e6.up.railway.app/"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="image-link"
-							>Portfolio de développement Web</a
-						> --->
-					</p>
+					<div class="hero__actions">
+						<a class="btn btn--primary" href="comptes-rendus.html">Découvrir mon offre de comptes rendus</a>
+						<a class="btn btn--ghost" href="#contact">Me contacter</a>
+					</div>
+				</div>
+			</section>
 
-					<!-- <div
-						style="
-							background: linear-gradient(
-								45deg,
-								rgba(42, 4, 94, 0.6),
-								rgba(34, 197, 94, 0.6)
-							);
-							width: fit-content;
-							margin: auto;
-							padding: 0 20px 0 20px;
-							border-radius: 33px;
-						"
-					>
-						<h3 style="color: #d4af37; text-shadow: none; font-size: 2rem">
-							La suite du e-portfolio :
-						</h3>
+			<!-- Ce que je fais -->
+			<section class="section">
+				<h2>Ce que je fais</h2>
+				<p class="section__intro">
+					J'accompagne les associations, sociétés savantes et structures locales dans la mise par écrit de leurs échanges.
+					Je ne suis pas spécialiste de votre domaine : ce sont vos membres qui gardent la main sur le fond.
+				</p>
 
-						<div class="image-container">
-							<a
-								href="https://codeleclerc.fr/portfoliocf/"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="image-link"
-							>
-								<img
-									src="cerclerouge.png"
-									alt="Portfolio de parcours pédagogiques"
-								/>
-								<div class="tooltip">Portfolio de parcours pédagogiques</div>
-							</a>
-							<a
-								href="https://portfolio-react-production-b4e6.up.railway.app/"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="image-link"
-							>
-								<img
-									src="cerclevert.png"
-									alt="Portfolio de développement web"
-								/>
-								<div class="tooltip">Portfolio de développement web</div>
-							</a>
-						</div>
-					</div> -->
-
+				<div class="cards">
+					<article class="card">
+						<h3>Comptes rendus</h3>
+						<p>Séances, conférences, conseils et assemblées générales, dans le format et le niveau de détail que vous utilisez.</p>
+					</article>
+					<article class="card">
+						<h3>Archives orales</h3>
+						<p>Transcription d'entretiens et de témoignages, relue et mise en forme pour être conservée et consultée.</p>
+					</article>
+					<article class="card">
+						<h3>Bulletins et newsletters</h3>
+						<p>Mise en forme de vos contenus pour votre bulletin, votre newsletter ou votre site.</p>
+					</article>
 				</div>
 
-				<!-- Étagère 1: Compétences Techniques -->
-				<div class="etagere-container">
-					<!-- <div class="presentation-container"> -->
-					<div class="etagere">
-						<div class="etagere-place-titre">
-							<!-- <div class="etagere-emoji">📚</div> -->
-							<div class="etagere-gif1">
-								<img
-									src="adaptability_17905281.gif"
-									alt="freepik-adaptability"
-								/>
-								<h2 class="etagere-titre">Compétences Techniques</h2>
-							</div>
-						</div>
+				<ul class="method">
+					<li><strong>Transcription en local</strong> : vos enregistrements ne partent pas vers un service tiers.</li>
+					<li><strong>Liste de référence</strong> : vous me donnez les termes techniques et les noms propres.</li>
+					<li><strong>Aucun passage deviné</strong> : tout doute est signalé dans le texte.</li>
+					<li><strong>Relecture par un de vos membres</strong> avant diffusion.</li>
+				</ul>
+			</section>
 
-						<!-- <div class="livres-container"> -->
-						<div class="livres-lot">
-							<!-- langages -->
-							<div
-								class="livre langages competence-card"
+			<!-- Références
+			<section class="section section--tinted">
+				<h2>Ils m'ont fait confiance</h2>
+				<ul class="refs">
+					<li>INIST-CNRS</li>
+					<li>Cité des sciences et de l'industrie</li>
+					<li>Eurocontrol</li>
+					<li>ONERA</li>
+				</ul>
+			</section> -->
+
+			<!-- Compétences : la bibliothèque -->
+			<section class="section" id="competences">
+				<h2>Ma bibliothèque de compétences</h2>
+				<p class="section__intro">Choisissez un livre pour voir le détail et les projets associés.</p>
+
+				<div class="shelves">
+					<div class="shelf">
+						<h3 class="shelf__title">Information scientifique et technique</h3>
+						<div class="shelf__books">
+							<button type="button" class="livre livre--1" aria-haspopup="dialog" onclick="ouvrirPopup('RechercheDocumentaire', 'technique', 75)">
+								<span>Recherche documentaire</span>
+							</button>
+							<button type="button" class="livre livre--2" aria-haspopup="dialog" onclick="ouvrirPopup('Normesstandards', 'technique', 80)">
+								<span>Normes et standards</span>
+							</button>
+							<button type="button" class="livre livre--3" aria-haspopup="dialog" onclick="ouvrirPopup('ProprieteIntellectuelle', 'technique', 75)">
+								<span>Propriété intellectuelle</span>
+							</button>
+							<button type="button" class="livre livre--4" aria-haspopup="dialog" onclick="ouvrirPopup('TechnologiesInformation', 'technique', 80)">
+								<span>Technologies de l'information</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="shelf">
+						<h3 class="shelf__title">Web et communication</h3>
+						<div class="shelf__books">
+							<button type="button" class="livre livre--2" aria-haspopup="dialog" onclick="ouvrirPopup('CommunicationDigitale', 'communication', 85)">
+								<span>Communication digitale</span>
+							</button>
+							<button type="button" class="livre livre--5" aria-haspopup="dialog" onclick="ouvrirPopup('WordPress', 'technique', 85)">
+								<span>WordPress</span>
+							</button>
+							<button type="button" class="livre livre--1" aria-haspopup="dialog" onclick="ouvrirPopup('SEO', 'communication', 80)">
+								<span>SEO</span>
+							</button>
+							<button
+								type="button"
+								class="livre livre--3 competence-card"
+								aria-haspopup="dialog"
 								data-micromodal-trigger="modal-competence"
 								data-competence="Langages"
 								data-titre="Langages"
 								data-categorie="technique"
 								data-niveau="85"
 							>
-								<div class="livre-titre">
-									<h3>Langages</h3>
-								</div>
-							</div>
-							<!-- frameworks -->
-							<div
-								class="livre frameworks competence-card"
-								data-micromodal-trigger="modal-competence"
-								data-competence="Frameworks"
-								data-titre="Frameworks"
-								data-categorie="technique"
-								data-niveau="85"
-								aria-hidden="true"
-							>
-								<div class="livre-titre">
-									<h3>Frameworks <br />& Déploiements</h3>
-								</div>
-							</div>
-							<!-- outils microsoft -->
-							<div
-								class="livre microsoft competence-card"
-								data-micromodal-trigger="modal-competence"
-								data-competence="Microsoft"
-								data-titre="Microsoft"
-								data-categorie="technique"
-								data-niveau="60"
-								aria-hidden="true"
-							>
-								<div class="livre-titre">
-									<h3>Outils <br />Microsoft</h3>
-								</div>
-							</div>
-							<!-- BDD -->
-							<div
-								class="livre bdd competence-card"
-								data-micromodal-trigger="modal-competence"
-								data-competence="BDDAPI"
-								data-titre="BDDAPI"
-								data-categorie="technique"
-								data-niveau="80"
-							>
-								<div class="livre-titre">
-									<h3>BDD & API</h3>
-								</div>
-							</div>
+								<span>Développement web</span>
+							</button>
 						</div>
-						<div class="livres-lot">
-							<!-- Recherche documentaire -->
-							<div
-								class="livre recherche-doc"
-								onclick="ouvrirPopup('RechercheDocumentaire', 'technique', 75)"
-							>
-								<div class="livre-titre">
-									<h3>Recherche <br />documentaire</h3>
-								</div>
-							</div>
-							<!-- technologies de l'information-->
-							<div
-								class="livre techno-info competence-card"
-								onclick="ouvrirPopup('TechnologiesInformation', 'technique', 80)"
-							>
-								<div class="livre-titre">
-									<h3>technologies <br />Information</h3>
-								</div>
-							</div>
-							<!-- Propriété intellectuelle -->
-							<div
-								class="livre propriete"
-								onclick="ouvrirPopup('ProprieteIntellectuelle', 'technique', 75)"
-							>
-								<div class="livre-titre">
-									<h3>Propriété <br />Intellectuelle</h3>
-								</div>
-							</div>
-							<!-- Normes & Standards -->
-							<div
-								class="livre normes-standards"
-								onclick="ouvrirPopup('Normesstandards', 'technique', 80)"
-							>
-								<div class="livre-titre">
-									<h3>
-										Normes<br />
-										Standards
-									</h3>
-								</div>
-							</div>
-							<!-- </div> -->
+					</div>
+
+					<div class="shelf">
+						<h3 class="shelf__title">Publics et secteurs</h3>
+						<div class="shelf__books">
+							<button type="button" class="livre livre--4" aria-haspopup="dialog" onclick="ouvrirPopup('RechercheInnovation', 'publics', 85)">
+								<span>Recherche</span>
+							</button>
+							<button type="button" class="livre livre--5" aria-haspopup="dialog" onclick="ouvrirPopup('EnseignementSuperieur', 'publics', 90)">
+								<span>Université</span>
+							</button>
+							<button type="button" class="livre livre--2" aria-haspopup="dialog" onclick="ouvrirPopup('SecteurPublic', 'publics', 95)">
+								<span>Secteur public</span>
+							</button>
+							<button type="button" class="livre livre--1" aria-haspopup="dialog" onclick="ouvrirPopup('CollectivitésTerritoriales', 'publics', 80)">
+								<span>Collectivités</span>
+							</button>
 						</div>
 					</div>
 				</div>
+			</section>
 
-				<div class="etagere-container">
-					<!-- Étagère 2: Communication & Design -->
+			<!-- Contact -->
+			<section class="section section--cta" id="contact">
+				<h2>Un enregistrement à mettre par écrit ?</h2>
+				<p>Écrivez-moi : myriam-braconier [at] afterbefore.fr</p>
+				<a class="btn btn--light" href="comptes-rendus.html">Voir l'offre et le tarif</a>
+			</section>
 
-					<div class="etagere">
-						<div class="etagere-place-titre">
-							<!-- <div class="etagere-emoji">🎨</div> -->
-							<div class="etagere-gif2">
-								<img
-									src="color-palette_18996608.gif"
-									alt="freepik-adaptability"
-								/>
-								<h2>Communication & Design</h2>
-							</div>
-						</div>
-						<!-- <div class="livres-container"> -->
-						<div class="livres-lot">
-							<!-- Adobe Suite -->
-							<div
-								class="livre adobe"
-								onclick="ouvrirPopup('AdobeSuite', 'communication', 85)"
-							>
-								<div class="livre-titre"><h3>Adobe</h3></div>
-							</div>
-							<!-- Canva -->
-							<div
-								class="livre canva"
-								onclick="ouvrirPopup('Canva', 'communication', 90)"
-							>
-								<div class="livre-titre"><h3>Canva</h3></div>
-							</div>
-							<!-- Maquettage et prototypage -->
-							<div
-								class="livre prototypage"
-								onclick="ouvrirPopup('Maquettage', 'communication', 75)"
-							>
-								<div class="livre-titre">
-									<h3>Maquettage</h3>
-								</div>
-							</div>
-							<!-- Communication Digitale -->
-							<div
-								class="livre communication"
-								onclick="ouvrirPopup('CommunicationDigitale', 'communication', 85)"
-							>
-								<div class="livre-titre">
-									<h3>
-										Communication<br />
-										Digitale
-									</h3>
-								</div>
-							</div>
-						</div>
-						<div class="livres-lot">
-							<!-- Wordpress -->
-							<div
-								class="livre wordpress competence-card"
-								onclick="ouvrirPopup('WordPress', 'technique', 85)"
-							>
-								<div class="livre-titre"><h3>WordPress</h3></div>
-							</div>
-							<!-- SEO -->
-							<div
-								class="livre seo"
-								onclick="ouvrirPopup('SEO', 'communication', 80)"
-							>
-								<div class="livre-titre"><h3>SEO</h3></div>
-							</div>
-							<!-- Gestion Agile -->
-							<div
-								class="livre agile"
-								onclick="ouvrirPopup('GestionAgile', 'communication', 80)"
-							>
-								<div class="livre-titre"><h3>Gestion Agile</h3></div>
-							</div>
-						</div>
-						<!-- </div> -->
-						<!-- </div> -->
-					</div>
-
-					<!-- Étagère 3: Publics & Secteurs -->
-					<div class="etagere">
-						<div class="etagere-place-titre">
-							<!-- <div class="etagere-emoji">👥</div> -->
-							<div class="etagere-gif3">
-								<img
-									src="public-relations_17905615.gif"
-									alt="freepik-adaptability"
-								/>
-								<h2 class="etagere-titre">Publics & Secteurs</h2>
-							</div>
-						</div>
-						<!-- <div class="livres-container"> -->
-						<div class="livres-lot">
-							<!-- Secteur Public -->
-							<div
-								class="livre public"
-								onclick="ouvrirPopup('SecteurPublic', 'publics', 95)"
-							>
-								<div class="livre-titre"><h3>Public</h3></div>
-							</div>
-							<!-- Université -->
-							<div
-								class="livre universite"
-								onclick="ouvrirPopup('EnseignementSuperieur', 'publics', 90)"
-							>
-								<div class="livre-titre"><h3>Université</h3></div>
-							</div>
-							<!-- R&D -->
-							<div
-								class="livre recherche"
-								onclick="ouvrirPopup('RechercheInnovation', 'publics', 85)"
-							>
-								<div class="livre-titre"><h3>R&D</h3></div>
-							</div>
-						</div>
-
-						<div class="livres-lot">
-							<!-- Collectivités -->
-							<div
-								class="livre collectivite"
-								onclick="ouvrirPopup('CollectivitésTerritoriales', 'publics', 80)"
-							>
-								<div class="livre-titre"><h3>Collectivités</h3></div>
-							</div>
-							<!-- Startups / PME -->
-							<div
-								class="livre startup"
-								onclick="ouvrirPopup('StartupsPME', 'publics', 85)"
-							>
-								<div class="livre-titre"><h3>StartUp</h3></div>
-							</div>
-							<!-- Formation Professionnelle -->
-							<div
-								class="livre formation"
-								onclick="ouvrirPopup('FormationProfessionnelle', 'publics', 90)"
-							>
-								<div class="livre-titre"><h3>Formation</h3></div>
-							</div>
-						</div>
-						<!-- </div> -->
-					</div>
-				</div>
-			</div>
-
-			<!-- La modale micromodal-->
+			<!-- Modale (structure conservée pour script.js / script2.js) -->
 			<div
 				class="modal micromodal-slide"
 				id="modal-competence"
@@ -446,61 +196,49 @@ Pour les termes techniques et les noms propres, je vous demande une courte liste
 			>
 				<div class="modal__overlay" data-micromodal-close>
 					<div class="modal__container" tabindex="-1">
-						<button
-							class="modal__close"
-							data-micromodal-close
-							aria-label="Fermer la modale"
-						>
+						<button class="modal__close" data-micromodal-close aria-label="Fermer">
 							<span aria-hidden="true">×</span>
 						</button>
 						<div class="modal__header">
 							<h3 id="modal-title">Titre</h3>
 							<h4 id="modal-category">Catégorie</h4>
 						</div>
+
+						<!-- Barre de niveau masquée en CSS, gardée pour la compatibilité du script -->
 						<div class="niveau-section">
 							<div class="niveau-label">
-								Niveau de maîtrise:
-								<span id="modal-niveau-text" aria-live="polite">0</span>%
+								Niveau de maîtrise : <span id="modal-niveau-text" aria-live="polite">0</span>%
 							</div>
-							<div
-								class="niveau-bar"
-								role="progressbar"
-								aria-valuemin="0"
-								aria-valuemax="100"
-								aria-valuenow="0"
-								aria-labelledby="modal-niveau-text"
-							>
-								<div
-									id="modal-niveau-fill"
-									class="niveau-fill"
-									style="width: 0%; transition: width 1s ease"
-								></div>
+							<div class="niveau-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-labelledby="modal-niveau-text">
+								<div id="modal-niveau-fill" class="niveau-fill" style="width: 0%"></div>
 							</div>
 						</div>
 
-						<div class="section-title">Description</div>
-						<hr />
-						<ul id="modal-description"></ul>
+						<div class="modal__body">
+							<div class="section-title">Description</div>
+							<ul id="modal-description"></ul>
 
-						<div class="section-title">Contexte d'utilisation</div>
-						<hr />
-						<div id="modal-contexte">Contexte</div>
+							<div class="section-title">Contexte d'utilisation</div>
+							<div id="modal-contexte">Contexte</div>
 
-						<div class="section-title">Projets réalisés</div>
-						<hr />
-						<ul id="modal-projets"></ul>
+							<div class="section-title">Projets réalisés</div>
+							<ul id="modal-projets"></ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
-		<footer>
-			<div>
-				<p>
-					&copy; 2026 | Myriam Braconier Leclerc | myriam-braconier [at]
-					afterbefore.fr
-				</p>
-			</div>
+
+		<footer class="footer">
+			<p>© 2026 · Myriam Braconier Leclerc · Entrepreneuse individuelle · Pantin (93)</p>
+			<p>
+				<a href="comptes-rendus.html">Comptes rendus</a> ·
+				<a href="securite.html">Sécurité</a> ·
+				<a href="mentions-legales.html">Mentions légales</a> ·
+				<a href="cgv.html">CGV</a>
+			</p>
 		</footer>
+
 		<script src="script2.js"></script>
 	</body>
 </html>
