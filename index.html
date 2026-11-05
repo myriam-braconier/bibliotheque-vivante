@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Myriam Braconier Leclerc · Comptes rendus et information scientifique</title>
+		<meta
+			name="description"
+			content="Technicienne de l'information scientifique et technique à Pantin : comptes rendus de séances, assemblées générales et conférences, archives orales, bulletins. Transcription en local, relecture humaine."
+		/>
+		<meta name="author" content="Myriam Braconier Leclerc" />
+		<meta name="robots" content="index, follow" />
+		<link rel="canonical" href="https://afterbefore.fr/" />
+
+		<!-- Open Graph -->
+		<meta property="og:title" content="Myriam Braconier Leclerc · Comptes rendus et information scientifique" />
+		<meta
+			property="og:description"
+			content="Comptes rendus de séances, d'assemblées générales et de conférences, archives orales et bulletins. Transcription en local, relecture humaine."
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="fr_FR" />
+		<meta property="og:url" content="https://afterbefore.fr/" />
+		<meta property="og:image" content="https://afterbefore.fr/feuille-verte.png" />
+
+		<link rel="icon" type="image/x-icon" href="/feuille-verte.ico" />
+		<link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="stylesheet" href="fonts/fonts.css" />
+		<link rel="stylesheet" href="styles.css" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/micromodal/0.6.1/micromodal.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+		<!-- Barre du haut -->
+		<header class="topbar" id="stickyIntro">
+			<a class="topbar__brand" href="https://afterbefore.fr">afterbefore.fr</a>
+			<nav class="topbar__nav" aria-label="Navigation principale">
+				<a href="comptes-rendus.html">Comptes rendus</a>
+				<a href="#competences">Compétences</a>
+				<a href="https://www.linkedin.com/in/myriam-braconier/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+			</nav>
+		</header>
+
+		<main id="contenu">
+			<!-- En-tête -->
+			<section class="hero">
+				<div class="portrait-container">
+					<img src="autoportrait-enhanced-removebg-preview.png" alt="Portrait de Myriam Braconier Leclerc" />
+				</div>
+				<div class="hero__text">
+					<p class="hero__eyebrow">Pantin · Île-de-France</p>
+					<h1>De l'oral à l'écrit, <em>fidèlement.</em></h1>
+					<p class="hero__role">
+						Je suis <strong>Myriam Braconier Leclerc</strong>, technicienne de l'information scientifique et technique.
+						Je transcris, structure et mets en forme vos contenus spécialisés.
+					</p>
+					<div class="hero__actions">
+						<a class="btn btn--primary" href="comptes-rendus.html">Découvrir l’offre comptes rendus</a>
+						<a class="btn btn--ghost" href="#contact">Me contacter</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Ce que je fais -->
+			<section class="section">
+				<h2>Ce que je fais</h2>
+				<p class="section__intro">
+					J'accompagne les associations, sociétés savantes et structures locales dans la mise par écrit de leurs échanges.
+					Je ne suis pas spécialiste de votre domaine : ce sont vos membres qui gardent la main sur le fond.
+				</p>
+
+				<div class="cards">
+					<article class="card">
+						<h3>Comptes rendus</h3>
+						<p>Séances, conférences, conseils et assemblées générales, dans le format et le niveau de détail que vous utilisez.</p>
+					</article>
+					<article class="card">
+						<h3>Archives orales</h3>
+						<p>Transcription d'entretiens et de témoignages, relue et mise en forme pour être conservée et consultée.</p>
+					</article>
+					<article class="card">
+						<h3>Bulletins et newsletters</h3>
+						<p>Mise en forme de vos contenus pour votre bulletin, votre newsletter ou votre site.</p>
+					</article>
+				</div>
+
+				<ul class="method">
+					<li><strong>Transcription en local</strong> : vos enregistrements ne partent pas vers un service tiers.</li>
+					<li><strong>Liste de référence</strong> : vous me donnez les termes techniques et les noms propres.</li>
+					<li><strong>Aucun passage deviné</strong> : tout doute est signalé dans le texte.</li>
+					<li><strong>Relecture par un de vos membres</strong> avant diffusion.</li>
+				</ul>
+			</section>
+
+			<!-- Références -->
+			<section class="section section--tinted">
+				<h2>Ils m'ont fait confiance</h2>
+				<ul class="refs">
+					<li>INIST-CNRS</li>
+					<li>Cité des sciences et de l'industrie</li>
+					<li>Eurocontrol</li>
+					<li>ONERA</li>
+				</ul>
+			</section>
+
+			<!-- Compétences : la bibliothèque -->
+			<section class="section" id="competences">
+				<h2>Ma bibliothèque de compétences</h2>
+				<p class="section__intro">Choisissez un livre pour voir le détail et les projets associés.</p>
+
+				<div class="shelves">
+					<div class="shelf">
+						<h3 class="shelf__title">Information scientifique et technique</h3>
+						<div class="shelf__books">
+							<button type="button" class="livre livre--1" aria-haspopup="dialog" onclick="ouvrirPopup('RechercheDocumentaire', 'technique', 75)">
+								<span>Recherche documentaire</span>
+							</button>
+							<button type="button" class="livre livre--2" aria-haspopup="dialog" onclick="ouvrirPopup('Normesstandards', 'technique', 80)">
+								<span>Normes et standards</span>
+							</button>
+							<button type="button" class="livre livre--3" aria-haspopup="dialog" onclick="ouvrirPopup('ProprieteIntellectuelle', 'technique', 75)">
+								<span>Propriété intellectuelle</span>
+							</button>
+							<button type="button" class="livre livre--4" aria-haspopup="dialog" onclick="ouvrirPopup('TechnologiesInformation', 'technique', 80)">
+								<span>Technologies de l'info</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="shelf">
+						<h3 class="shelf__title">Web et communication</h3>
+						<div class="shelf__books">
+							<button type="button" class="livre livre--2" aria-haspopup="dialog" onclick="ouvrirPopup('CommunicationDigitale', 'communication', 85)">
+								<span>Communication digitale</span>
+							</button>
+							<button type="button" class="livre livre--5" aria-haspopup="dialog" onclick="ouvrirPopup('WordPress', 'technique', 85)">
+								<span>WordPress</span>
+							</button>
+							<button type="button" class="livre livre--1" aria-haspopup="dialog" onclick="ouvrirPopup('SEO', 'communication', 80)">
+								<span>SEO</span>
+							</button>
+							<button
+								type="button"
+								class="livre livre--3 competence-card"
+								aria-haspopup="dialog"
+								data-micromodal-trigger="modal-competence"
+								data-competence="Langages"
+								data-titre="Langages"
+								data-categorie="technique"
+								data-niveau="85"
+							>
+								<span>Développement web</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="shelf">
+						<h3 class="shelf__title">Publics et secteurs</h3>
+						<div class="shelf__books">
+							<button type="button" class="livre livre--4" aria-haspopup="dialog" onclick="ouvrirPopup('RechercheInnovation', 'publics', 85)">
+								<span>Recherche</span>
+							</button>
+							<button type="button" class="livre livre--5" aria-haspopup="dialog" onclick="ouvrirPopup('EnseignementSuperieur', 'publics', 90)">
+								<span>Université</span>
+							</button>
+							<button type="button" class="livre livre--2" aria-haspopup="dialog" onclick="ouvrirPopup('SecteurPublic', 'publics', 95)">
+								<span>Secteur public</span>
+							</button>
+							<button type="button" class="livre livre--1" aria-haspopup="dialog" onclick="ouvrirPopup('CollectivitésTerritoriales', 'publics', 80)">
+								<span>Collectivités</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact -->
+			<section class="section section--cta" id="contact">
+				<h2>Un enregistrement à mettre par écrit ?</h2>
+				<p>Écrivez-moi : myriam-braconier [at] afterbefore.fr</p>
+				<a class="btn btn--light" href="comptes-rendus.html">Voir l'offre et le tarif</a>
+			</section>
+
+			<!-- Modale (structure conservée pour script.js / script2.js) -->
+			<div
+				class="modal micromodal-slide"
+				id="modal-competence"
+				role="dialog"
+				aria-modal="true"
+				aria-labelledby="modal-title"
+				aria-describedby="modal-description"
+			>
+				<div class="modal__overlay" data-micromodal-close>
+					<div class="modal__container" tabindex="-1">
+						<button class="modal__close" data-micromodal-close aria-label="Fermer">
+							<span aria-hidden="true">×</span>
+						</button>
+						<div class="modal__header">
+							<h3 id="modal-title">Titre</h3>
+							<h4 id="modal-category">Catégorie</h4>
+						</div>
+
+						<!-- Barre de niveau masquée en CSS, gardée pour la compatibilité du script -->
+						<div class="niveau-section">
+							<div class="niveau-label">
+								Niveau de maîtrise : <span id="modal-niveau-text" aria-live="polite">0</span>%
+							</div>
+							<div class="niveau-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-labelledby="modal-niveau-text">
+								<div id="modal-niveau-fill" class="niveau-fill" style="width: 0%"></div>
+							</div>
+						</div>
+
+						<div class="modal__body">
+							<div class="section-title">Description</div>
+							<ul id="modal-description"></ul>
+
+							<div class="section-title">Contexte d'utilisation</div>
+							<div id="modal-contexte">Contexte</div>
+
+							<div class="section-title">Projets réalisés</div>
+							<ul id="modal-projets"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<p>© 2026 · Myriam Braconier Leclerc · Entrepreneuse individuelle · Pantin (93)</p>
+			<p>
+				<a href="comptes-rendus.html">Comptes rendus</a> ·
+				<a href="securite.html">Sécurité</a> ·
+				<a href="mentions-legales.html">Mentions légales</a> ·
+				<a href="cgv.html">CGV</a>
+			</p>
+		</footer>
+
+		<script src="script2.js"></script>
+	</body>
+</html>
