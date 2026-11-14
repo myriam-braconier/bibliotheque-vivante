@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Étude de cas : d'une séance scientifique à un compte rendu fidèle | afterbefore.fr</title>
+<meta name="description" content="Comment une séance scientifique au vocabulaire spécialisé devient un compte rendu fidèle, avec un traitement 100 % local.">
+<link rel="canonical" href="https://afterbefore.fr/etude-de-cas.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Étude de cas : d'une séance scientifique à un compte rendu fidèle">
+<meta property="og:description" content="Comment une séance scientifique au vocabulaire spécialisé devient un compte rendu fidèle, avec un traitement 100 % local.">
+<meta property="og:url" content="https://afterbefore.fr/etude-de-cas.html">
+<link rel="icon" type="image/x-icon" href="/feuille-verte.ico">
+<link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Styles propres à cette page, construits sur la charte de styles.css (papier, encre, vermillon).
+     Mêmes réglages que la page comptes-rendus.html. */
+  main#contenu { max-width: 52rem; margin: 0 auto; padding: 0 16px 3rem; }
+  main h1, main h2 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-spacing: -0.01em; }
+  main h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.1; margin: 2.5rem 0 1rem; }
+  main h2 { font-size: clamp(1.6rem, 3.5vw, 2.15rem); line-height: 1.2; margin: 3rem 0 .8rem; }
+  main h3 { margin: 1.4rem 0 .4rem; }
+  main p { margin: .6rem 0; }
+  .lead { font-size: 1.2rem; color: var(--encre-douce); max-width: 60ch; }
+  .btns { display: flex; gap: .8rem; flex-wrap: wrap; margin: 1.5rem 0; }
+  .bloc { background: var(--blanc); border: 1px solid var(--bord); border-radius: var(--rayon); padding: 1.3rem 1.6rem; margin: 1rem 0; }
+  ol.steps { padding-left: 1.3rem; }
+  ol.steps li { margin: .7rem 0; }
+  ol.steps li::marker { color: var(--accent); }
+  ul.checks { list-style: none; padding: 0; margin: .8rem 0; }
+  ul.checks li { padding-left: 1.6rem; position: relative; margin: .7rem 0; }
+  ul.checks li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .sub { display: block; color: var(--encre-douce); font-size: .98rem; }
+  .chiffres { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); margin: 1.5rem 0; }
+  .chiffre { background: var(--papier-2); border: 1px solid var(--bord); border-radius: var(--rayon); padding: 1rem 1.2rem; }
+  .chiffre strong { display: block; font-family: "Fraunces", Georgia, serif; font-size: clamp(1.6rem, 4vw, 2.1rem); font-weight: 600; line-height: 1.2; color: var(--accent); }
+  .chiffre span { color: var(--encre-douce); font-size: .98rem; }
+  .compare { display: grid; gap: 1rem; grid-template-columns: 1fr; margin: 1rem 0; }
+  @media (min-width: 700px) { .compare { grid-template-columns: 1fr 1fr; } }
+  .compare .bloc { margin: 0; }
+  .compare h3 { margin-top: 0; }
+  .raw { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92rem; background: var(--papier-2); }
+  .footer a { margin: 0 .3rem; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<header class="topbar">
+  <a class="topbar__brand" href="https://afterbefore.fr">afterbefore.fr</a>
+  <nav class="topbar__nav" aria-label="Navigation principale">
+    <a href="securite.html">Sécurité</a>
+    <a href="cgv.html">CGV</a>
+    <a href="mentions-legales.html">Mentions légales</a>
+    <a href="index.html">← Portfolio</a>
+  </nav>
+</header>
+
+<main id="contenu">
+
+  <p class="note"><a href="comptes-rendus.html">← Retour à la prestation</a></p>
+
+  <h1>D'une séance scientifique à un <em>compte rendu fidèle</em></h1>
+  <p class="lead">Comment une séance de l'académie d'agriculture dense devient, en 4 jours, un compte rendu fidèle, sans que l'enregistrement quitte jamais mon poste de travail.</p>
+
+  <h2>Le contexte</h2>
+  <p>L'Académie d'Agriculture de France organise des séances publiques au cours desquelles des spécialistes présentent leurs travaux. Le thème de cette séance : Le méthane et les ruminants (séance du 4 novembre, Paris).</p>
+
+  <div class="chiffres">
+    <div class="chiffre"><strong>2:43:31</strong><span>d'enregistrement</span></div>
+    <div class="chiffre"><strong>7</strong><span>orateurs</span></div>
+    <div class="chiffre"><strong>104</strong><span>termes spécialisés dans le glossaire</span></div>
+    <div class="chiffre"><strong>0</strong><span>donnée envoyée dans le cloud</span></div>
+  </div>
+
+  <h2>Le défi</h2>
+  <p>Ces séances sont riches, mais elles restent souvent difficiles d'accès pour qui n'y a pas assisté : la vidéo dure plusieurs heures, le vocabulaire est pointu, et les contenus écrits publiés ensuite se limitent parfois à un résumé de quelques lignes.</p>
+  <p>Les outils de transcription automatique grand public butent sur ce vocabulaire : noms de molécules, de pathologies et de chercheurs sont souvent déformés. Et ils envoient l'enregistrement sur des serveurs externes, ce qui pose problème quand un orateur présente des résultats pas encore publiés.</p>
+
+  <h2>La méthode</h2>
+  <ol class="steps">
+    <li><strong>Préparer le vocabulaire de la discipline.</strong><span class="sub">Avant la transcription, je constitue un glossaire : un socle propre à la discipline, complété par les termes de la séance (programme, noms des orateurs, titres des communications).</span></li>
+    <li><strong>Transcrire en local.</strong><span class="sub">L'enregistrement est transcrit sur mon propre ordinateur, avec identification des orateurs et horodatage. Rien ne transite par un service en ligne.</span></li>
+    <li><strong>Repérer et vérifier les passages incertains.</strong><span class="sub">Les chiffres, les noms propres et les termes douteux sont signalés automatiquement. Je les vérifie un par un en réécoutant l'enregistrement.</span></li>
+    <li><strong>Rédiger le compte rendu.</strong><span class="sub">À partir de la transcription vérifiée, je rédige le compte rendu de chaque communication, sans rien ajouter que l'orateur n'ait dit.</span></li>
+    <li><strong>Faire valider par l'orateur.</strong><span class="sub">Chaque orateur relit le texte qui le concerne avant publication. C'est la garantie que le compte rendu ne trahit pas sa pensée.</span></li>
+  </ol>
+
+  <h2>Un passage, du parlé à l'écrit</h2>
+  <p>Voici un moment de la séance, tel qu'il a été dit, puis tel qu'il est restitué.</p>
+  <div class="compare">
+    <div class="bloc raw">
+      <h3>Ce qui a été dit</h3>
+      <p>(transcription vérifiée, extrait)</p>
+      <p>Donc, c'est à partir de cet exercice d'attribution du GIEC qu'on peut dire qu'aujourd'hui, les émissions de méthane ont contribué à 45 % du réchauffement observé qui est la barre grise. Donc, c'est une part extrêmement significative du réchauffement. En fait, ce méthane, quand il est émis par les différents secteurs d'activité, ce méthane entre dans l'atmosphère et une fois dans l'atmosphère, il va s'oxyder et il va, in fine, au bout de quelques années, être transformé en CO2. Pendant cette oxydation, il y a différentes réactions chimiques qui se passent et un point notable dans cette oxydation, c'est la production d'ozone, ozone dont on verra un petit peu plus loin les conséquences.</p>
+    </div>
+    <div class="bloc">
+      <h3>Ce qui est restitué</h3>
+      <p>(compte rendu fidèle)</p>
+      <p>Une chercheuse de l'INRAE relève que, selon l'attribution du GIEC, les émissions de méthane ont contribué à 45 % du réchauffement observé. Elle précise qu'il s'agit d'une part extrêmement significative du réchauffement. Elle explique que, une fois émis, le méthane s'oxyde dans l'atmosphère et finit, au bout de quelques années, par être transformé en CO2 ; cette oxydation s'accompagne de réactions chimiques, dont la production d'ozone.</p>
+    </div>
+  </div>
+
+  <h2>La même méthode, pour votre discipline</h2>
+  <p>Une séance d’agriculture mêle biologie, génétique, climat, économie et pratiques de terrain. Le glossaire doit couvrir toutes ces disciplines, et la restitution rester fidèle sur des sujets souvent débattus. La méthode reste la même pour toutes les sciences : seul le glossaire change.</p>
+  <div class="bloc">
+    <h3>Elle s'adapte par exemple à :</h3>
+    <ul class="checks">
+      <li>vos séances, colloques et congrès ;</li>
+      <li>vos journées d'étude et conférences grand public ;</li>
+      <li>vos webinaires et tables rondes enregistrés.</li>
+    </ul>
+  </div>
+
+  <h2>Vos données restent chez vous</h2>
+  <p>Tout le traitement se fait sur mon poste, sans service en ligne. Les résultats non publiés présentés par vos orateurs ne sont donc jamais exposés à un tiers. Un accord de confidentialité peut être signé avant toute mission.</p>
+
+  <div class="btns">
+    <a class="btn btn--ghost" href="comptes-rendus.html">Voir la prestation et le tarif</a>
+  </div>
+
+</main>
+
+<section class="section section--cta" id="essai">
+  <h2 style="color: var(--papier)">Testez sur l'une de vos séances</h2>
+  <p>Je vous propose un échantillon gratuit à partir de l'enregistrement d'une de vos séances publiques : un passage, restitué en compte rendu fidèle.</p>
+  <a class="btn btn--light" href="mailto:myriam-braconier@afterbefore.fr?subject=Demande%20d%27%C3%A9chantillon">Demander un échantillon</a>
+</section>
+
+<footer class="footer">
+  <p>© 2026 BRACONIER-LECLERC – entrepreneuse individuelle – SIRET 83922324500037</p>
+  <p>Site hébergé par GitHub. Cette page n'utilise ni cookie, ni police externe, ni outil de mesure.</p>
+  <p>
+    <a href="securite.html">Sécurité</a> ·
+    <a href="mentions-legales.html">Mentions légales</a> ·
+    <a href="cgv.html">CGV</a>
+  </p>
+</footer>
+</body>
+</html>
