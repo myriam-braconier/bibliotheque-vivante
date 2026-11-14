@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Étude de cas : d'une séance scientifique à un compte rendu fidèle | Myriam Braconier Leclerc</title>
+<meta name="description" content="Comment une séance scientifique au vocabulaire spécialisé devient un compte rendu fidèle, avec un traitement 100 % local.">
+<style>
+  :root {
+    --texte: #1f2328;
+    --doux: #57606a;
+    --fond: #ffffff;
+    --fond-alt: #f6f8fa;
+    --accent: #1a5f7a;
+    --bord: #d0d7de;
+    --a-completer: #fff4d6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Fraunces, "Times New Roman", serif;
+    color: var(--texte);
+    background: var(--fond);
+    line-height: 1.65;
+    font-size: 18px;
+  }
+  header, main, footer { max-width: 860px; margin: 0 auto; padding: 0 1.25rem; }
+  header { padding-top: 3rem; padding-bottom: 1rem; }
+  .surtitre {
+    font-family: system-ui, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.5rem;
+  }
+  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 1rem; }
+  .chapeau { font-size: 1.2rem; color: var(--doux); margin: 0; }
+  h2 {
+    font-size: 1.45rem;
+    margin: 3rem 0 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--bord);
+  }
+  h3 { font-family: system-ui, sans-serif; font-size: 1rem; margin: 0 0 0.4rem; }
+  p { margin: 0 0 1rem; }
+
+
+
+  /* Chiffres clés */
+  .chiffres {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+    font-family: system-ui, sans-serif;
+  }
+  .chiffre {
+    background: var(--fond-alt);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  .chiffre strong { display: block; font-size: 1.6rem; color: var(--accent); }
+  .chiffre span { font-size: 0.9rem; color: var(--doux); }
+
+  /* Étapes de la méthode */
+  .etapes { list-style: none; padding: 0; margin: 1.5rem 0; counter-reset: etape; }
+  .etapes li {
+    counter-increment: etape;
+    position: relative;
+    padding: 0 0 1.25rem 3.2rem;
+  }
+  .etapes li::before {
+    content: counter(etape);
+    position: absolute; left: 0; top: 0;
+    width: 2.2rem; height: 2.2rem;
+    border-radius: 50%;
+    background: var(--accent); color: #fff;
+    font-family: system-ui, sans-serif; font-weight: 600;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  /* Un passage, trois formats */
+  .trois-formats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .format {
+    border: 1px solid var(--bord);
+    border-radius: 8px;
+    padding: 1.1rem;
+    font-size: 0.95rem;
+  }
+  .format .public {
+    font-family: system-ui, sans-serif;
+    font-size: 0.8rem;
+    color: var(--doux);
+    margin-bottom: 0.75rem;
+  }
+  .extrait-source {
+    background: var(--fond-alt);
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.25rem;
+    font-size: 0.95rem;
+    margin: 1rem 0;
+  }
+
+  .encadre {
+    background: var(--fond-alt);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .encadre ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+
+  .appel {
+    text-align: center;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    margin: 3rem 0;
+  }
+  .appel h2 { border: none; margin-top: 0; padding-top: 0; color: #fff; }
+  .appel a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background: #fff;
+    color: var(--accent);
+    font-family: system-ui, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+  }
+  footer {
+    font-family: system-ui, sans-serif;
+    font-size: 0.85rem;
+    color: var(--doux);
+    padding-bottom: 3rem;
+  }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="surtitre">Étude de cas</p>
+  <h1>D'une séance scientifique à un compte rendu fidèle</h1>
+  <p class="chapeau">
+    Comment une séance au vocabulaire médical dense devient, en
+    <strong>4 jours</strong>, un compte rendu fidèle, sans que l'enregistrement
+    quitte jamais mon poste de travail.
+  </p>
+</header>
+
+<main>
+
+  <!-- 1. LE CONTEXTE -->
+  <h2>Le contexte</h2>
+  <p>
+    <span>L'Académie d'Agriculture de France</span>
+    organise des séances publiques au cours desquelles des spécialistes présentent
+    leurs travaux. Le thème de cette séance :
+    <span>Le méthane et les ruminants (séance du 4 novembre, Paris)</span>.
+  </p>
+
+  <div class="chiffres">
+    <div class="chiffre"><strong>2:43:31</strong><span>d'enregistrement</span></div>
+    <div class="chiffre"><strong>7 </strong><span>orateurs</span></div>
+    <div class="chiffre"><strong>104</strong><span>termes spécialisés dans le glossaire</span></div>
+    <div class="chiffre"><strong>0</strong><span>donnée envoyée dans le cloud</span></div>
+  </div>
+
+  <!-- 2. LE DÉFI -->
+  <h2>Le défi</h2>
+  <p>
+    Ces séances sont riches, mais elles restent souvent difficiles d'accès pour qui n'y
+    a pas assisté : la vidéo dure plusieurs heures, le vocabulaire est pointu, et les
+    contenus écrits publiés ensuite se limitent parfois à un résumé de quelques lignes.
+  </p>
+  <p>
+    Les outils de transcription automatique grand public butent sur ce vocabulaire :
+    noms de molécules, de pathologies et de chercheurs sont souvent déformés. Et ils
+    envoient l'enregistrement sur des serveurs externes, ce qui pose problème quand
+    un orateur présente des résultats pas encore publiés.
+  </p>
+
+  <!-- 3. LA MÉTHODE -->
+  <h2>La méthode</h2>
+  <ol class="etapes">
+    <li>
+      <h3>Préparer le vocabulaire de la discipline</h3>
+      Avant la transcription, je constitue un glossaire : un socle propre à la
+      discipline, complété par les termes de la séance (programme, noms des orateurs,
+      titres des communications).
+    </li>
+    <li>
+      <h3>Transcrire en local</h3>
+      L'enregistrement est transcrit sur mon propre ordinateur, avec identification
+      des orateurs et horodatage. Rien ne transite par un service en ligne.
+    </li>
+    <li>
+      <h3>Repérer et vérifier les passages incertains</h3>
+      Les chiffres, les noms propres et les termes douteux sont signalés
+      automatiquement. Je les vérifie un par un en réécoutant l'enregistrement.
+    </li>
+    <li>
+      <h3>Rédiger le compte rendu</h3>
+      À partir de la transcription vérifiée, je rédige le compte rendu de chaque
+      communication, sans rien ajouter que l'orateur n'ait dit.
+    </li>
+    <li>
+      <h3>Faire valider par l'orateur</h3>
+      Chaque orateur relit le texte qui le concerne avant publication. C'est la
+      garantie que le compte rendu ne trahit pas sa pensée.
+    </li>
+  </ol>
+
+  <!-- 4. UN PASSAGE, DU PARLÉ À L'ÉCRIT -->
+  <h2>Un passage, du parlé à l'écrit</h2>
+  <p>Voici un moment de la séance, tel qu'il a été dit, puis tel qu'il est restitué.</p>
+
+  <div class="extrait-source">
+    <strong>Ce qui a été dit</strong> (transcription vérifiée, extrait) :<br>
+    Donc, c'est à partir de cet exercice d'attribution du GIEC qu'on peut dire qu'aujourd'hui, les émissions de méthane ont contribué à 45 % du réchauffement observé qui est la barre grise. Donc, c'est une part extrêmement significative du réchauffement. En fait, ce méthane, quand il est émis par les différents secteurs d'activité, ce méthane entre dans l'atmosphère et une fois dans l'atmosphère, il va s'oxyder et il va, in fine, au bout de quelques années, être transformé en CO2. Pendant cette oxydation, il y a différentes réactions chimiques qui se passent et un point notable dans cette oxydation, c'est la production d'ozone, ozone dont on verra un petit peu plus loin les conséquences.
+  </div>
+
+  <div class="extrait-source">
+    <strong>Ce qui est restitué</strong> (compte rendu fidèle) :<br>
+    Une chercheuse de l'INRAE relève que, selon l'attribution du GIEC, les émissions de méthane ont contribué à 45 % du réchauffement observé. Elle précise qu'il s'agit d'une part extrêmement significative du réchauffement. Elle explique que, une fois émis, le méthane s'oxyde dans l'atmosphère et finit, au bout de quelques années, par être transformé en CO2 ; cette oxydation s'accompagne de réactions chimiques, dont la production d'ozone.
+  </div>
+
+  <!-- 5. TRANSPOSABLE -->
+  <h2>La même méthode, pour votre discipline</h2>
+  <p>
+    Une séance d’agriculture mêle biologie, génétique, climat, économie et pratiques de terrain. Le glossaire doit couvrir toutes ces disciplines, et la restitution rester fidèle sur des sujets souvent débattus.
+    La méthode reste la même pour toutes les sciences : seul le glossaire change.
+  </p>
+  <div class="encadre">
+    <strong>Elle s'adapte par exemple à :</strong>
+    <ul>
+      <li>vos séances, colloques et congrès ;</li>
+      <li>vos journées d'étude et conférences grand public ;</li>
+      <li>vos webinaires et tables rondes enregistrés.</li>
+    </ul>
+  </div>
+
+  <!-- 6. CONFIDENTIALITÉ -->
+  <h2>Vos données restent chez vous</h2>
+  <p>
+    Tout le traitement se fait sur mon poste, sans service en ligne. Les résultats
+    non publiés présentés par vos orateurs ne sont donc jamais exposés à un tiers.
+    Un accord de confidentialité peut être signé avant toute mission.
+  </p>
+
+  <!-- 7. APPEL À L'ACTION -->
+  <section class="appel">
+    <h2>Testez sur l'une de vos séances</h2>
+    <p>
+      Je vous propose un échantillon gratuit à partir de l'enregistrement d'une de vos
+      séances publiques : un passage, restitué en compte rendu fidèle.
+    </p>
+    <a href="mailto:myriam-braconier@afterbefore.fr?subject=Demande%20d%27%C3%A9chantillon">Demander un échantillon</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    Myriam Braconier Leclerc, transcription et comptes rendus de communications scientifiques.
+    <a href="index.html">Retour à l'accueil</a>
+  </p>
+</footer>
+
+</body>
+</html>
